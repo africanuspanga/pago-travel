@@ -38,6 +38,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="/itineraries" className="text-blue-100 hover:text-white transition-colors">
+                  Tour Packages
+                </Link>
+              </li>
+              <li>
                 <Link href="/zanzibar" className="text-blue-100 hover:text-white transition-colors">
                   Zanzibar Tours
                 </Link>
@@ -52,24 +57,43 @@ export default function Footer() {
                   Kilimanjaro Climbing
                 </Link>
               </li>
-              <li>
-                <Link href="/services" className="text-blue-100 hover:text-white transition-colors">
-                  Our Services
-                </Link>
-              </li>
             </ul>
           </div>
 
           {/* Services */}
           <div>
             <h4 className="text-lg font-display font-semibold mb-4">Our Services</h4>
-            <ul className="space-y-2 text-blue-100 text-sm">
-              <li>Airport Transfers</li>
-              <li>Hotel Transfers</li>
-              <li>Travel Insurance</li>
-              <li>Tour Packages</li>
-              <li>Safari Adventures</li>
-              <li>Mountain Climbing</li>
+            <ul className="space-y-2">
+              <li>
+                <Link href="/transfers" className="text-blue-100 hover:text-white transition-colors">
+                  Airport Transfers
+                </Link>
+              </li>
+              <li>
+                <Link href="/transfers" className="text-blue-100 hover:text-white transition-colors">
+                  Hotel Transfers
+                </Link>
+              </li>
+              <li>
+                <Link href="/services" className="text-blue-100 hover:text-white transition-colors">
+                  Taxi Services
+                </Link>
+              </li>
+              <li>
+                <Link href="/itineraries" className="text-blue-100 hover:text-white transition-colors">
+                  Tour Packages
+                </Link>
+              </li>
+              <li>
+                <Link href="/safari" className="text-blue-100 hover:text-white transition-colors">
+                  Safari Adventures
+                </Link>
+              </li>
+              <li>
+                <Link href="/kilimanjaro" className="text-blue-100 hover:text-white transition-colors">
+                  Mountain Climbing
+                </Link>
+              </li>
             </ul>
           </div>
 

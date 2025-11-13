@@ -203,9 +203,11 @@ export default function HomePage() {
                   Explore pristine beaches, spice farms, Stone Town's rich history, and incredible marine life in
                   crystal-clear waters.
                 </p>
-                <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">
-                  Explore Zanzibar Tours
-                </Button>
+                <Link href="/zanzibar">
+                  <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">
+                    Explore Zanzibar Tours
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
@@ -227,9 +229,11 @@ export default function HomePage() {
                   Witness the Big Five in Serengeti, Ngorongoro Crater, and other world-renowned national parks with
                   expert guides.
                 </p>
-                <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">
-                  Discover Safari Adventures
-                </Button>
+                <Link href="/safari">
+                  <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">
+                    Discover Tanzania Safaris
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
 
@@ -253,96 +257,9 @@ export default function HomePage() {
                   Conquer Africa's highest peak with our experienced mountain guides and comprehensive climbing
                   packages.
                 </p>
-                <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">Plan Your Climb</Button>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
-      {/* Zanzibar Highlights */}
-      <section className="py-12 sm:py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-blue-season mb-4 sm:mb-6">
-              Zanzibar Highlights
-            </h2>
-            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-2">
-              Experience the best of Zanzibar with our most popular island adventures
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-            {/* Stone Town Tour */}
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="relative h-48 sm:h-64 w-full">
-                <Image
-                  src="/images/tours/stone-town-tour.jpg"
-                  alt="Stone Town Tour"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-              <CardContent className="p-4 sm:p-6">
-                <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-3">Stone Town Tour</h3>
-                <p className="text-gray-600 mb-4 text-sm sm:text-base">
-                  Explore the UNESCO World Heritage site with its narrow alleys, historic buildings, and vibrant
-                  markets. Discover the cultural heart of Zanzibar.
-                </p>
-                <Link href="/zanzibar">
+                <Link href="/kilimanjaro">
                   <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">
-                    Explore Zanzibar Tours
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-
-            {/* Nakupenda Beach */}
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="relative h-48 sm:h-64 w-full">
-                <Image
-                  src="/images/tours/nakupenda-sandbank.jpg"
-                  alt="Nakupenda Beach"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-              <CardContent className="p-4 sm:p-6">
-                <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-3">Nakupenda Beach</h3>
-                <p className="text-gray-600 mb-4 text-sm sm:text-base">
-                  Escape to a pristine white sand paradise in the middle of the ocean. Perfect for relaxation, swimming,
-                  and enjoying fresh seafood.
-                </p>
-                <Link href="/zanzibar">
-                  <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">
-                    Explore Zanzibar Tours
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
-
-            {/* Dolphins Tour */}
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="relative h-48 sm:h-64 w-full">
-                <Image
-                  src="/images/tours/kizimkazi-dolphin.jpg"
-                  alt="Dolphins Tour"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-              <CardContent className="p-4 sm:p-6">
-                <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-3">Kizimkazi Dolphins</h3>
-                <p className="text-gray-600 mb-4 text-sm sm:text-base">
-                  Swim with wild dolphins in their natural habitat at Kizimkazi. An unforgettable wildlife encounter in
-                  the warm waters of the Indian Ocean.
-                </p>
-                <Link href="/zanzibar">
-                  <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">
-                    Explore Zanzibar Tours
+                    Kilimanjaro Climbing
                   </Button>
                 </Link>
               </CardContent>
@@ -438,6 +355,318 @@ export default function HomePage() {
                 <Link href="/safari">
                   <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">
                     View More Destinations
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Tour Packages Highlights */}
+      <section className="py-12 sm:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-blue-season mb-4 sm:mb-6">
+              Featured Tour Packages
+            </h2>
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-2">
+              All-inclusive packages combining the best of Tanzania and Zanzibar
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            {/* Mikumi Safari */}
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="relative h-48 sm:h-64 w-full">
+                <Image
+                  src="/images/packages/mikumi-safari.jpg"
+                  alt="Mikumi Day Trip Safari"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+              <CardContent className="p-4 sm:p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="flex text-golden">
+                    {[...Array(4)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-current" />
+                    ))}
+                  </div>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-2">
+                  Mikumi Day Trip Safari
+                </h3>
+                <p className="text-lg font-semibold text-golden mb-3">From $400</p>
+                <p className="text-gray-600 mb-4 text-sm sm:text-base">
+                  Full-day flying safari to Mikumi National Park. Experience incredible wildlife viewing including
+                  elephants, giraffes, lions, and zebras.
+                </p>
+                <Link href="/itineraries/mikumi-safari">
+                  <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">
+                    View Package Details
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Zanzibar Tour */}
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="relative h-48 sm:h-64 w-full">
+                <Image
+                  src="/images/packages/zanzibar-tour.jpg"
+                  alt="Zanzibar 5-Day Tour Package"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+              <CardContent className="p-4 sm:p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="flex text-golden">
+                    {[...Array(4)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-current" />
+                    ))}
+                  </div>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-2">
+                  Zanzibar 5-Day Tour Package
+                </h3>
+                <p className="text-lg font-semibold text-golden mb-3">From $390</p>
+                <p className="text-gray-600 mb-4 text-sm sm:text-base">
+                  Comprehensive exploration of Zanzibar's culture, nature, and beaches. Includes Safari Blue, Jozani
+                  Forest, Stone Town, and more.
+                </p>
+                <Link href="/itineraries/zanzibar-tour">
+                  <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">
+                    View Package Details
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Serengeti Safari */}
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="relative h-48 sm:h-64 w-full">
+                <Image
+                  src="/images/packages/serengeti-safari.jpg"
+                  alt="Serengeti 2 Days Safari"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+              <CardContent className="p-4 sm:p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="flex text-golden">
+                    {[...Array(4)].map((_, i) => (
+                      <Star key={i} className="w-4 h-4 fill-current" />
+                    ))}
+                  </div>
+                </div>
+                <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-2">
+                  Serengeti 2 Days 1 Night Safari
+                </h3>
+                <p className="text-lg font-semibold text-golden mb-3">From $1,676</p>
+                <p className="text-gray-600 mb-4 text-sm sm:text-base">
+                  Experience the magic of Serengeti with a fly-in safari. Witness the Great Migration and spot the Big
+                  Five across endless plains.
+                </p>
+                <Link href="/itineraries/serengeti-safari">
+                  <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">
+                    View Package Details
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Transfer Services Highlights */}
+      <section className="py-12 sm:py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-blue-season mb-4 sm:mb-6">
+              Reliable Transfer Services
+            </h2>
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-2">
+              Comfortable and affordable transportation across Zanzibar
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            {/* Airport to Stone Town */}
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="relative h-48 sm:h-64 w-full">
+                <Image
+                  src="/images/vehicles/alphard-gold.jpg"
+                  alt="Airport to Stone Town Transfer"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+              <CardContent className="p-4 sm:p-6">
+                <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-2">
+                  Airport to Stone Town
+                </h3>
+                <p className="text-2xl font-bold text-golden mb-3">$15</p>
+                <p className="text-gray-600 mb-4 text-sm sm:text-base">
+                  Quick and convenient transfer from the airport or ferry terminal to historic Stone Town. Perfect for
+                  arrivals and departures.
+                </p>
+                <Link href="/transfers">
+                  <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">
+                    View All Transfers
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Airport to Nungwi */}
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="relative h-48 sm:h-64 w-full">
+                <Image
+                  src="/images/vehicles/alphard-white.png"
+                  alt="Airport to Nungwi Transfer"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+              <CardContent className="p-4 sm:p-6">
+                <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-2">
+                  Airport to Nungwi - Kendwa
+                </h3>
+                <p className="text-2xl font-bold text-golden mb-3">$35</p>
+                <p className="text-gray-600 mb-4 text-sm sm:text-base">
+                  Direct transfer to the beautiful northern beaches of Nungwi and Kendwa. Enjoy a comfortable ride in
+                  our modern vehicles.
+                </p>
+                <Link href="/transfers">
+                  <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">
+                    View All Transfers
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Airport to East Coast */}
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="relative h-48 sm:h-64 w-full">
+                <Image
+                  src="/images/vehicles/alphard-black.jpg"
+                  alt="Airport to Paje Transfer"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+              <CardContent className="p-4 sm:p-6">
+                <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-2">
+                  Airport to Paje - Jambiani
+                </h3>
+                <p className="text-2xl font-bold text-golden mb-3">$35</p>
+                <p className="text-gray-600 mb-4 text-sm sm:text-base">
+                  Travel to the stunning east coast beaches of Paje and Jambiani. Perfect for kitesurf enthusiasts and
+                  beach lovers.
+                </p>
+                <Link href="/transfers">
+                  <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">
+                    View All Transfers
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Zanzibar Highlights */}
+      <section className="py-12 sm:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-blue-season mb-4 sm:mb-6">
+              Zanzibar Highlights
+            </h2>
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-2">
+              Experience the best of Zanzibar with our most popular island adventures
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
+            {/* Stone Town Tour */}
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="relative h-48 sm:h-64 w-full">
+                <Image
+                  src="/images/tours/stone-town-tour.jpg"
+                  alt="Stone Town Tour"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+              <CardContent className="p-4 sm:p-6">
+                <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-3">Stone Town Tour</h3>
+                <p className="text-gray-600 mb-4 text-sm sm:text-base">
+                  Explore the UNESCO World Heritage site with its narrow alleys, historic buildings, and vibrant
+                  markets. Discover the cultural heart of Zanzibar.
+                </p>
+                <Link href="/zanzibar">
+                  <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">
+                    Explore Zanzibar Tours
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Nakupenda Beach */}
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="relative h-48 sm:h-64 w-full">
+                <Image
+                  src="/images/tours/nakupenda-sandbank.jpg"
+                  alt="Nakupenda Beach"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+              <CardContent className="p-4 sm:p-6">
+                <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-3">Nakupenda Beach</h3>
+                <p className="text-gray-600 mb-4 text-sm sm:text-base">
+                  Escape to a pristine white sand paradise in the middle of the ocean. Perfect for relaxation, swimming,
+                  and enjoying fresh seafood.
+                </p>
+                <Link href="/zanzibar">
+                  <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">
+                    Explore Zanzibar Tours
+                  </Button>
+                </Link>
+              </CardContent>
+            </Card>
+
+            {/* Dolphins Tour */}
+            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
+              <div className="relative h-48 sm:h-64 w-full">
+                <Image
+                  src="/images/tours/kizimkazi-dolphin.jpg"
+                  alt="Dolphins Tour"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
+              <CardContent className="p-4 sm:p-6">
+                <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-3">Kizimkazi Dolphins</h3>
+                <p className="text-gray-600 mb-4 text-sm sm:text-base">
+                  Swim with wild dolphins in their natural habitat at Kizimkazi. An unforgettable wildlife encounter in
+                  the warm waters of the Indian Ocean.
+                </p>
+                <Link href="/zanzibar">
+                  <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">
+                    Explore Zanzibar Tours
                   </Button>
                 </Link>
               </CardContent>

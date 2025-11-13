@@ -62,6 +62,12 @@ export default function Navigation() {
               About
             </Link>
             <Link
+              href="/itineraries"
+              className="text-gray-700 hover:text-blue-season font-medium transition-colors duration-200"
+            >
+              Itineraries
+            </Link>
+            <Link
               href="/zanzibar"
               className="text-gray-700 hover:text-blue-season font-medium transition-colors duration-200"
             >
@@ -131,6 +137,13 @@ export default function Navigation() {
                 onClick={() => setIsOpen(false)}
               >
                 About
+              </Link>
+              <Link
+                href="/itineraries"
+                className="text-gray-700 hover:text-blue-season font-medium py-3 px-2 rounded-md hover:bg-gray-50 transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Itineraries
               </Link>
               <Link
                 href="/zanzibar"

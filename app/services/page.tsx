@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Plane, MapPin, Car, Clock, Users, CheckCircle } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 const services = [
   {
@@ -80,18 +81,18 @@ export default function ServicesPage() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {services.map((service) => (
-              <Card key={service.id} className="overflow-hidden hover:shadow-xl transition-shadow">
+              <Card key={service.id} className="overflow-hidden hover:shadow-xl transition-shadow flex flex-col">
                 <div className="h-48 bg-gradient-to-br from-blue-400 to-teal-500 flex items-center justify-center">
                   <div className="text-center text-white">
                     <service.icon className="w-16 h-16 mx-auto mb-4" />
                     <p className="text-lg font-semibold">{service.title}</p>
                   </div>
                 </div>
-                <CardContent className="p-8">
+                <CardContent className="p-8 flex flex-col flex-grow">
                   <h3 className="text-2xl font-display font-bold text-blue-season mb-4">{service.title}</h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
 
-                  <div className="mb-6">
+                  <div className="mb-6 flex-grow">
                     <h4 className="font-semibold text-blue-season mb-3">What's Included:</h4>
                     <ul className="space-y-2">
                       {service.features.map((feature, index) => (
@@ -103,8 +104,10 @@ export default function ServicesPage() {
                     </ul>
                   </div>
 
-                  <div className="text-center">
-                    <Button className="bg-blue-season hover:bg-blue-season/90 text-white">Book Now</Button>
+                  <div className="mt-auto">
+                    <Link href="/contact" className="block">
+                      <Button className="w-full bg-golden hover:bg-golden/90 text-white">LEARN MORE</Button>
+                    </Link>
                   </div>
                 </CardContent>
               </Card>
@@ -279,16 +282,20 @@ export default function ServicesPage() {
             personalized quote.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-season hover:bg-blue-season/90 text-white font-semibold px-8 py-4">
-              Get Quote Now
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-golden font-semibold px-8 py-4 bg-transparent"
-            >
-              Call Us Direct
-            </Button>
+            <Link href="/contact">
+              <Button size="lg" className="bg-blue-season hover:bg-blue-season/90 text-white font-semibold px-8 py-4">
+                Get Quote Now
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-golden font-semibold px-8 py-4 bg-transparent"
+              >
+                Call Us Direct
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

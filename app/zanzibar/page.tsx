@@ -15,6 +15,7 @@ const zanzibarTours = [
     image: "/images/tours/safari-blue-day.jpg",
     duration: "Full Day",
     groupSize: "4-20 people",
+    price: "$40",
     description:
       "Sail on traditional dhows to pristine sandbanks and enjoy the ultimate marine adventure with snorkeling, swimming, and a seafood feast.",
     highlights: [
@@ -31,6 +32,7 @@ const zanzibarTours = [
     image: "/images/tours/stone-town-tour.jpg",
     duration: "Half Day",
     groupSize: "2-12 people",
+    price: "$25",
     description:
       "Explore the UNESCO World Heritage site with its narrow alleys, historic buildings, and vibrant markets. Discover the cultural heart of Zanzibar.",
     highlights: [
@@ -47,6 +49,7 @@ const zanzibarTours = [
     image: "/images/tours/prison-island.jpg",
     duration: "Half Day",
     groupSize: "2-15 people",
+    price: "$30",
     description:
       "Visit the historic Changuu Island to learn about its fascinating past and meet the famous giant Aldabra tortoises, some over 100 years old.",
     highlights: [
@@ -63,6 +66,7 @@ const zanzibarTours = [
     image: "/images/tours/nakupenda-sandbank.jpg",
     duration: "Half Day",
     groupSize: "4-20 people",
+    price: "$49",
     description:
       "Escape to a pristine white sand paradise in the middle of the ocean. Perfect for relaxation, swimming, and enjoying fresh seafood.",
     highlights: [
@@ -79,6 +83,7 @@ const zanzibarTours = [
     image: "/images/tours/spice-tour.jpg",
     duration: "Half Day",
     groupSize: "2-15 people",
+    price: "$25",
     description:
       "Discover why Zanzibar is called the 'Spice Island' with visits to working spice plantations where you'll see, smell, and taste exotic spices.",
     highlights: [
@@ -95,6 +100,7 @@ const zanzibarTours = [
     image: "/images/tours/jozani-forest.jpg",
     duration: "Half Day",
     groupSize: "2-15 people",
+    price: "$30",
     description:
       "Explore Zanzibar's indigenous forest and meet the rare Red Colobus monkeys found nowhere else on Earth. A nature lover's paradise with guided forest walks.",
     highlights: [
@@ -111,6 +117,7 @@ const zanzibarTours = [
     image: "/images/tours/salaam-cave.jpg",
     duration: "Half Day",
     groupSize: "2-10 people",
+    price: "$35",
     description:
       "Experience the hidden underground swimming cave with crystal-clear freshwater pools. A unique geological wonder perfect for adventure seekers.",
     highlights: [
@@ -127,6 +134,7 @@ const zanzibarTours = [
     image: "/images/tours/kizimkazi-dolphin.jpg",
     duration: "Half Day",
     groupSize: "2-12 people",
+    price: "$35",
     description:
       "Swim with wild dolphins in their natural habitat at Kizimkazi. An unforgettable wildlife encounter in the warm waters of the Indian Ocean.",
     highlights: [
@@ -143,6 +151,7 @@ const zanzibarTours = [
     image: "/images/tours/mtende-beach.jpg",
     duration: "Half Day",
     groupSize: "2-15 people",
+    price: "$32",
     description:
       "Discover one of Zanzibar's most pristine and secluded beaches. Perfect for those seeking tranquility and natural beauty away from the crowds.",
     highlights: [
@@ -159,6 +168,7 @@ const zanzibarTours = [
     image: "/images/tours/maalum-cave.jpg",
     duration: "Half Day",
     groupSize: "2-10 people",
+    price: "$38",
     description:
       "Explore this mystical cave system with its natural pools and fascinating rock formations. A hidden gem for adventure enthusiasts.",
     highlights: [
@@ -175,6 +185,7 @@ const zanzibarTours = [
     image: "/images/tours/the-rock-restaurant.jpg",
     duration: "Half Day",
     groupSize: "2-8 people",
+    price: "$45",
     description:
       "Dine at the world-famous restaurant built on a rock in the Indian Ocean. An iconic Zanzibar experience combining great food with stunning views.",
     highlights: [
@@ -191,6 +202,7 @@ const zanzibarTours = [
     image: "/images/tours/mnemba-island.jpg",
     duration: "Half Day",
     groupSize: "2-12 people",
+    price: "$42",
     description:
       "Discover pristine coral reefs and swim in crystal-clear waters around this protected marine sanctuary. Perfect for snorkeling enthusiasts and marine life lovers.",
     highlights: [
@@ -207,6 +219,7 @@ const zanzibarTours = [
     image: "/images/tours/sunset-dhow.jpg",
     duration: "Half Day",
     groupSize: "2-20 people",
+    price: "$35",
     description:
       "Sail into the golden hour aboard a traditional dhow and watch the spectacular Zanzibar sunset paint the sky in brilliant colors.",
     highlights: [
@@ -295,6 +308,11 @@ export default function ZanzibarPage() {
                       <span>{tour.groupSize}</span>
                     </div>
                   </div>
+                  {tour.price && (
+                    <div className="mb-3">
+                      <p className="text-lg font-semibold text-golden">From {tour.price}</p>
+                    </div>
+                  )}
                   <p className="text-gray-600 mb-4 text-sm leading-relaxed">{tour.description}</p>
 
                   <div className="mb-4">
