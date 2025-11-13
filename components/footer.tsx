@@ -1,6 +1,6 @@
 import Link from "next/link"
 import Image from "next/image"
-import { Phone, Mail, MapPin, Instagram } from "lucide-react"
+import { Phone, Mail, MapPin, Instagram, Facebook } from "lucide-react"
 
 export default function Footer() {
   return (
@@ -113,6 +113,15 @@ export default function Footer() {
                 <Mail className="w-4 h-4 text-golden" />
                 <span className="text-blue-100 text-sm">zanzionetoursandtravel@gmail.com</span>
               </div>
+              <a
+                href="https://www.facebook.com/share/17Wn8GXrd8/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 hover:text-golden transition-colors"
+              >
+                <Facebook className="w-4 h-4 text-golden" />
+                <span className="text-blue-100 text-sm">Follow us on Facebook</span>
+              </a>
               <div className="flex items-center gap-3">
                 <Instagram className="w-4 h-4 text-golden" />
                 <span className="text-blue-100 text-sm">@zanzione_tours</span>

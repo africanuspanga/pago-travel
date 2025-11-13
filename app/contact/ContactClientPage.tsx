@@ -4,7 +4,7 @@ import WhatsAppFloat from "@/components/whatsapp-float"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Phone, Mail, MapPin, Clock } from "lucide-react"
+import { Phone, Mail, MapPin, Clock, Facebook } from "lucide-react"
 
 export default function ContactClientPage() {
   return (
@@ -80,6 +80,24 @@ export default function ContactClientPage() {
                     <h3 className="text-lg font-display font-semibold text-blue-season mb-1">Office Hours</h3>
                     <p className="text-gray-600">Monday - Sunday: 7:00 AM - 9:00 PM</p>
                     <p className="text-sm text-gray-500">East Africa Time (EAT)</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-golden/10 rounded-lg flex items-center justify-center">
+                    <Facebook className="w-6 h-6 text-golden" />
+                  </div>
+                  <div>
+                    <h3 className="text-lg font-display font-semibold text-blue-season mb-1">Follow Us</h3>
+                    <a
+                      href="https://www.facebook.com/share/17Wn8GXrd8/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-blue-600 hover:text-golden transition-colors"
+                    >
+                      Facebook: ZANZIONE TOURS
+                    </a>
+                    <p className="text-sm text-gray-500">Stay updated with our latest tours</p>
                   </div>
                 </div>
               </div>
