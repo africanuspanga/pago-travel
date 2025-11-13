@@ -87,7 +87,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-golden" />
-                <span className="text-blue-100 text-sm">zanzionetoursandtravel@mail.com</span>
+                <span className="text-blue-100 text-sm">zanzionetoursandtravel@gmail.com</span>
               </div>
               <div className="flex items-center gap-3">
                 <Instagram className="w-4 h-4 text-golden" />

@@ -23,7 +23,7 @@ export default function Navigation() {
             </div>
             <div className="hidden sm:flex items-center gap-2">
               <Mail className="w-4 h-4" />
-              <span>zanzionetoursandtravel@mail.com</span>
+              <span>zanzionetoursandtravel@gmail.com</span>
             </div>
           </div>
           <div className="hidden md:block">
