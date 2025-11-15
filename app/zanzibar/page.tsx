@@ -3,7 +3,7 @@ import WhatsAppFloat from "@/components/whatsapp-float"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Clock, Users } from "lucide-react"
+import { Clock, Users } from 'lucide-react'
 import Link from "next/link"
 import Image from "next/image"
 import type { Metadata } from "next"
@@ -16,6 +16,7 @@ const zanzibarTours = [
     duration: "Full Day",
     groupSize: "4-20 people",
     price: "$40",
+    slug: "SafariBlueTour", // Added slug for Safari Blue detail page
     description:
       "Sail on traditional dhows to pristine sandbanks and enjoy the ultimate marine adventure with snorkeling, swimming, and a seafood feast.",
     highlights: [
@@ -33,6 +34,7 @@ const zanzibarTours = [
     duration: "Half Day",
     groupSize: "2-12 people",
     price: "$25",
+    slug: "StoneTownTour",
     description:
       "Explore the UNESCO World Heritage site with its narrow alleys, historic buildings, and vibrant markets. Discover the cultural heart of Zanzibar.",
     highlights: [
@@ -50,6 +52,7 @@ const zanzibarTours = [
     duration: "Half Day",
     groupSize: "2-15 people",
     price: "$30",
+    slug: "PrisonIslandTour",
     description:
       "Visit the historic Changuu Island to learn about its fascinating past and meet the famous giant Aldabra tortoises, some over 100 years old.",
     highlights: [
@@ -67,6 +70,7 @@ const zanzibarTours = [
     duration: "Half Day",
     groupSize: "4-20 people",
     price: "$49",
+    slug: "NakupendaSandbankTour",
     description:
       "Escape to a pristine white sand paradise in the middle of the ocean. Perfect for relaxation, swimming, and enjoying fresh seafood.",
     highlights: [
@@ -84,6 +88,7 @@ const zanzibarTours = [
     duration: "Half Day",
     groupSize: "2-15 people",
     price: "$25",
+    slug: "SpiceFarmTour",
     description:
       "Discover why Zanzibar is called the 'Spice Island' with visits to working spice plantations where you'll see, smell, and taste exotic spices.",
     highlights: [
@@ -101,6 +106,7 @@ const zanzibarTours = [
     duration: "Half Day",
     groupSize: "2-15 people",
     price: "$30",
+    slug: "JozaniForestTour", // Added slug for Jozani Forest detail page
     description:
       "Explore Zanzibar's indigenous forest and meet the rare Red Colobus monkeys found nowhere else on Earth. A nature lover's paradise with guided forest walks.",
     highlights: [
@@ -135,6 +141,7 @@ const zanzibarTours = [
     duration: "Half Day",
     groupSize: "2-12 people",
     price: "$35",
+    slug: "KizimkaziDolphinsTour",
     description:
       "Swim with wild dolphins in their natural habitat at Kizimkazi. An unforgettable wildlife encounter in the warm waters of the Indian Ocean.",
     highlights: [
@@ -186,6 +193,7 @@ const zanzibarTours = [
     duration: "Half Day",
     groupSize: "2-8 people",
     price: "$45",
+    slug: "TheRockRestaurant", // Added slug for The Rock Restaurant detail page
     description:
       "Dine at the world-famous restaurant built on a rock in the Indian Ocean. An iconic Zanzibar experience combining great food with stunning views.",
     highlights: [
@@ -203,6 +211,7 @@ const zanzibarTours = [
     duration: "Half Day",
     groupSize: "2-12 people",
     price: "$42",
+    slug: "MnembaIslandTour",
     description:
       "Discover pristine coral reefs and swim in crystal-clear waters around this protected marine sanctuary. Perfect for snorkeling enthusiasts and marine life lovers.",
     highlights: [
@@ -220,6 +229,7 @@ const zanzibarTours = [
     duration: "Half Day",
     groupSize: "2-20 people",
     price: "$35",
+    slug: "SunsetDhowCruise",
     description:
       "Sail into the golden hour aboard a traditional dhow and watch the spectacular Zanzibar sunset paint the sky in brilliant colors.",
     highlights: [
@@ -327,9 +337,24 @@ export default function ZanzibarPage() {
                     </ul>
                   </div>
 
-                  <Link href="/contact">
-                    <Button className="w-full bg-golden hover:bg-golden/90 text-white">Book This Tour</Button>
-                  </Link>
+                  <div className="flex gap-2">
+                    {tour.slug ? (
+                      <>
+                        <Link href={`/zanzibar/${tour.slug}`} scroll={true} className="flex-1">
+                          <Button variant="outline" className="w-full border-ocean text-ocean hover:bg-ocean hover:text-white">
+                            View Details
+                          </Button>
+                        </Link>
+                        <Link href={`/zanzibar/${tour.slug}`} scroll={true} className="flex-1">
+                          <Button className="w-full bg-golden hover:bg-golden/90 text-white">Book Now</Button>
+                        </Link>
+                      </>
+                    ) : (
+                      <Link href="/contact" className="w-full">
+                        <Button className="w-full bg-golden hover:bg-golden/90 text-white">Book This Tour</Button>
+                      </Link>
+                    )}
+                  </div>
                 </CardContent>
               </Card>
             ))}
