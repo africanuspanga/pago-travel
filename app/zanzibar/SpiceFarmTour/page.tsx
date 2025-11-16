@@ -107,6 +107,42 @@ export default function SpiceFarmTourPage() {
                 </CardContent>
               </Card>
 
+              {/* Tour Pricing */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-2xl text-blue-season">Tour Pricing</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="overflow-x-auto">
+                    <table className="w-full border-collapse">
+                      <thead>
+                        <tr className="bg-blue-season text-white">
+                          <th className="border border-gray-300 px-4 py-3 text-left">Group Size</th>
+                          <th className="border border-gray-300 px-4 py-3 text-left">Price Per Person</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr className="hover:bg-gray-50">
+                          <td className="border border-gray-300 px-4 py-3">1 - 2 persons</td>
+                          <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-season">$10 p.p</td>
+                        </tr>
+                        <tr className="hover:bg-gray-50">
+                          <td className="border border-gray-300 px-4 py-3">3 - 6 persons</td>
+                          <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-season">$7 p.p</td>
+                        </tr>
+                        <tr className="hover:bg-gray-50">
+                          <td className="border border-gray-300 px-4 py-3">7 - 28 persons</td>
+                          <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-season">$5 p.p</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <p className="text-sm text-gray-600 mt-4 italic">
+                    Prices are per person and exclude transportation costs from your hotel.
+                  </p>
+                </CardContent>
+              </Card>
+
               {/* Tour Details */}
               <Card>
                 <CardHeader>

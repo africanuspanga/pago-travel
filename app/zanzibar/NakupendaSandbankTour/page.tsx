@@ -184,6 +184,44 @@ export default function NakupendaSandbankPage() {
                 </div>
               </div>
 
+              {/* Tour Pricing */}
+              <div>
+                <h2 className="text-3xl font-display font-bold text-blue-600 mb-4">
+                  Tour Pricing
+                </h2>
+                <div className="overflow-x-auto">
+                  <table className="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-sm">
+                    <thead>
+                      <tr className="bg-blue-600 text-white">
+                        <th className="border border-gray-300 px-4 py-3 text-left">Group Size</th>
+                        <th className="border border-gray-300 px-4 py-3 text-left">Price Per Person</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr className="hover:bg-gray-50">
+                        <td className="border border-gray-300 px-4 py-3">1 - 2 persons</td>
+                        <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-600">$80 p.p</td>
+                      </tr>
+                      <tr className="hover:bg-gray-50">
+                        <td className="border border-gray-300 px-4 py-3">3 - 5 persons</td>
+                        <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-600">$55 p.p</td>
+                      </tr>
+                      <tr className="hover:bg-gray-50">
+                        <td className="border border-gray-300 px-4 py-3">6 - 10 persons</td>
+                        <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-600">$48 p.p</td>
+                      </tr>
+                      <tr className="hover:bg-gray-50">
+                        <td className="border border-gray-300 px-4 py-3">11 - 25 persons</td>
+                        <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-600">$40 p.p</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <p className="text-sm text-gray-600 mt-4 italic">
+                  Prices are per person. For guests staying in Stone Town, additional transportation costs may not apply.
+                </p>
+              </div>
+
               {/* Important Note */}
               <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded">
                 <h3 className="font-bold text-gray-900 mb-2">💡 Important Note on Pricing</h3>

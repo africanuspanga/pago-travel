@@ -107,6 +107,46 @@ export default function MnembaIslandTourPage() {
                 <h2 className="text-3xl font-display font-bold text-blue-season mb-6">
                   Price & Inclusions
                 </h2>
+                
+                <Card className="bg-blue-50 border-blue-200 mb-6">
+                  <CardContent className="p-6">
+                    <p className="text-lg font-semibold text-blue-season mb-4">Tour Pricing (Per Person):</p>
+                    <div className="overflow-x-auto">
+                      <table className="w-full border-collapse">
+                        <thead>
+                          <tr className="bg-blue-season text-white">
+                            <th className="py-3 px-4 text-left font-semibold">Group Size</th>
+                            <th className="py-3 px-4 text-right font-semibold">Price per Person</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr className="border-b border-blue-200">
+                            <td className="py-3 px-4 text-gray-700">1 - 2 persons</td>
+                            <td className="py-3 px-4 text-right font-semibold text-blue-season">$55</td>
+                          </tr>
+                          <tr className="border-b border-blue-200 bg-blue-50/50">
+                            <td className="py-3 px-4 text-gray-700">3 - 5 persons</td>
+                            <td className="py-3 px-4 text-right font-semibold text-blue-season">$53</td>
+                          </tr>
+                          <tr className="border-b border-blue-200">
+                            <td className="py-3 px-4 text-gray-700">6 - 10 persons</td>
+                            <td className="py-3 px-4 text-right font-semibold text-blue-season">$40</td>
+                          </tr>
+                          <tr className="bg-blue-50/50">
+                            <td className="py-3 px-4 text-gray-700">11 - 25 persons</td>
+                            <td className="py-3 px-4 text-right font-semibold text-blue-season">$35</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div className="mt-4 p-3 bg-amber-50 border border-amber-200 rounded">
+                      <p className="text-sm text-gray-600">
+                        <strong>Note:</strong> Transport costs to the departure point are excluded from the prices above. Contact us with your hotel location for the final price.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+                
                 <Card className="bg-blue-50 border-blue-200">
                   <CardContent className="p-6">
                     <p className="text-lg font-semibold text-blue-season mb-4">The tour price includes:</p>
