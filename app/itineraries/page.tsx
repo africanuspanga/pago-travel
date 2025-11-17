@@ -3,7 +3,7 @@ import WhatsAppFloat from "@/components/whatsapp-float"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Star, Clock, Users } from "lucide-react"
+import { Star, Clock, Users } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
@@ -65,6 +65,246 @@ const packages = [
       "Game drives in Serengeti",
       "Possible Big Five sightings",
       "Accommodation included",
+    ],
+  },
+  {
+    id: "mikumi-day-trip",
+    title: "Mikumi Day Trip Safari from Zanzibar",
+    price: "$430",
+    priceNote: "Per Person",
+    duration: "1 Day",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mikumi-bxYBdPwmmPNbzzdU2RvasPGdoZnptH.jpg",
+    description:
+      "Escape to wild Africa with a day trip to Mikumi National Park. Witness giraffes, elephants, wildebeests, lions, zebras, African buffalo in Tanzania's fourth-largest park, just 50 minutes from Zanzibar.",
+    highlights: [
+      "Round-trip flights included",
+      "Full-day guided safari",
+      "Bush lunch in the park",
+      "Private vehicle option available",
+    ],
+  },
+  {
+    id: "selous-day-trip",
+    title: "Selous Day Trip Safari from Zanzibar",
+    price: "$450",
+    priceNote: "Per Person",
+    duration: "1 Day",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/selous-PLPCwmHRaGPCeRtGO4YFWqPzgbbLuj.jpg",
+    description:
+      "Unforgettable day trip to Selous Game Reserve (Nyerere National Park), Africa's largest reserve. Experience remarkable wildlife diversity including lions, elephants, giraffes, and stunning Rufiji River landscapes.",
+    highlights: [
+      "Flight to Selous included",
+      "Experienced safari guide",
+      "Lunch amidst nature",
+      "Sharing or private options",
+    ],
+  },
+  {
+    id: "serengeti-3-days",
+    title: "3 Days 2 Nights Serengeti Safari from Zanzibar",
+    price: "$2,048",
+    priceNote: "Per Adult",
+    duration: "3 Days / 2 Nights",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/serengeti%20-lSPfjdMgugUtgqOQjyHFkanjYQCjbI.jpg",
+    description:
+      "Experience the magic of Serengeti National Park with this 3-day safari from Zanzibar. World-renowned for breathtaking landscapes and the Big Five, with multiple game drives across diverse ecosystems.",
+    highlights: [
+      "Round-trip flights included",
+      "2 nights accommodation",
+      "Multiple game drives",
+      "All meals & park fees",
+    ],
+  },
+  {
+    id: "serengeti-balloon-safari",
+    title: "3 Days Serengeti Safari & Hot Air Balloon from Zanzibar",
+    price: "$2,793",
+    priceNote: "Per Adult",
+    duration: "3 Days / 2 Nights",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/serengeti-VUxSGtAmLFsVZH7cx67afMN8rT2oBn.jpg",
+    description:
+      "Ultimate Serengeti adventure combining game drives with a magical hot air balloon safari at sunrise. Witness wildlife from the sky, enjoy bush breakfast, and experience unforgettable encounters including night game drives.",
+    highlights: [
+      "Hot air balloon safari",
+      "Bush breakfast included",
+      "Night game drive",
+      "Round-trip flights & accommodation",
+    ],
+  },
+  {
+    id: "zanzibar-3-days",
+    title: "Zanzibar 3 Days 2 Nights Package",
+    price: "$398",
+    priceNote: "Per Person",
+    duration: "3 Days / 2 Nights",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-mGZVMQ2iZK1EpkoVsQUYgGmAH9CwNP.jpg",
+    description:
+      "Perfect short getaway to Zanzibar. Includes accommodation with breakfast & dinner, Stone Town cultural tour, Spice Farm experience, Prison Island visit, and airport transfers.",
+    highlights: [
+      "2 nights accommodation included",
+      "Stone Town & Prison Island",
+      "Authentic spice farm tour",
+      "All transfers included",
+    ],
+  },
+  {
+    id: "zanzibar-4-days",
+    title: "Zanzibar 4 Days 3 Nights Package",
+    price: "$617",
+    priceNote: "Per Person",
+    duration: "4 Days / 3 Nights",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2-b94hGpun4A1YdQW2nQ8PHk6WqCkm8k.jpg",
+    description:
+      "Extended Zanzibar experience with dolphin encounters. Includes 3 nights accommodation, Stone Town tour, Spice Farm, Prison Island, Mnemba dolphin swimming & snorkeling.",
+    highlights: [
+      "3 nights accommodation",
+      "Swim with dolphins at Mnemba",
+      "Cultural & historical tours",
+      "Breakfast & dinner daily",
+    ],
+  },
+  {
+    id: "zanzibar-5-days",
+    title: "Zanzibar 5 Days 4 Nights Package",
+    price: "$740",
+    priceNote: "Per Person",
+    duration: "5 Days / 4 Nights",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3-pkDJR7WXf4YSlGOacUsAnIpo2RGvl7.jpg",
+    description:
+      "Comprehensive Zanzibar adventure featuring Safari Blue full-day trip, dolphin encounters, cultural tours, and relaxation. Perfect balance of activities and beach time.",
+    highlights: [
+      "Full-day Safari Blue adventure",
+      "Dolphin swimming & snorkeling",
+      "Stone Town & Spice Farm",
+      "4 nights with meals included",
+    ],
+  },
+  {
+    id: "zanzibar-7-days",
+    title: "Zanzibar 7 Days 6 Nights Package",
+    price: "$1,298",
+    priceNote: "Per Person",
+    duration: "7 Days / 6 Nights",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4-DY5HqYR6uOcnDpyE0cfBG2gUwBTPIU.jpg",
+    description:
+      "Ultimate Zanzibar vacation with everything included. Safari Blue, dolphins, Jozani Forest, The Rock Restaurant, cultural tours, plus free beach relaxation days.",
+    highlights: [
+      "6 nights accommodation",
+      "Safari Blue & dolphin tours",
+      "Jozani Forest & The Rock",
+      "Beach relaxation days included",
+    ],
+  },
+  {
+    id: "zanzibar-8-days",
+    title: "Zanzibar 8 Days 7 Nights Package",
+    price: "$1,340",
+    priceNote: "Per Person",
+    duration: "8 Days / 7 Nights",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/7-6eePncVQ8Op8dAB1gTA69IbyRlXwOx.jpg",
+    description:
+      "Extended Zanzibar escape with full-day Safari Blue, Jozani Forest tour, Stone Town, Prison Island, Spice Farm, Mnemba dolphin encounters, plus beach relaxation days.",
+    highlights: [
+      "7 nights accommodation",
+      "Full-day Safari Blue adventure",
+      "Mnemba dolphins & snorkeling",
+      "Multiple relaxation days",
+    ],
+  },
+  {
+    id: "zanzibar-9-days",
+    title: "Zanzibar 9 Days 8 Nights Package",
+    price: "$1,430",
+    priceNote: "Per Person",
+    duration: "9 Days / 8 Nights",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5-hguPTgqUvdnvQXLPvVHOBq7ruQNM8U.jpg",
+    description:
+      "Comprehensive Zanzibar experience featuring Safari Blue, Mangrove Bay Kayaking, Stone Town, Prison Island, Spice Farm, Jozani Forest, Mnemba dolphins with ample beach time.",
+    highlights: [
+      "8 nights accommodation",
+      "Mangrove Bay Kayaking",
+      "Safari Blue & dolphin tours",
+      "Cultural & adventure activities",
+    ],
+  },
+  {
+    id: "zanzibar-10-days",
+    title: "Zanzibar 10 Days 9 Nights Package",
+    price: "$1,590",
+    priceNote: "Per Person",
+    duration: "10 Days / 9 Nights",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/6-Z4TldhxGWRDyxKK89AKFzO1b4FyrP5.jpg",
+    description:
+      "Ultimate 10-day Zanzibar vacation with Safari Blue, Mangrove Kayaking, Nakupenda Sandbank, Prison Island, Jozani Forest, Mnemba dolphins, and multiple free beach days.",
+    highlights: [
+      "9 nights accommodation",
+      "Nakupenda Sandbank experience",
+      "Safari Blue & Mangrove Kayaking",
+      "Multiple free days for relaxation",
+    ],
+  },
+  {
+    id: "tanzania-safari-5-days",
+    title: "5 Days Tanzania Safari Package",
+    price: "$1,770",
+    priceNote: "Per Person",
+    duration: "5 Days / 4 Nights",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/istockphoto-2164403934-612x612-HdABUcJJ5XjxbXARXyQB7coV71ddDx.jpg",
+    description:
+      "Immerse yourself in Tanzania's incredible wildlife on this unforgettable 5-day safari. Discover vast elephant herds of Tarangire, diverse ecosystems of Lake Manyara, and breathtaking Ngorongoro Crater.",
+    highlights: [
+      "Tarangire & Lake Manyara parks",
+      "Ngorongoro Crater descent",
+      "Private safari vehicle & guide",
+      "All park fees & accommodation",
+    ],
+  },
+  {
+    id: "tanzania-safari-7-days",
+    title: "7 Days Tanzania Safari Package",
+    price: "$2,480",
+    priceNote: "Per Person",
+    duration: "7 Days / 6 Nights",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/istockphoto-2140549925-612x612-xqVFbqqrcJxrD746BZh8NSB62q3K61.jpg",
+    description:
+      "Thrilling 7-day Tanzania Safari through Africa's most renowned national parks. Experience the iconic Serengeti, Tarangire, Lake Manyara, and stunning Ngorongoro Crater with breathtaking wildlife encounters.",
+    highlights: [
+      "Serengeti National Park",
+      "Great Migration viewing",
+      "Ngorongoro Crater & Big Five",
+      "Tarangire elephant herds",
+    ],
+  },
+  {
+    id: "tanzania-safari-8-days",
+    title: "8 Days Tanzania Safari Package",
+    price: "$2,600",
+    priceNote: "Per Person",
+    duration: "8 Days / 7 Nights",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/istockphoto-1136053333-612x612-qGo4tXLLhliU6LP9YpvviF7vAU9Om4.jpg",
+    description:
+      "Book directly with locals for authentic 8-day Tanzania safari. Journey through Tarangire, Ngorongoro Crater, legendary Serengeti, plus unique cultural immersion with the Hadzabe tribe at Lake Eyasi.",
+    highlights: [
+      "Serengeti & Ngorongoro Crater",
+      "Hadzabe tribe cultural experience",
+      "Lake Eyasi visit",
+      "All meals & accommodations",
+    ],
+  },
+  {
+    id: "tanzania-safari-10-days",
+    title: "10 Days Tanzania Safari Package",
+    price: "$3,720",
+    priceNote: "Per Person",
+    duration: "10 Days / 9 Nights",
+    image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/istockphoto-93469821-612x612-QhIAeWpzjALB7ZnlEHegynJmpCGhfS.jpg",
+    description:
+      "Unforgettable 10-day safari across Tanzania's breathtaking northern parks. From Tarangire and Lake Manyara to expansive Serengeti and majestic Ngorongoro Crater with Wildebeest Migration viewing.",
+    highlights: [
+      "Arusha & Tarangire National Parks",
+      "2 days in Serengeti",
+      "Ngorongoro Crater & Lake Eyasi",
+      "Hadzabe tribe cultural tour",
     ],
   },
 ]
