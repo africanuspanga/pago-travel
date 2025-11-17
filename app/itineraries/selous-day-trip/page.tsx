@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     "Unforgettable day trip to Selous Game Reserve (Nyerere National Park), Africa's largest reserve. Experience lions, elephants, giraffes, and stunning Rufiji River landscapes from Zanzibar.",
 }
 
-export default function SelousD ayTripPage() {
+export default function SelousDayTripPage() {
   const whatsappNumber = "255628734126"
   const message = encodeURIComponent(
     "Hello! I'm interested in booking the Selous Day Trip Safari from Zanzibar ($450 per person). Can you provide more details?"
