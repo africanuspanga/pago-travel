@@ -290,24 +290,22 @@ export default function NakupendaSandbankPage() {
       </section>
 
       {/* Final CTA Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white">
-        <div className="py-16">
-          <div className="max-w-4xl mx-auto text-center px-4">
-            <h2 className="text-4xl font-display font-bold mb-4">
-              Visit Nakupenda Today!
-            </h2>
-            <p className="text-xl mb-8 text-white">
-              Visiting Nakupenda Sandbank is one of the most enjoyable things you can do during your Zanzibar vacation. It provides stunning views and romantic vibes that make it truly worth the trip.
-            </p>
-            <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
-              <Button 
-                size="lg" 
-                className="bg-golden hover:bg-golden/90 text-white font-bold px-8 py-4"
-              >
-                Book This Experience Now
-              </Button>
-            </a>
-          </div>
+      <section className="py-16 bg-gradient-to-r from-ocean to-cyan-500 text-white">
+        <div className="max-w-4xl mx-auto text-center px-4">
+          <h2 className="text-4xl font-display font-bold mb-4">
+            Visit Nakupenda Today!
+          </h2>
+          <p className="text-xl mb-8 text-white">
+            Visiting Nakupenda Sandbank is one of the most enjoyable things you can do during your Zanzibar vacation. It provides stunning views and romantic vibes that make it truly worth the trip.
+          </p>
+          <a href={whatsappUrl} target="_blank" rel="noopener noreferrer">
+            <Button 
+              size="lg" 
+              className="bg-green-600 hover:bg-green-700 text-white font-bold px-8 py-4"
+            >
+              Book This Experience Now
+            </Button>
+          </a>
         </div>
       </section>
 

@@ -261,7 +261,7 @@ export default function SunsetDhowCruisePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-season text-white">
+      <section className="py-16 bg-gradient-to-r from-ocean to-blue-600 text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Ready for a Romantic Evening?</h2>
           <p className="text-xl text-white mb-8">
@@ -273,12 +273,12 @@ export default function SunsetDhowCruisePage() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Button size="lg" className="bg-golden hover:bg-golden/90 text-white font-semibold px-8">
+              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8">
                 Book Now on WhatsApp
               </Button>
             </a>
             <Link href="/zanzibar">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-season bg-transparent">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-ocean bg-transparent">
                 View All Tours
               </Button>
             </Link>

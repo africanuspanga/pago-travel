@@ -214,11 +214,11 @@ export default function PrisonIslandTourPage() {
             {/* Right Column - Booking Card */}
             <div className="lg:col-span-1">
               <Card className="sticky top-24 shadow-xl">
-                <CardHeader className="bg-gradient-to-r from-blue-season to-blue-600 text-white">
-                  <CardTitle className="text-2xl">Book This Tour</CardTitle>
+                <CardHeader className="bg-white">
+                  <CardTitle className="text-2xl text-gray-900">Book This Tour</CardTitle>
                   <div className="flex items-center gap-2 mt-2">
-                    <span className="text-3xl font-bold">$30</span>
-                    <span className="text-blue-100">per person</span>
+                    <span className="text-3xl font-bold text-gray-900">$30</span>
+                    <span className="text-gray-600">per person</span>
                   </div>
                 </CardHeader>
                 <CardContent className="p-6 space-y-6">
@@ -264,6 +264,27 @@ export default function PrisonIslandTourPage() {
                 </CardContent>
               </Card>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 bg-gradient-to-r from-ocean to-blue-600 text-white">
+        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Ready to Meet the Giant Tortoises?</h2>
+          <p className="text-xl text-white mb-8">
+            Experience the wonder of Prison Island and meet these magnificent creatures over 100 years old.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="https://wa.me/255710885320?text=Hello! I'm interested in booking the Prison Island Tour" target="_blank">
+              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8">
+                Book Now on WhatsApp
+              </Button>
+            </Link>
+            <Link href="/zanzibar">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-ocean bg-transparent">
+                View All Tours
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

@@ -204,11 +204,11 @@ export default function SpiceFarmTourPage() {
             {/* Right Column - Booking Card */}
             <div className="lg:col-span-1">
               <Card className="sticky top-24 shadow-xl">
-                <CardHeader className="bg-gradient-to-r from-blue-season to-blue-600 text-white">
-                  <CardTitle className="text-2xl">Book This Tour</CardTitle>
+                <CardHeader className="bg-white">
+                  <CardTitle className="text-2xl text-gray-900">Book This Tour</CardTitle>
                   <div className="flex items-center gap-2 mt-2">
-                    <span className="text-3xl font-bold">$25</span>
-                    <span className="text-blue-100">per person</span>
+                    <span className="text-3xl font-bold text-gray-900">$25</span>
+                    <span className="text-gray-600">per person</span>
                   </div>
                 </CardHeader>
                 <CardContent className="p-6 space-y-6">
@@ -257,6 +257,26 @@ export default function SpiceFarmTourPage() {
           </div>
         </div>
       </section>
+
+      {/* Final CTA */}
+      <div className="bg-gradient-to-r from-ocean to-blue-600 text-white shadow-2xl rounded-lg p-10 text-center">
+        <h2 className="text-3xl font-display font-bold mb-4">Book This Tour Today!</h2>
+        <p className="text-xl text-white mb-8">
+          Experience the flavors and scents of Zanzibar's spice heritage
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Link href="https://wa.me/255710885320?text=Hello! I'm interested in booking the Spice Farm Tour" target="_blank">
+            <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto">
+              BOOK VIA WHATSAPP
+            </Button>
+          </Link>
+          <Link href="/contact">
+            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-ocean font-semibold px-8 py-6 bg-transparent w-full sm:w-auto">
+              Contact Us
+            </Button>
+          </Link>
+        </div>
+      </div>
 
       <Footer />
       <WhatsAppFloat />
