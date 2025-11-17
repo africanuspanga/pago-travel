@@ -218,7 +218,7 @@ export default function MtendeBeachPage() {
           <Card className="bg-gradient-to-r from-ocean to-cyan-600 text-white shadow-2xl">
             <CardContent className="p-10 text-center">
               <h2 className="text-3xl font-display font-bold mb-4">Ready to Discover Mtende Beach?</h2>
-              <p className="text-xl text-blue-100 mb-8">
+              <p className="text-xl text-white mb-8">
                 Book your secluded beach escape to Zanzibar's hidden gem today
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

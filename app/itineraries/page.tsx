@@ -27,7 +27,7 @@ const packages = [
   {
     id: "mikumi-safari",
     title: "Mikumi Day Trip Safari",
-    price: "$400",
+    price: "$430",
     priceNote: "Per Person",
     duration: "1 Day",
     image: "/images/packages/mikumi-safari.jpg",

@@ -221,7 +221,7 @@ export default function MaalumCavePage() {
           <Card className="bg-gradient-to-r from-ocean to-emerald-600 text-white shadow-2xl">
             <CardContent className="p-10 text-center">
               <h2 className="text-3xl font-display font-bold mb-4">Ready to Discover This Hidden Oasis?</h2>
-              <p className="text-xl text-blue-100 mb-8">
+              <p className="text-xl text-white mb-8">
                 Book your Maalum Cave experience and dive into natural beauty
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

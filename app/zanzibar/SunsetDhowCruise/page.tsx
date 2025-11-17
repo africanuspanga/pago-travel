@@ -264,7 +264,7 @@ export default function SunsetDhowCruisePage() {
       <section className="py-16 bg-blue-season text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Ready for a Romantic Evening?</h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-white mb-8">
             Experience the magic of Zanzibar's sunset from the water on a traditional dhow cruise.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

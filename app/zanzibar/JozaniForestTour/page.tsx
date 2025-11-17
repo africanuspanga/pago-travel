@@ -248,7 +248,7 @@ export default function JozaniForestTourPage() {
           <Card className="bg-gradient-to-r from-ocean to-blue-600 text-white shadow-2xl">
             <CardContent className="p-10 text-center">
               <h2 className="text-3xl font-display font-bold mb-4">Visit Jozani Forest Today!</h2>
-              <p className="text-xl text-blue-100 mb-8">
+              <p className="text-xl text-white mb-8">
                 A must-visit for nature lovers and a unique opportunity to interact with the world's rarest primates
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">

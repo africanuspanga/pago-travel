@@ -3,13 +3,13 @@ import WhatsAppFloat from "@/components/whatsapp-float"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Star, Clock, Users, Plane, Utensils, Camera, Binary as Binoculars } from "lucide-react"
+import { Star, Clock, Users, Plane, Utensils, Camera, Binary as Binoculars } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Mikumi Day Trip Safari - $400 Per Person | ZANZIONE TOURS",
+  title: "Mikumi Day Trip Safari - $430 Per Person | ZANZIONE TOURS",
   description:
     "Full-day flying safari to Mikumi National Park from Zanzibar. See elephants, giraffes, lions, and zebras. Includes round-trip flights, game drive, and bush lunch. Perfect day safari experience.",
   alternates: {
@@ -46,7 +46,7 @@ export default function MikumiSafariPage() {
             <div className="hidden sm:block">•</div>
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5" />
-              <span>$400 Per Person</span>
+              <span>$430 Per Person</span>
             </div>
           </div>
         </div>
@@ -104,7 +104,7 @@ export default function MikumiSafariPage() {
               <Card className="sticky top-24">
                 <CardContent className="p-6">
                   <div className="text-center mb-6">
-                    <p className="text-3xl font-bold text-golden mb-2">$400</p>
+                    <p className="text-3xl font-bold text-golden mb-2">$430</p>
                     <p className="text-gray-600">Per Person</p>
                   </div>
 
