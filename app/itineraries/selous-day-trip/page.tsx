@@ -7,6 +7,7 @@ import { Clock, MapPin, Users, Check, Star, ArrowLeft } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
+import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
   title: "Selous Day Trip Safari from Zanzibar - $450 | ZANZIONE TOURS",
@@ -203,11 +204,10 @@ export default function SelousDayTripPage() {
                       </div>
                     </div>
                     <p className="text-sm text-gray-500 mb-6">Price per person</p>
-                    <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                      <Button className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-6">
-                        Book via WhatsApp
-                      </Button>
-                    </a>
+                    <BookingModal 
+                      tourName="Selous Day Trip Safari" 
+                      className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-6"
+                    />
                   </CardContent>
                 </Card>
 
@@ -248,11 +248,10 @@ export default function SelousDayTripPage() {
             Book your Selous day trip today and experience Africa's largest game reserve in all its glory.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4">
-                Book via WhatsApp
-              </Button>
-            </a>
+            <BookingModal 
+              tourName="Selous Day Trip Safari" 
+              className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4"
+            />
             <Link href="/itineraries">
               <Button
                 size="lg"

@@ -4,6 +4,7 @@ import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Users, Award, Globe, Heart } from "lucide-react"
+import BookingModal from "@/components/booking-modal"
 
 export default function AboutPage() {
   return (
@@ -14,7 +15,7 @@ export default function AboutPage() {
       <section className="relative h-96 bg-gradient-to-r from-blue-600 to-teal-600 flex items-center justify-center">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-6xl font-display font-bold mb-6">About ZANZIONE TOURS & SAFARIS</h1>
+          <h1 className="text-5xl md:text-6xl font-display font-bold mb-6">About ZANZIONE TOURS & TRAVELS</h1>
           <p className="text-xl md:text-2xl leading-relaxed">
             Your trusted partner for authentic East African adventures since our founding in Stone Town
           </p>
@@ -29,7 +30,7 @@ export default function AboutPage() {
               <h2 className="text-4xl font-display font-bold text-blue-season mb-6">Our Story</h2>
               <div className="space-y-6 text-gray-600 leading-relaxed">
                 <p>
-                  Born in the historic Shangani area of Stone Town, Zanzibar, ZANZIONE TOURS & SAFARIS emerged from a
+                  Born in the historic Shangani area of Stone Town, Zanzibar, ZANZIONE TOURS & TRAVELS emerged from a
                   passion for sharing the incredible beauty and rich culture of East Africa with travelers from around
                   the world. Our journey began with a simple mission: to create authentic, transformative experiences
                   that connect people with the soul of this magnificent region.
@@ -179,16 +180,14 @@ export default function AboutPage() {
             Let our passionate team create an unforgettable adventure tailored to your dreams and interests.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-season hover:bg-blue-season/90 text-white font-semibold px-8 py-4">
-              Start Planning
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-golden font-semibold px-8 py-4 bg-transparent"
-            >
-              Meet Our Team
-            </Button>
+            <BookingModal
+              tourName="General Inquiry / Custom Tour"
+              trigger={
+                <Button size="lg" className="bg-blue-season hover:bg-blue-season/90 text-white font-semibold px-8 py-4">
+                  BOOK A TOUR
+                </Button>
+              }
+            />
           </div>
         </div>
       </section>

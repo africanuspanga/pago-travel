@@ -1,11 +1,12 @@
 import Navigation from "@/components/navigation"
 import WhatsAppFloat from "@/components/whatsapp-float"
 import Footer from "@/components/footer"
-import { Star, Clock } from "lucide-react"
+import { Star, Clock } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import type { Metadata } from "next"
+import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
   title: "Zanzibar 5-Day Tour Package - $390 Per Person | ZANZIONE TOURS",
@@ -168,11 +169,14 @@ export default function ZanzibarTourPage() {
 
           {/* CTA */}
           <div className="mt-12 text-center">
-            <Link href="/contact">
-              <Button size="lg" className="bg-golden hover:bg-golden/90 text-white text-lg px-12 py-6">
-                BOOK THIS TRIP
-              </Button>
-            </Link>
+            <BookingModal 
+              tourName="Zanzibar 5-Day Tour Package" 
+              trigger={
+                <Button size="lg" className="bg-golden hover:bg-golden/90 text-white text-lg px-12 py-6">
+                  BOOK THIS TRIP
+                </Button>
+              }
+            />
           </div>
         </div>
       </section>

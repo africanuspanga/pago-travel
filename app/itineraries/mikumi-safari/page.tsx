@@ -7,6 +7,7 @@ import { Star, Clock, Users, Plane, Utensils, Camera, Binary as Binoculars } fro
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
+import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
   title: "Mikumi Day Trip Safari - $430 Per Person | ZANZIONE TOURS",
@@ -131,11 +132,14 @@ export default function MikumiSafariPage() {
                     </div>
                   </div>
 
-                  <Link href="/contact">
-                    <Button className="w-full bg-golden hover:bg-golden/90 text-white font-semibold py-6 text-lg">
-                      BOOK THIS TRIP
-                    </Button>
-                  </Link>
+                  <BookingModal 
+                    tourName="Mikumi Day Trip Safari" 
+                    trigger={
+                      <Button className="w-full bg-golden hover:bg-golden/90 text-white font-semibold py-6 text-lg">
+                        BOOK THIS TRIP
+                      </Button>
+                    }
+                  />
                 </CardContent>
               </Card>
             </div>
@@ -234,11 +238,14 @@ export default function MikumiSafariPage() {
             to witness Tanzania's incredible wildlife.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
-              <Button size="lg" className="bg-golden hover:bg-golden/90 text-white font-semibold px-8 py-6 text-lg">
-                BOOK THIS TRIP
-              </Button>
-            </Link>
+            <BookingModal 
+              tourName="Mikumi Day Trip Safari" 
+              trigger={
+                <Button size="lg" className="bg-golden hover:bg-golden/90 text-white font-semibold px-8 py-6 text-lg">
+                  BOOK THIS TRIP
+                </Button>
+              }
+            />
             <Link href="/itineraries">
               <Button
                 size="lg"

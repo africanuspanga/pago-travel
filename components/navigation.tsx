@@ -4,7 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
-import { Menu, X, Phone, Mail, ChevronDown } from "lucide-react"
+import { Menu, X, Phone, Mail, ChevronDown } from 'lucide-react'
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false)
@@ -39,7 +39,7 @@ export default function Navigation() {
           <Link href="/" className="flex items-center">
             <Image
               src="/images/logo-zanzione.png"
-              alt="ZANZIONE TOURS & SAFARIS"
+              alt="ZANZIONE TOURS & TRAVELS"
               width={60}
               height={60}
               className="h-8 sm:h-12 w-auto"

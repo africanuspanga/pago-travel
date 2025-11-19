@@ -7,13 +7,14 @@ import { Star, Users, Shield, Clock, MapPin, Plane, Car } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
+import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
   title: "Home - Premium Zanzibar Tours, Tanzania Safari & Kilimanjaro Climbing",
   description:
-    "Discover the magic of East Africa with ZANZIONE TOURS & SAFARIS. Based in Shangani, Stone Town, we offer authentic Zanzibar island tours, wildlife safaris in Serengeti & Ngorongoro, and Kilimanjaro climbing expeditions with expert multilingual guides.",
+    "Discover the magic of East Africa with ZANZIONE TOURS & TRAVELS. Based in Shangani, Stone Town, we offer authentic Zanzibar island tours, wildlife safaris in Serengeti & Ngorongoro, and Kilimanjaro climbing expeditions with expert multilingual guides.",
   openGraph: {
-    title: "ZANZIONE TOURS & SAFARIS - Your Gateway to East African Adventures",
+    title: "ZANZIONE TOURS & TRAVELS - Your Gateway to East African Adventures",
     description:
       "Premium tours, authentic experiences, and unforgettable adventures in Zanzibar, Tanzania, and Mount Kilimanjaro.",
     url: "https://www.zanzionetours.com",
@@ -67,12 +68,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* About ZANZIONE TOURS & SAFARIS */}
+      {/* About ZANZIONE TOURS & TRAVELS */}
       <section className="py-12 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-blue-season mb-4 sm:mb-6">
-              About ZANZIONE TOURS & SAFARIS
+              About ZANZIONE TOURS & TRAVELS
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-2">
               Based in the historic Shangani area of Stone Town, Zanzibar, we are your gateway to extraordinary African
@@ -675,12 +676,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why Choose ZANZIONE TOURS & SAFARIS? */}
+      {/* Why Choose ZANZIONE TOURS & TRAVELS? */}
       <section className="py-12 sm:py-20 bg-blue-season text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-4 sm:mb-6">
-              Why Choose ZANZIONE TOURS & SAFARIS?
+              Why Choose ZANZIONE TOURS & TRAVELS?
             </h2>
             <p className="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto px-2">
               We don't just show you destinations – we create transformative experiences that connect you with the soul
@@ -741,7 +742,7 @@ export default function HomePage() {
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-2">
               Don't just take our word for it – hear from the adventurers who've experienced the magic of ZANZIONE TOURS
-              & SAFARIS.
+              & TRAVELS.
             </p>
           </div>
 
@@ -754,7 +755,7 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-gray-600 italic">
-                  "An absolutely incredible experience! The team at ZANZIONE TOURS & SAFARIS made our Zanzibar honeymoon
+                  "An absolutely incredible experience! The team at ZANZIONE TOURS & TRAVELS made our Zanzibar honeymoon
                   unforgettable. Every detail was perfect."
                 </p>
                 <div>
@@ -790,7 +791,7 @@ export default function HomePage() {
                   ))}
                 </div>
                 <p className="text-gray-600 italic">
-                  "Professional, friendly, and incredibly knowledgeable. ZANZIONE TOURS & SAFARIS turned our family
+                  "Professional, friendly, and incredibly knowledgeable. ZANZIONE TOURS & TRAVELS turned our family
                   vacation into a lifetime of memories."
                 </p>
                 <div>
@@ -814,12 +815,17 @@ export default function HomePage() {
             planning your unforgettable journey.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
-            <Button
-              size="lg"
-              className="bg-blue-season hover:bg-blue-season/90 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg min-h-[48px]"
-            >
-              Get Free Quote
-            </Button>
+            <BookingModal
+              tourName="General Inquiry / Free Quote"
+              trigger={
+                <Button
+                  size="lg"
+                  className="bg-blue-season hover:bg-blue-season/90 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg min-h-[48px]"
+                >
+                  Get Free Quote
+                </Button>
+              }
+            />
             <Button
               size="lg"
               variant="outline"

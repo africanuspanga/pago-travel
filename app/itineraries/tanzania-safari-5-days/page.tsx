@@ -7,6 +7,7 @@ import { Clock, Users, MapPin, Check, ArrowLeft } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
+import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
   title: "5 Days Tanzania Safari Package - Tarangire, Lake Manyara & Ngorongoro | ZANZIONE TOURS",
@@ -284,15 +285,10 @@ export default function TanzaniaSafari5Days() {
             perfect wildlife experience.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href={`https://wa.me/255684966333?text=${whatsappMessage}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4 w-full sm:w-auto">
-                Book via WhatsApp
-              </Button>
-            </a>
+            <BookingModal 
+              tourName="5 Days Tanzania Safari Package" 
+              className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4 w-full sm:w-auto"
+            />
             <Link href="/itineraries">
               <Button
                 size="lg"

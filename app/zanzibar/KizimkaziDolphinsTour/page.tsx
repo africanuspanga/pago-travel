@@ -3,15 +3,17 @@ import WhatsAppFloat from "@/components/whatsapp-float"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Clock, Users, MapPin, Check } from 'lucide-react'
+import { Clock, Users, MapPin, Check } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import type { Metadata } from "next"
 import ScrollToTop from "@/components/scroll-to-top"
+import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
   title: "Kizimkazi Wild Dolphin Tour - Swim with Dolphins in Zanzibar | ZANZIONE TOURS",
-  description: "Witness and swim with wild dolphins on Zanzibar's South Coast. Enjoy a unique 3-hour experience in Kizimkazi, spotting and swimming with dolphins in their natural habitat.",
+  description:
+    "Witness and swim with wild dolphins on Zanzibar's South Coast. Enjoy a unique 3-hour experience in Kizimkazi, spotting and swimming with dolphins in their natural habitat.",
 }
 
 export default function KizimkaziDolphinsTourPage() {
@@ -75,21 +77,19 @@ export default function KizimkaziDolphinsTourPage() {
             <div className="lg:col-span-2 space-y-8">
               {/* Overview Section */}
               <div>
-                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">
-                  Overview & Experience
-                </h2>
+                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Overview & Experience</h2>
                 <div className="prose prose-lg max-w-none text-gray-700">
                   <p className="text-lg leading-relaxed mb-4">
-                    This is an amazing and unique 3-hour experience located in Kizimkazi, the famous home of dolphins on the south coast of Zanzibar. You will set out on a traditional local boat to witness schools of wild dolphins in their natural habitat, leaping and playing in the clear blue ocean.
+                    This is an amazing and unique 3-hour experience located in Kizimkazi, the famous home of dolphins on
+                    the south coast of Zanzibar. You will set out on a traditional local boat to witness schools of wild
+                    dolphins in their natural habitat, leaping and playing in the clear blue ocean.
                   </p>
                 </div>
               </div>
 
               {/* Highlights Section */}
               <div>
-                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">
-                  What You Will Experience
-                </h2>
+                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">What You Will Experience</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <Card className="border-l-4 border-golden">
                     <CardContent className="p-6">
@@ -103,7 +103,8 @@ export default function KizimkaziDolphinsTourPage() {
                     <CardContent className="p-6">
                       <h3 className="font-semibold text-lg text-blue-season mb-2">Swimming with Dolphins</h3>
                       <p className="text-gray-600">
-                        If you are lucky and conditions allow, you will have the unique opportunity to jump in and swim alongside these beautiful wild creatures.
+                        If you are lucky and conditions allow, you will have the unique opportunity to jump in and swim
+                        alongside these beautiful wild creatures.
                       </p>
                     </CardContent>
                   </Card>
@@ -118,9 +119,7 @@ export default function KizimkaziDolphinsTourPage() {
                   <Card className="border-l-4 border-golden">
                     <CardContent className="p-6">
                       <h3 className="font-semibold text-lg text-blue-season mb-2">Refreshments</h3>
-                      <p className="text-gray-600">
-                        Enjoy delicious tropical fruits included in your trip.
-                      </p>
+                      <p className="text-gray-600">Enjoy delicious tropical fruits included in your trip.</p>
                     </CardContent>
                   </Card>
                 </div>
@@ -128,10 +127,8 @@ export default function KizimkaziDolphinsTourPage() {
 
               {/* Inclusions Section */}
               <div>
-                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">
-                  Price & Inclusions
-                </h2>
-                
+                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Price & Inclusions</h2>
+
                 <div className="mb-6">
                   <h3 className="text-xl font-bold text-blue-season mb-4">Tour Pricing</h3>
                   <div className="overflow-x-auto">
@@ -159,17 +156,19 @@ export default function KizimkaziDolphinsTourPage() {
                     </table>
                   </div>
                 </div>
-                
+
                 <Card className="bg-blue-50 border-blue-200">
                   <CardContent className="p-6">
-                    <p className="text-lg font-semibold text-blue-season mb-4">The tour price is comprehensive and includes:</p>
+                    <p className="text-lg font-semibold text-blue-season mb-4">
+                      The tour price is comprehensive and includes:
+                    </p>
                     <ul className="space-y-3">
                       {[
                         "Services of an English-Speaking Guide",
                         "Boat transfer",
                         "Swimming/snorkeling equipment",
                         "Tropical Fruits",
-                        "All government taxes and fees"
+                        "All government taxes and fees",
                       ].map((item, index) => (
                         <li key={index} className="flex items-start gap-3">
                           <Check className="w-5 h-5 text-golden flex-shrink-0 mt-0.5" />
@@ -183,13 +182,13 @@ export default function KizimkaziDolphinsTourPage() {
 
               {/* Important Note */}
               <div>
-                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">
-                  Important Logistics Note
-                </h2>
+                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Important Logistics Note</h2>
                 <Card className="bg-amber-50 border-amber-200">
                   <CardContent className="p-6">
                     <p className="text-gray-700 leading-relaxed">
-                      This tour is located on the South Coast of Zanzibar in Kizimkazi village. Please note that transportation costs to and from your hotel to Kizimkazi are typically not included in the base price and will depend on your hotel's location.
+                      This tour is located on the South Coast of Zanzibar in Kizimkazi village. Please note that
+                      transportation costs to and from your hotel to Kizimkazi are typically not included in the base
+                      price and will depend on your hotel's location.
                     </p>
                   </CardContent>
                 </Card>
@@ -197,12 +196,11 @@ export default function KizimkaziDolphinsTourPage() {
 
               {/* Visit Section */}
               <div>
-                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">
-                  Visit Kizimkazi Today!
-                </h2>
+                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Visit Kizimkazi Today!</h2>
                 <div className="prose prose-lg max-w-none text-gray-700">
                   <p className="text-lg leading-relaxed">
-                    This tour offers a chance to connect with Zanzibar's marine life in a way few other experiences can. Don't miss the opportunity to witness wild dolphins in their element.
+                    This tour offers a chance to connect with Zanzibar's marine life in a way few other experiences can.
+                    Don't miss the opportunity to witness wild dolphins in their element.
                   </p>
                 </div>
               </div>
@@ -234,18 +232,19 @@ export default function KizimkaziDolphinsTourPage() {
                   </div>
 
                   <div className="pt-4 border-t space-y-3">
-                    <a
-                      href="https://wa.me/255710885320?text=Hi, I'm interested in the Kizimkazi Dolphins Tour"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block"
-                    >
-                      <Button className="w-full bg-golden hover:bg-golden/90 text-white font-semibold py-6 text-lg">
-                        BOOK VIA WHATSAPP
-                      </Button>
-                    </a>
+                    <BookingModal
+                      tourName="Kizimkazi Wild Dolphin Tour"
+                      trigger={
+                        <Button className="w-full bg-golden hover:bg-golden/90 text-white font-semibold py-6 text-lg">
+                          BOOK VIA WHATSAPP
+                        </Button>
+                      }
+                    />
                     <Link href="/contact" className="block">
-                      <Button variant="outline" className="w-full border-blue-season text-blue-season hover:bg-blue-season hover:text-white py-6">
+                      <Button
+                        variant="outline"
+                        className="w-full border-blue-season text-blue-season hover:bg-blue-season hover:text-white py-6 bg-transparent"
+                      >
                         Contact Us
                       </Button>
                     </Link>
@@ -264,24 +263,27 @@ export default function KizimkaziDolphinsTourPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-ocean to-blue-600 text-white">
+      <section className="py-16 bg-blue-600 text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Ready to Meet the Dolphins?</h2>
           <p className="text-xl text-white mb-8">
             Experience the thrill of swimming with wild dolphins in their natural habitat.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://wa.me/255710885320?text=Hi, I'm interested in the Kizimkazi Dolphins Tour"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8">
-                Book Now on WhatsApp
-              </Button>
-            </a>
+            <BookingModal
+              tourName="Kizimkazi Wild Dolphin Tour"
+              trigger={
+                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8">
+                  Book Now on WhatsApp
+                </Button>
+              }
+            />
             <Link href="/zanzibar">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-ocean bg-transparent">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-ocean bg-transparent"
+              >
                 View All Tours
               </Button>
             </Link>

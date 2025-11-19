@@ -3,7 +3,7 @@ import WhatsAppFloat from "@/components/whatsapp-float"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Mountain, Clock, Users, TrendingUp } from "lucide-react"
+import { Mountain, Clock, Users, TrendingUp } from 'lucide-react'
 import Link from "next/link"
 import type { Metadata } from "next"
 
@@ -354,7 +354,7 @@ export default function KilimanjaroPage() {
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-display font-bold text-white mb-6">Ready to Climb Kilimanjaro?</h2>
           <p className="text-xl text-white/90 mb-8">
-            Join thousands of successful climbers who have reached Uhuru Peak with ZANZIONE TOURS & SAFARIS. Let us
+            Join thousands of successful climbers who have reached Uhuru Peak with ZANZIONE TOURS & TRAVELS. Let us
             guide you to the roof of Africa.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

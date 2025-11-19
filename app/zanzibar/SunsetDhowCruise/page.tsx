@@ -1,17 +1,19 @@
 import Navigation from "@/components/navigation"
 import WhatsAppFloat from "@/components/whatsapp-float"
 import Footer from "@/components/footer"
+import ScrollToTop from "@/components/scroll-to-top"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Clock, Users, MapPin, Check } from 'lucide-react'
+import { Clock, Users, MapPin, Check } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import type { Metadata } from "next"
-import ScrollToTop from "@/components/scroll-to-top"
+import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
   title: "Sunset Dhow Cruise Zanzibar - Romantic Evening Sailing | ZANZIONE TOURS",
-  description: "Experience an unforgettable romantic evening on a traditional Arabian dhow. Enjoy stunning sunset views, local delights, and traditional music while sailing from Stone Town, Nungwi, or Kendwa Beach.",
+  description:
+    "Experience an unforgettable romantic evening on a traditional Arabian dhow. Enjoy stunning sunset views, local delights, and traditional music while sailing from Stone Town, Nungwi, or Kendwa Beach.",
 }
 
 export default function SunsetDhowCruisePage() {
@@ -75,16 +77,14 @@ export default function SunsetDhowCruisePage() {
             <div className="lg:col-span-2 space-y-8">
               {/* Overview Section */}
               <div>
-                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">
-                  Overview & Experience
-                </h2>
+                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Overview & Experience</h2>
                 <div className="prose prose-lg max-w-none text-gray-700">
                   <p className="text-lg leading-relaxed mb-4">
-                    A Sunset Dhow Cruise is one of the best and most romantic activities to do during your Zanzibar holiday. Experience the breathtaking coastal views in the evening while sailing on a traditional Arabian dhow—a memorable way to spend time with your loved ones.
+                    A Sunset Dhow Cruise is one of the best and most romantic activities to do during your Zanzibar
+                    holiday. Experience the breathtaking coastal views in the evening while sailing on a traditional
+                    Arabian dhow—a memorable way to spend time with your loved ones.
                   </p>
-                  <p className="text-lg leading-relaxed">
-                    We offer daily sunset cruises departing from:
-                  </p>
+                  <p className="text-lg leading-relaxed">We offer daily sunset cruises departing from:</p>
                   <ul className="list-disc pl-6 text-lg space-y-2">
                     <li>Stone Town</li>
                     <li>Nungwi Beach</li>
@@ -95,24 +95,21 @@ export default function SunsetDhowCruisePage() {
 
               {/* Highlights Section */}
               <div>
-                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">
-                  What You Will Experience
-                </h2>
+                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">What You Will Experience</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <Card className="border-l-4 border-golden">
                     <CardContent className="p-6">
                       <h3 className="font-semibold text-lg text-blue-season mb-2">Sunset Views</h3>
                       <p className="text-gray-600">
-                        Witness the lovely, vibrant sunset from the water, the best way to view the coasts of Stone Town, Kendwa, and Nungwi.
+                        Witness the lovely, vibrant sunset from the water, the best way to view the coasts of Stone
+                        Town, Kendwa, and Nungwi.
                       </p>
                     </CardContent>
                   </Card>
                   <Card className="border-l-4 border-golden">
                     <CardContent className="p-6">
                       <h3 className="font-semibold text-lg text-blue-season mb-2">Traditional Sailing</h3>
-                      <p className="text-gray-600">
-                        Sail aboard an authentic wooden traditional Arabian Dhow.
-                      </p>
+                      <p className="text-gray-600">Sail aboard an authentic wooden traditional Arabian Dhow.</p>
                     </CardContent>
                   </Card>
                   <Card className="border-l-4 border-golden">
@@ -126,9 +123,7 @@ export default function SunsetDhowCruisePage() {
                   <Card className="border-l-4 border-golden">
                     <CardContent className="p-6">
                       <h3 className="font-semibold text-lg text-blue-season mb-2">Entertainment</h3>
-                      <p className="text-gray-600">
-                        Experience a Traditional Music Performance while sailing.
-                      </p>
+                      <p className="text-gray-600">Experience a Traditional Music Performance while sailing.</p>
                     </CardContent>
                   </Card>
                 </div>
@@ -136,10 +131,8 @@ export default function SunsetDhowCruisePage() {
 
               {/* Inclusions Section */}
               <div>
-                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">
-                  Price & Inclusions
-                </h2>
-                
+                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Price & Inclusions</h2>
+
                 <div className="mb-6">
                   <h3 className="text-xl font-bold text-blue-season mb-4">Cruise Pricing</h3>
                   <div className="overflow-x-auto">
@@ -167,17 +160,19 @@ export default function SunsetDhowCruisePage() {
                     </table>
                   </div>
                 </div>
-                
+
                 <Card className="bg-blue-50 border-blue-200">
                   <CardContent className="p-6">
-                    <p className="text-lg font-semibold text-blue-season mb-4">The cruise price is comprehensive and includes:</p>
+                    <p className="text-lg font-semibold text-blue-season mb-4">
+                      The cruise price is comprehensive and includes:
+                    </p>
                     <ul className="space-y-3">
                       {[
                         "Services of an English-Speaking Guide",
                         "Sailing on a Traditional Dhow Boat",
                         "Locally prepared snacks and drinks",
                         "Traditional Music Performance",
-                        "All government taxes and fees"
+                        "All government taxes and fees",
                       ].map((item, index) => (
                         <li key={index} className="flex items-start gap-3">
                           <Check className="w-5 h-5 text-golden flex-shrink-0 mt-0.5" />
@@ -191,15 +186,16 @@ export default function SunsetDhowCruisePage() {
 
               {/* History Section */}
               <div>
-                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">
-                  Explore the Traditional Dhow
-                </h2>
+                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Explore the Traditional Dhow</h2>
                 <div className="prose prose-lg max-w-none text-gray-700">
                   <p className="text-lg leading-relaxed mb-4">
-                    The history of these traditional dhows dates back many centuries when Arab and Indian merchants began exploring East Africa for trade and religion, relying on the monsoon winds for transport.
+                    The history of these traditional dhows dates back many centuries when Arab and Indian merchants
+                    began exploring East Africa for trade and religion, relying on the monsoon winds for transport.
                   </p>
                   <p className="text-lg leading-relaxed">
-                    On this tour, you will experience this perfect, traditional method of sailing. Today, these dhows are still used by locals to travel and import different commodities between the Zanzibar Islands and the Tanzania mainland.
+                    On this tour, you will experience this perfect, traditional method of sailing. Today, these dhows
+                    are still used by locals to travel and import different commodities between the Zanzibar Islands and
+                    the Tanzania mainland.
                   </p>
                 </div>
               </div>
@@ -231,18 +227,19 @@ export default function SunsetDhowCruisePage() {
                   </div>
 
                   <div className="pt-4 border-t space-y-3">
-                    <a
-                      href="https://wa.me/255710885320?text=Hi, I'm interested in the Sunset Dhow Cruise"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block"
-                    >
-                      <Button className="w-full bg-golden hover:bg-golden/90 text-white font-semibold py-6 text-lg">
-                        BOOK VIA WHATSAPP
-                      </Button>
-                    </a>
+                    <BookingModal
+                      tourName="Sunset Dhow Cruise"
+                      trigger={
+                        <Button className="w-full bg-golden hover:bg-golden/90 text-white font-semibold py-6 text-lg">
+                          BOOK VIA WHATSAPP
+                        </Button>
+                      }
+                    />
                     <Link href="/contact" className="block">
-                      <Button variant="outline" className="w-full border-blue-season text-blue-season hover:bg-blue-season hover:text-white py-6">
+                      <Button
+                        variant="outline"
+                        className="w-full border-blue-season text-blue-season hover:bg-blue-season hover:text-white py-6 bg-transparent"
+                      >
                         Contact Us
                       </Button>
                     </Link>
@@ -261,24 +258,27 @@ export default function SunsetDhowCruisePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-gradient-to-r from-ocean to-blue-600 text-white">
+      <section className="py-16 bg-blue-600 text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Ready for a Romantic Evening?</h2>
           <p className="text-xl text-white mb-8">
             Experience the magic of Zanzibar's sunset from the water on a traditional dhow cruise.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="https://wa.me/255710885320?text=Hi, I'm interested in the Sunset Dhow Cruise"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8">
-                Book Now on WhatsApp
-              </Button>
-            </a>
+            <BookingModal
+              tourName="Sunset Dhow Cruise"
+              trigger={
+                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8">
+                  Book Now on WhatsApp
+                </Button>
+              }
+            />
             <Link href="/zanzibar">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-ocean bg-transparent">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-ocean bg-transparent"
+              >
                 View All Tours
               </Button>
             </Link>

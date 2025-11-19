@@ -7,13 +7,14 @@ import { Star, Clock, Users } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
+import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
   title: "Safari & Tour Packages - Serengeti, Zanzibar & Mikumi | ZANZIONE TOURS",
   description:
     "Explore our curated tour packages including 2-day Serengeti safari with the Great Migration, 5-day Zanzibar beach and culture tour, and Mikumi day trip safari. All-inclusive itineraries with expert guides, accommodation, meals, and unforgettable wildlife experiences in Tanzania.",
   openGraph: {
-    title: "Complete Tour Packages - ZANZIONE TOURS & SAFARIS",
+    title: "Complete Tour Packages - ZANZIONE TOURS & TRAVELS",
     description:
       "Choose from our carefully crafted safari and beach tour packages. From the Serengeti plains to Zanzibar beaches.",
     url: "https://www.zanzionetours.com/itineraries",
@@ -400,9 +401,12 @@ export default function ItinerariesPage() {
                         View Full Itinerary
                       </Button>
                     </Link>
-                    <Link href="/contact">
-                      <Button className="w-full bg-golden hover:bg-golden/90 text-white">BOOK THIS TRIP</Button>
-                    </Link>
+                    <BookingModal 
+                      tourName={pkg.title} 
+                      trigger={
+                        <Button className="w-full bg-golden hover:bg-golden/90 text-white">BOOK THIS TRIP</Button>
+                      }
+                    />
                   </div>
                 </CardContent>
               </Card>

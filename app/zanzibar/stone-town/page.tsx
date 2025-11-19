@@ -7,6 +7,7 @@ import { Star, Clock, Users, MapPin, CheckCircle } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
+import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
   title: "Stone Town Walking Tour - UNESCO Heritage Site | ZANZIONE TOURS",
@@ -195,11 +196,10 @@ export default function StoneTownTourPage() {
                     </div>
                   </div>
 
-                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                    <Button className="w-full bg-golden hover:bg-golden/90 text-white font-semibold py-6 text-lg mb-3">
-                      BOOK VIA WHATSAPP
-                    </Button>
-                  </a>
+                  <BookingModal 
+                    tourName="Stone Town Walking Tour" 
+                    className="w-full bg-golden hover:bg-golden/90 text-white font-semibold py-6 text-lg mb-3"
+                  />
 
                   <Link href="/contact">
                     <Button
@@ -237,11 +237,10 @@ export default function StoneTownTourPage() {
             Book your Stone Town walking tour today and discover the heart of Zanzibar with our expert local guides.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-golden hover:bg-golden/90 text-white font-semibold px-8 py-6 text-lg">
-                BOOK VIA WHATSAPP
-              </Button>
-            </a>
+            <BookingModal 
+              tourName="Stone Town Walking Tour" 
+              className="bg-golden hover:bg-golden/90 text-white font-semibold px-8 py-6 text-lg"
+            />
             <Link href="/zanzibar">
               <Button
                 size="lg"

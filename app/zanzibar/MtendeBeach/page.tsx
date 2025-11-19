@@ -3,10 +3,11 @@ import WhatsAppFloat from "@/components/whatsapp-float"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Clock, Users, Check, Star } from 'lucide-react'
+import { Clock, Users, Check, Star } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import type { Metadata } from "next"
+import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
   title: "Mtende Beach Tour - Zanzibar's Secret Cove | ZANZIONE TOURS",
@@ -27,7 +28,7 @@ export default function MtendeBeachPage() {
       <section className="relative h-[500px] bg-gradient-to-r from-cyan-600 to-blue-500">
         <div className="absolute inset-0">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mtende%20Beach-6BjUwLXrLo6prVoiEffWsirJQT11vW.jpeg"
+            src="/images/mtende-20beach.jpeg"
             alt="Mtende Beach - Secluded Paradise"
             fill
             className="object-cover opacity-40"
@@ -56,9 +57,7 @@ export default function MtendeBeachPage() {
                 <Users className="w-5 h-5" />
                 <span>2-25 People</span>
               </div>
-              <div className="bg-golden px-4 py-2 rounded-full font-bold">
-                From $5 per person
-              </div>
+              <div className="bg-golden px-4 py-2 rounded-full font-bold">From $5 per person</div>
             </div>
           </div>
         </div>
@@ -72,15 +71,11 @@ export default function MtendeBeachPage() {
             <CardContent className="p-8">
               <div className="text-center">
                 <h2 className="text-3xl font-display font-bold text-ocean mb-4">Book Your Mtende Beach Escape</h2>
-                <p className="text-gray-600 mb-6 text-lg">
-                  Experience Zanzibar's most secluded and dramatic beach
+                <p className="text-gray-600 mb-6 text-lg">Experience Zanzibar's most secluded and dramatic beach</p>
+                <BookingModal tourName="Mtende Beach Tour" />
+                <p className="text-sm text-gray-500 mt-4">
+                  ✓ Best Price Guarantee | ✓ Easy Online Booking | ✓ Book Now & Pay Later
                 </p>
-                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="inline-block w-full sm:w-auto">
-                  <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto">
-                    BOOK VIA WHATSAPP
-                  </Button>
-                </a>
-                <p className="text-sm text-gray-500 mt-4">✓ Best Price Guarantee | ✓ Easy Online Booking | ✓ Book Now & Pay Later</p>
               </div>
             </CardContent>
           </Card>
@@ -91,14 +86,14 @@ export default function MtendeBeachPage() {
             <h3 className="text-2xl font-bold text-blue-season mb-4">Zanzibar's Secluded Cove</h3>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
               <p>
-                Mtende Beach, located on the southeast coast near <strong>Makunduchi</strong>, is a photographer's dream. 
-                Nestled between towering, rugged rock formations, the beach forms a large, secluded cove. Unlike the bustling 
-                northern beaches, Mtende offers a sense of discovery and privacy, perfect for those seeking genuine tranquility 
-                and unique coastal scenery.
+                Mtende Beach, located on the southeast coast near <strong>Makunduchi</strong>, is a photographer's
+                dream. Nestled between towering, rugged rock formations, the beach forms a large, secluded cove. Unlike
+                the bustling northern beaches, Mtende offers a sense of discovery and privacy, perfect for those seeking
+                genuine tranquility and unique coastal scenery.
               </p>
               <p>
-                This hidden gem showcases nature's dramatic artistry with its natural amphitheater of sand and sea, framed by 
-                impressive cliffs and lush tropical vegetation on both sides.
+                This hidden gem showcases nature's dramatic artistry with its natural amphitheater of sand and sea,
+                framed by impressive cliffs and lush tropical vegetation on both sides.
               </p>
             </div>
           </div>
@@ -127,7 +122,8 @@ export default function MtendeBeachPage() {
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
             <h2 className="text-3xl font-display font-bold text-ocean mb-6">Pricing Overview</h2>
             <p className="text-gray-600 mb-6">
-              Highly group-friendly pricing with substantial savings for larger parties exploring this secluded paradise.
+              Highly group-friendly pricing with substantial savings for larger parties exploring this secluded
+              paradise.
             </p>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
@@ -154,8 +150,10 @@ export default function MtendeBeachPage() {
             </div>
             <div className="mt-6 bg-amber-50 p-6 rounded-lg border-l-4 border-golden">
               <p className="text-gray-700 text-sm leading-relaxed">
-                <strong>Note:</strong> The base price covers local guide services and entrance fees (approximately $1 USD per person). 
-                <strong> Transport is not included</strong> - there is no public transport to Mtende Beach. Contact us for full pricing including private transfer from your hotel.
+                <strong>Note:</strong> The base price covers local guide services and entrance fees (approximately $1
+                USD per person).
+                <strong> Transport is not included</strong> - there is no public transport to Mtende Beach. Contact us
+                for full pricing including private transfer from your hotel.
               </p>
             </div>
           </div>
@@ -181,11 +179,21 @@ export default function MtendeBeachPage() {
               <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-ocean">
                 <h3 className="font-bold text-ocean mb-3">Logistics & Practical Tips</h3>
                 <ul className="space-y-3 text-sm text-gray-700">
-                  <li><strong>Duration:</strong> Recommended 2-3 hours at the beach</li>
-                  <li><strong>Tides:</strong> Highly tide-dependent. Check tide charts for best experience</li>
-                  <li><strong>Accessibility:</strong> Stairs lead down to beach (may not suit limited mobility)</li>
-                  <li><strong>Nearby:</strong> Often combined with The Rock Restaurant and Maalum Cave</li>
-                  <li><strong>Transport:</strong> Private taxi or arranged transfer required</li>
+                  <li>
+                    <strong>Duration:</strong> Recommended 2-3 hours at the beach
+                  </li>
+                  <li>
+                    <strong>Tides:</strong> Highly tide-dependent. Check tide charts for best experience
+                  </li>
+                  <li>
+                    <strong>Accessibility:</strong> Stairs lead down to beach (may not suit limited mobility)
+                  </li>
+                  <li>
+                    <strong>Nearby:</strong> Often combined with The Rock Restaurant and Maalum Cave
+                  </li>
+                  <li>
+                    <strong>Transport:</strong> Private taxi or arranged transfer required
+                  </li>
                 </ul>
               </div>
             </div>
@@ -198,36 +206,34 @@ export default function MtendeBeachPage() {
               <div className="bg-white p-6 rounded-lg">
                 <h3 className="font-bold text-blue-season mb-3 text-lg">Low Tide Experience</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  At low tide, witness Zanzibar's spectacular tidal changes. Walk hundreds of meters out to explore exposed 
-                  ancient coral cliffs and natural tide pools teeming with small fish and crabs. The dramatic rock formations 
-                  are fully revealed, creating incredible photo opportunities.
+                  At low tide, witness Zanzibar's spectacular tidal changes. Walk hundreds of meters out to explore
+                  exposed ancient coral cliffs and natural tide pools teeming with small fish and crabs. The dramatic
+                  rock formations are fully revealed, creating incredible photo opportunities.
                 </p>
               </div>
               <div className="bg-white p-6 rounded-lg">
                 <h3 className="font-bold text-blue-season mb-3 text-lg">High Tide Experience</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  At high tide, the cove's calm, emerald-green waters reach the stairs, creating perfect conditions for safe 
-                  swimming and kayaking. The rock swing becomes an exciting attraction as you swing over the deeper water. 
-                  The natural amphitheater effect is most pronounced.
+                  At high tide, the cove's calm, emerald-green waters reach the stairs, creating perfect conditions for
+                  safe swimming and kayaking. The rock swing becomes an exciting attraction as you swing over the deeper
+                  water. The natural amphitheater effect is most pronounced.
                 </p>
               </div>
             </div>
           </div>
 
           {/* Final CTA */}
-          <div className="bg-gradient-to-r from-ocean to-cyan-600 text-white shadow-2xl rounded-lg p-10 text-center">
+          <div className="bg-blue-600 text-white shadow-2xl rounded-lg p-10 text-center">
             <h2 className="text-3xl font-display font-bold mb-4">Ready to Discover Mtende Beach?</h2>
-            <p className="text-xl text-white mb-8">
-              Book your secluded beach escape to Zanzibar's hidden gem today
-            </p>
+            <p className="text-xl text-white mb-8">Book your secluded beach escape to Zanzibar's hidden gem today</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto">
-                  BOOK VIA WHATSAPP
-                </Button>
-              </a>
+              <BookingModal tourName="Mtende Beach Tour" />
               <Link href="/contact" className="w-full sm:w-auto">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-ocean font-semibold px-8 py-6 bg-transparent w-full sm:w-auto">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-white text-white hover:bg-white hover:text-ocean font-semibold px-8 py-6 bg-transparent w-full sm:w-auto"
+                >
                   Contact Us
                 </Button>
               </Link>

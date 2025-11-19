@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter, Poppins } from "next/font/google"
+import { Inter, Poppins } from 'next/font/google'
 import "./globals.css"
 
 const inter = Inter({
@@ -19,16 +19,16 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.zanzionetours.com"),
   title: {
-    default: "ZANZIONE TOURS & SAFARIS - Premium Zanzibar Tours, Tanzania Safari & Kilimanjaro Climbing",
-    template: "%s | ZANZIONE TOURS & SAFARIS",
+    default: "ZANZIONE TOURS & TRAVELS - Premium Zanzibar Tours, Tanzania Safari & Kilimanjaro Climbing",
+    template: "%s | ZANZIONE TOURS & TRAVELS",
   },
   description:
-    "Experience authentic East African adventures with ZANZIONE TOURS & SAFARIS. Based in Stone Town, Zanzibar, we offer premium island tours, Tanzania safaris, and Kilimanjaro climbing expeditions. Expert local guides, personalized service, and unforgettable memories.",
+    "Experience authentic East African adventures with ZANZIONE TOURS & TRAVELS. Based in Stone Town, Zanzibar, we offer premium island tours, Tanzania safaris, and Kilimanjaro climbing expeditions. Expert local guides, personalized service, and unforgettable memories.",
   keywords:
     "Zanzibar tours, Tanzania safari, Kilimanjaro climbing, Stone Town tours, Shangani, spice tours, Safari Blue, Serengeti safari, Ngorongoro crater, beach tours, dolphin tours, Zanzibar travel, East Africa adventures",
-  authors: [{ name: "ZANZIONE TOURS & SAFARIS" }],
-  creator: "ZANZIONE TOURS & SAFARIS",
-  publisher: "ZANZIONE TOURS & SAFARIS",
+  authors: [{ name: "ZANZIONE TOURS & TRAVELS" }],
+  creator: "ZANZIONE TOURS & TRAVELS",
+  publisher: "ZANZIONE TOURS & TRAVELS",
   robots: {
     index: true,
     follow: true,
@@ -44,8 +44,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://www.zanzionetours.com",
-    siteName: "ZANZIONE TOURS & SAFARIS",
-    title: "ZANZIONE TOURS & SAFARIS - Premium Zanzibar Tours & Tanzania Safari",
+    siteName: "ZANZIONE TOURS & TRAVELS",
+    title: "ZANZIONE TOURS & TRAVELS - Premium Zanzibar Tours & Tanzania Safari",
     description:
       "Experience authentic East African adventures with expert local guides. Zanzibar tours, Tanzania safaris, and Kilimanjaro climbing expeditions.",
     images: [
@@ -53,13 +53,13 @@ export const metadata: Metadata = {
         url: "/images/hero-bg.jpg",
         width: 1200,
         height: 630,
-        alt: "ZANZIONE TOURS & SAFARIS - Zanzibar Beach Paradise",
+        alt: "ZANZIONE TOURS & TRAVELS - Zanzibar Beach Paradise",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "ZANZIONE TOURS & SAFARIS - Premium Zanzibar Tours & Tanzania Safari",
+    title: "ZANZIONE TOURS & TRAVELS - Premium Zanzibar Tours & Tanzania Safari",
     description: "Experience authentic East African adventures with expert local guides based in Stone Town, Zanzibar.",
     images: ["/images/hero-bg.jpg"],
   },
@@ -69,7 +69,7 @@ export const metadata: Metadata = {
   verification: {
     google: "your-google-verification-code",
   },
-    generator: 'v0.app'
+  generator: 'v0.app'
 }
 
 export default function RootLayout({

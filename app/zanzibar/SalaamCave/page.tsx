@@ -3,16 +3,18 @@ import WhatsAppFloat from "@/components/whatsapp-float"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Clock, Users, Check, Star } from 'lucide-react'
+import { Clock, Users, Check, Star } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import type { Metadata } from "next"
+import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
   title: "Salaam Cave Tour - Sea Turtle Sanctuary & Natural Swimming Pool | ZANZIONE TOURS",
   description:
     "Visit Salaam Cave in Kizimkazi - a unique sea turtle sanctuary and natural coral grotto. Swim with turtles, learn about conservation, and explore crystal-clear saltwater pools in this unforgettable Zanzibar experience.",
-  keywords: "Salaam Cave Zanzibar, Kizimkazi turtle sanctuary, sea turtle experience, cave swimming Zanzibar, conservation tour",
+  keywords:
+    "Salaam Cave Zanzibar, Kizimkazi turtle sanctuary, sea turtle experience, cave swimming Zanzibar, conservation tour",
 }
 
 export default function SalaamCavePage() {
@@ -27,7 +29,7 @@ export default function SalaamCavePage() {
       <section className="relative h-[500px] bg-gradient-to-r from-teal-600 to-cyan-500">
         <div className="absolute inset-0">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Salam%20Cave-maSMMXqzhTperq8CvQZOv47LUaKQYl.jpeg"
+            src="/images/salam-20cave.jpeg"
             alt="Salaam Cave - Sea Turtle Sanctuary"
             fill
             className="object-cover opacity-40"
@@ -56,9 +58,7 @@ export default function SalaamCavePage() {
                 <Users className="w-5 h-5" />
                 <span>2-25 People</span>
               </div>
-              <div className="bg-golden px-4 py-2 rounded-full font-bold">
-                From $25 per person
-              </div>
+              <div className="bg-golden px-4 py-2 rounded-full font-bold">From $25 per person</div>
             </div>
           </div>
         </div>
@@ -72,15 +72,11 @@ export default function SalaamCavePage() {
             <CardContent className="p-8">
               <div className="text-center">
                 <h2 className="text-3xl font-display font-bold text-ocean mb-4">Book Your Salaam Cave Adventure</h2>
-                <p className="text-gray-600 mb-6 text-lg">
-                  Swim with sea turtles and support conservation
+                <p className="text-gray-600 mb-6 text-lg">Swim with sea turtles and support conservation</p>
+                <BookingModal tourName="Salaam Cave Tour" />
+                <p className="text-sm text-gray-500 mt-4">
+                  ✓ Best Price Guarantee | ✓ Easy Online Booking | ✓ Book Now & Pay Later
                 </p>
-                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="inline-block w-full sm:w-auto">
-                  <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto">
-                    BOOK VIA WHATSAPP
-                  </Button>
-                </a>
-                <p className="text-sm text-gray-500 mt-4">✓ Best Price Guarantee | ✓ Easy Online Booking | ✓ Book Now & Pay Later</p>
               </div>
             </CardContent>
           </Card>
@@ -91,13 +87,14 @@ export default function SalaamCavePage() {
             <h3 className="text-2xl font-bold text-blue-season mb-4">The Sea Turtle Haven of Kizimkazi</h3>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
               <p>
-                Tucked away in the coastal region of <strong>Kizimkazi</strong>, Salaam Cave is a natural coral grotto famous for 
-                housing and caring for <strong>sea turtles in a safe, clear-water sanctuary</strong>. It offers an incredible opportunity 
-                to interact with these magnificent creatures while supporting vital conservation efforts.
+                Tucked away in the coastal region of <strong>Kizimkazi</strong>, Salaam Cave is a natural coral grotto
+                famous for housing and caring for <strong>sea turtles in a safe, clear-water sanctuary</strong>. It
+                offers an incredible opportunity to interact with these magnificent creatures while supporting vital
+                conservation efforts.
               </p>
               <p>
-                This unique experience combines marine wildlife encounters with education about turtle rehabilitation and the importance 
-                of protecting Zanzibar's precious marine ecosystems.
+                This unique experience combines marine wildlife encounters with education about turtle rehabilitation
+                and the importance of protecting Zanzibar's precious marine ecosystems.
               </p>
             </div>
           </div>
@@ -179,8 +176,8 @@ export default function SalaamCavePage() {
                   <strong>Duration:</strong> Typically 1-2 hours at the cave site
                 </p>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  <strong>TRANSPORT IS EXCLUDED:</strong> Hotel transfers vary by location. 
-                  Contact us for the full price including transfers from your accommodation.
+                  <strong>TRANSPORT IS EXCLUDED:</strong> Hotel transfers vary by location. Contact us for the full
+                  price including transfers from your accommodation.
                 </p>
               </div>
             </div>
@@ -191,31 +188,29 @@ export default function SalaamCavePage() {
             <h2 className="text-3xl font-display font-bold text-ocean mb-6">Conservation Impact</h2>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
               <p>
-                By visiting Salaam Cave, you directly support the <strong>local conservation efforts</strong> that protect and 
-                rehabilitate sea turtles in Zanzibar. The sanctuary provides a safe haven for injured or young turtles, 
-                preparing them for eventual release back into the wild.
+                By visiting Salaam Cave, you directly support the <strong>local conservation efforts</strong> that
+                protect and rehabilitate sea turtles in Zanzibar. The sanctuary provides a safe haven for injured or
+                young turtles, preparing them for eventual release back into the wild.
               </p>
               <p>
-                Learn about the challenges facing marine wildlife, including plastic pollution and habitat loss, and discover 
-                how your visit helps fund ongoing protection and education programs in the local community.
+                Learn about the challenges facing marine wildlife, including plastic pollution and habitat loss, and
+                discover how your visit helps fund ongoing protection and education programs in the local community.
               </p>
             </div>
           </div>
 
           {/* Final CTA */}
-          <div className="bg-gradient-to-r from-ocean to-teal-600 text-white shadow-2xl rounded-lg p-10 text-center">
+          <div className="bg-blue-600 text-white shadow-2xl rounded-lg p-10 text-center">
             <h2 className="text-3xl font-display font-bold mb-4">Ready to Meet the Sea Turtles?</h2>
-            <p className="text-xl text-white mb-8">
-              Book your unforgettable turtle sanctuary experience today
-            </p>
+            <p className="text-xl text-white mb-8">Book your unforgettable turtle sanctuary experience today</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto">
-                  BOOK VIA WHATSAPP
-                </Button>
-              </a>
+              <BookingModal tourName="Salaam Cave Tour" />
               <Link href="/contact" className="w-full sm:w-auto">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-ocean font-semibold px-8 py-6 bg-transparent w-full sm:w-auto">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-white text-white hover:bg-white hover:text-ocean font-semibold px-8 py-6 bg-transparent w-full sm:w-auto"
+                >
                   Contact Us
                 </Button>
               </Link>

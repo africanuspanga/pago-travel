@@ -3,16 +3,18 @@ import WhatsAppFloat from "@/components/whatsapp-float"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Clock, Users, Check, Star } from 'lucide-react'
+import { Clock, Users, Check, Star } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import type { Metadata } from "next"
+import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
   title: "Maalum Cave Tour - Natural Freshwater Swimming Pool & Limestone Grotto | ZANZIONE TOURS",
   description:
     "Discover Maalum Cave in Paje - a hidden natural limestone oasis with crystal-clear freshwater pools. Swim in mineral-rich waters, explore stunning stalactites, and relax in this unique geological wonder.",
-  keywords: "Maalum Cave Zanzibar, Paje cave, natural swimming pool, limestone cave, freshwater cave Zanzibar, geological tour",
+  keywords:
+    "Maalum Cave Zanzibar, Paje cave, natural swimming pool, limestone cave, freshwater cave Zanzibar, geological tour",
 }
 
 export default function MaalumCavePage() {
@@ -27,7 +29,7 @@ export default function MaalumCavePage() {
       <section className="relative h-[500px] bg-gradient-to-r from-emerald-600 to-teal-500">
         <div className="absolute inset-0">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Maalum%20Cave-7PuunGmAhTkHZ7MtEO0Mzjuf7H5N4x.jpeg"
+            src="/images/maalum-20cave.jpeg"
             alt="Maalum Cave - Natural Freshwater Pool"
             fill
             className="object-cover opacity-40"
@@ -56,9 +58,7 @@ export default function MaalumCavePage() {
                 <Users className="w-5 h-5" />
                 <span>2-25 People</span>
               </div>
-              <div className="bg-golden px-4 py-2 rounded-full font-bold">
-                From $27 per person
-              </div>
+              <div className="bg-golden px-4 py-2 rounded-full font-bold">From $27 per person</div>
             </div>
           </div>
         </div>
@@ -72,15 +72,11 @@ export default function MaalumCavePage() {
             <CardContent className="p-8">
               <div className="text-center">
                 <h2 className="text-3xl font-display font-bold text-ocean mb-4">Book Your Maalum Cave Adventure</h2>
-                <p className="text-gray-600 mb-6 text-lg">
-                  Experience Zanzibar's hidden natural swimming pool
+                <p className="text-gray-600 mb-6 text-lg">Experience Zanzibar's hidden natural swimming pool</p>
+                <BookingModal tourName="Maalum Cave Tour" />
+                <p className="text-sm text-gray-500 mt-4">
+                  ✓ Best Price Guarantee | ✓ Easy Online Booking | ✓ Book Now & Pay Later
                 </p>
-                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="inline-block w-full sm:w-auto">
-                  <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto">
-                    BOOK VIA WHATSAPP
-                  </Button>
-                </a>
-                <p className="text-sm text-gray-500 mt-4">✓ Best Price Guarantee | ✓ Easy Online Booking | ✓ Book Now & Pay Later</p>
               </div>
             </CardContent>
           </Card>
@@ -91,14 +87,15 @@ export default function MaalumCavePage() {
             <h3 className="text-2xl font-bold text-blue-season mb-4">The Hidden Oasis of Paje</h3>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
               <p>
-                Located just minutes from Paje on the southeast coast, <strong>Maalum Cave</strong> is a unique natural phenomenon 
-                featuring a beautiful, <strong>clear-water swimming pool inside a limestone grotto</strong>. The cave's unique, 
-                open-top design allows sunlight to stream in, illuminating the pool's mineral-rich water, which many visitors 
-                find incredibly refreshing and peaceful.
+                Located just minutes from Paje on the southeast coast, <strong>Maalum Cave</strong> is a unique natural
+                phenomenon featuring a beautiful, <strong>clear-water swimming pool inside a limestone grotto</strong>.
+                The cave's unique, open-top design allows sunlight to stream in, illuminating the pool's mineral-rich
+                water, which many visitors find incredibly refreshing and peaceful.
               </p>
               <p>
-                This hidden natural sanctuary offers a luxurious retreat from the tropical heat, where you can swim in pristine 
-                freshwater surrounded by ancient geological formations that have been sculpted over thousands of years.
+                This hidden natural sanctuary offers a luxurious retreat from the tropical heat, where you can swim in
+                pristine freshwater surrounded by ancient geological formations that have been sculpted over thousands
+                of years.
               </p>
             </div>
           </div>
@@ -127,7 +124,8 @@ export default function MaalumCavePage() {
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
             <h2 className="text-3xl font-display font-bold text-ocean mb-6">Pricing Overview</h2>
             <p className="text-gray-600 mb-6">
-              The price per person decreases as your group size increases, offering excellent value for shared experiences.
+              The price per person decreases as your group size increases, offering excellent value for shared
+              experiences.
             </p>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
@@ -201,36 +199,34 @@ export default function MaalumCavePage() {
             <h2 className="text-3xl font-display font-bold text-ocean mb-6">A Geological Wonder</h2>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
               <p>
-                Maalum Cave is a <strong>natural limestone phenomenon</strong> formed over thousands of years by filtering water that 
-                has created spectacular stalactites hanging from above and stalagmites rising from below - nature's sculptures in their 
-                purest form.
+                Maalum Cave is a <strong>natural limestone phenomenon</strong> formed over thousands of years by
+                filtering water that has created spectacular stalactites hanging from above and stalagmites rising from
+                below - nature's sculptures in their purest form.
               </p>
               <p>
-                The cave's open-top design creates a unique microclimate where sunlight dances on the water's surface, creating 
-                mesmerizing light patterns throughout the day. The <strong>mineral-rich freshwater</strong> is incredibly clear and 
-                refreshing, making it perfect for swimming and underwater exploration.
+                The cave's open-top design creates a unique microclimate where sunlight dances on the water's surface,
+                creating mesmerizing light patterns throughout the day. The <strong>mineral-rich freshwater</strong> is
+                incredibly clear and refreshing, making it perfect for swimming and underwater exploration.
               </p>
               <p>
-                Your guide will share fascinating stories about the cave's formation, local legends, and the cultural significance 
-                of this hidden gem in Zanzibar's landscape.
+                Your guide will share fascinating stories about the cave's formation, local legends, and the cultural
+                significance of this hidden gem in Zanzibar's landscape.
               </p>
             </div>
           </div>
 
           {/* Final CTA */}
-          <div className="bg-gradient-to-r from-ocean to-emerald-600 text-white shadow-2xl rounded-lg p-10 text-center">
+          <div className="bg-blue-600 text-white shadow-2xl rounded-lg p-10 text-center">
             <h2 className="text-3xl font-display font-bold mb-4">Ready to Discover This Hidden Oasis?</h2>
-            <p className="text-xl text-white mb-8">
-              Book your Maalum Cave experience and dive into natural beauty
-            </p>
+            <p className="text-xl text-white mb-8">Book your Maalum Cave experience and dive into natural beauty</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto">
-                  BOOK VIA WHATSAPP
-                </Button>
-              </a>
+              <BookingModal tourName="Maalum Cave Tour" />
               <Link href="/contact" className="w-full sm:w-auto">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-ocean font-semibold px-8 py-6 bg-transparent w-full sm:w-auto">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-white text-white hover:bg-white hover:text-ocean font-semibold px-8 py-6 bg-transparent w-full sm:w-auto"
+                >
                   Contact Us
                 </Button>
               </Link>

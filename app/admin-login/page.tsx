@@ -49,7 +49,7 @@ export default function AdminLoginPage() {
             />
           </div>
           <CardTitle className="text-3xl font-display text-ocean">Admin Login</CardTitle>
-          <p className="text-muted-foreground">ZANZIONE TOURS & SAFARIS</p>
+          <p className="text-muted-foreground">ZANZIONE TOURS & TRAVELS</p>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleLogin} className="space-y-4">

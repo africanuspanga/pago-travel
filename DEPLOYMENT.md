@@ -1,6 +1,6 @@
-# ZANZIONE TOURS & SAFARIS - cPanel Deployment Guide
+# ZANZIONE TOURS & TRAVELS - cPanel Deployment Guide
 
-This guide will help you deploy the ZANZIONE TOURS & SAFARIS website as static HTML files to your cPanel hosting.
+This guide will help you deploy the ZANZIONE TOURS & TRAVELS website as static HTML files to your cPanel hosting.
 
 ## Prerequisites
 
@@ -93,7 +93,7 @@ rsync -avz out/ username@your-server.com:~/public_html/
 
 Create a `.htaccess` file in your `public_html` directory with the following content:
 
-```apache
+\`\`\`apache
 # Enable directory browsing
 Options +FollowSymLinks
 

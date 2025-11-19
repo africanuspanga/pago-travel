@@ -7,6 +7,7 @@ import { Clock, Users, Check, Star } from 'lucide-react'
 import Link from "next/link"
 import Image from "next/image"
 import type { Metadata } from "next"
+import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
   title: "Zanzibar Safari Blue Trip - Full Day Snorkeling & Seafood BBQ Tour | ZANZIONE TOURS",
@@ -75,11 +76,7 @@ export default function SafariBlueTourPage() {
                 <p className="text-gray-600 mb-6 text-lg">
                   Secure your spot for Zanzibar's most popular marine tour
                 </p>
-                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="inline-block w-full sm:w-auto">
-                  <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto">
-                    BOOK VIA WHATSAPP
-                  </Button>
-                </a>
+                <BookingModal tourName="Safari Blue Trip" />
                 <p className="text-sm text-gray-500 mt-4">✓ Best Price Guarantee | ✓ Easy Online Booking | ✓ Book Now & Pay Later</p>
               </div>
             </CardContent>
@@ -214,20 +211,16 @@ export default function SafariBlueTourPage() {
         </div>
       </section>
 
-      <section className="w-full bg-gradient-to-r from-ocean to-blue-600 text-white py-12">
+      <section className="w-full bg-blue-600 text-white py-12">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-display font-bold mb-4">Ready for the Best Day of Your Zanzibar Trip?</h2>
           <p className="text-xl text-white mb-8">
             Join us for an unforgettable marine adventure in Menai Bay
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto">
-                BOOK VIA WHATSAPP
-              </Button>
-            </a>
+            <BookingModal tourName="Safari Blue Trip" />
             <Link href="/contact" className="w-full sm:w-auto">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-ocean font-semibold px-8 py-6 bg-transparent w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-8 py-6 bg-transparent w-full sm:w-auto">
                 Contact Us
               </Button>
             </Link>

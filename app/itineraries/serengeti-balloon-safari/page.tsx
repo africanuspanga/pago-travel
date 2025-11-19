@@ -7,6 +7,7 @@ import { Clock, MapPin, Users, Check, Star, ArrowLeft } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
+import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
   title: "3 Days Serengeti Safari & Hot Air Balloon from Zanzibar - $2,793 | ZANZIONE TOURS",
@@ -186,11 +187,10 @@ export default function SerengetiBalloonSafariPage() {
                       </div>
                     </div>
                     <p className="text-sm text-gray-500 mb-6">Price per person</p>
-                    <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                      <Button className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-6">
-                        Book via WhatsApp
-                      </Button>
-                    </a>
+                    <BookingModal 
+                      tourName="3 Days Serengeti Safari & Hot Air Balloon" 
+                      className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-6"
+                    />
                   </CardContent>
                 </Card>
 
@@ -234,11 +234,10 @@ export default function SerengetiBalloonSafariPage() {
             Book your Serengeti safari with hot air balloon today and experience the park from both land and sky in this once-in-a-lifetime adventure.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4">
-                Book via WhatsApp
-              </Button>
-            </a>
+            <BookingModal 
+              tourName="3 Days Serengeti Safari & Hot Air Balloon" 
+              className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4"
+            />
             <Link href="/itineraries">
               <Button
                 size="lg"

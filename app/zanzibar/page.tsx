@@ -1,6 +1,7 @@
 import Navigation from "@/components/navigation"
 import WhatsAppFloat from "@/components/whatsapp-float"
 import Footer from "@/components/footer"
+import BookingModal from "@/components/booking-modal"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Clock, Users } from 'lucide-react'
@@ -348,14 +349,28 @@ export default function ZanzibarPage() {
                             View Details
                           </Button>
                         </Link>
-                        <Link href={`/zanzibar/${tour.slug}`} scroll={true} className="flex-1">
-                          <Button className="w-full bg-golden hover:bg-golden/90 text-white">Book Now</Button>
-                        </Link>
+                        <div className="flex-1">
+                          <BookingModal 
+                            tourName={tour.title} 
+                            trigger={
+                              <Button className="w-full bg-[#F5A623] hover:bg-[#F5A623]/90 text-white font-bold">
+                                BOOK NOW
+                              </Button>
+                            }
+                          />
+                        </div>
                       </>
                     ) : (
-                      <Link href="/contact" className="w-full">
-                        <Button className="w-full bg-golden hover:bg-golden/90 text-white">Book This Tour</Button>
-                      </Link>
+                      <div className="w-full">
+                        <BookingModal 
+                          tourName={tour.title} 
+                          trigger={
+                            <Button className="w-full bg-[#F5A623] hover:bg-[#F5A623]/90 text-white font-bold">
+                              BOOK NOW
+                            </Button>
+                          }
+                        />
+                      </div>
                     )}
                   </div>
                 </CardContent>

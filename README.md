@@ -1,4 +1,4 @@
-# ZANZIONE TOURS & SAFARIS
+# ZANZIONE TOURS & TRAVELS
 
 Premium Zanzibar Tours, Tanzania Safari & Kilimanjaro Climbing Expeditions
 
@@ -9,7 +9,7 @@ Premium Zanzibar Tours, Tanzania Safari & Kilimanjaro Climbing Expeditions
 
 ## About
 
-ZANZIONE TOURS & SAFARIS is a premier tour operator based in Shangani, Stone Town, Zanzibar. We specialize in authentic East African adventures including:
+ZANZIONE TOURS & TRAVELS is a premier tour operator based in Shangani, Stone Town, Zanzibar. We specialize in authentic East African adventures including:
 
 - **Zanzibar Island Tours** - Pristine beaches, spice farms, Stone Town heritage, and marine life
 - **Tanzania Safaris** - Big Five game viewing in Serengeti, Ngorongoro, and other iconic parks
@@ -131,7 +131,7 @@ Note: Admin dashboard is for demonstration purposes with sample data.
 
 ## Contact Information
 
-**ZANZIONE TOURS & SAFARIS**
+**ZANZIONE TOURS & TRAVELS**
 - **Location:** Shangani, Stone Town, Zanzibar
 - **Email:** zanzionetoursandtravel@gmail.com
 - **Facebook:** [ZANZIONE TOURS](https://www.facebook.com/share/17Wn8GXrd8/)
@@ -145,7 +145,7 @@ Note: Admin dashboard is for demonstration purposes with sample data.
 
 ## License
 
-© 2025 ZANZIONE TOURS & SAFARIS. All rights reserved.
+© 2025 ZANZIONE TOURS & TRAVELS. All rights reserved.
 
 ## Support
 

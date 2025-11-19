@@ -6,6 +6,7 @@ import { Calendar, Users, Utensils, Car, Check } from 'lucide-react'
 import Navigation from "@/components/navigation"
 import WhatsAppFloat from "@/components/whatsapp-float"
 import Footer from "@/components/footer"
+import BookingModal from "@/components/booking-modal"
 
 export default function Zanzibar9DaysPackage() {
   const whatsappNumber = "255718881882"
@@ -227,14 +228,10 @@ export default function Zanzibar9DaysPackage() {
                       </div>
                     </div>
 
-                    <Button 
+                    <BookingModal 
+                      tourName="Zanzibar 9 Days 8 Nights Package" 
                       className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-6"
-                      asChild
-                    >
-                      <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                        Book This Trip
-                      </a>
-                    </Button>
+                    />
                   </CardContent>
                 </Card>
 
@@ -267,11 +264,10 @@ export default function Zanzibar9DaysPackage() {
             Let us handle all the details for your perfect vacation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-blue-500 hover:bg-gray-100 font-semibold px-8 py-6 text-lg" asChild>
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                BOOK THIS TRIP
-              </a>
-            </Button>
+            <BookingModal 
+              tourName="Zanzibar 9 Days 8 Nights Package" 
+              className="bg-white text-blue-500 hover:bg-gray-100 font-semibold px-8 py-6 text-lg"
+            />
             <Button
               size="lg"
               variant="outline"

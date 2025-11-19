@@ -3,22 +3,21 @@ import WhatsAppFloat from "@/components/whatsapp-float"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Clock, Users, Check, Star, TreePine } from 'lucide-react'
+import { Clock, Users, Check, Star, TreePine } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import type { Metadata } from "next"
+import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
   title: "Jozani Forest Walking Tour - Meet Rare Red Colobus Monkeys | ZANZIONE TOURS",
   description:
     "Explore Jozani Chwaka Bay National Park on a 3-hour guided walking tour. See the endangered Zanzibar Red Colobus Monkeys, explore mangrove boardwalks, and discover rare flora. Expert local guides included.",
-  keywords: "Jozani Forest Zanzibar, Red Colobus monkeys, Jozani National Park, mangrove tour, wildlife Zanzibar, Kima Punju",
+  keywords:
+    "Jozani Forest Zanzibar, Red Colobus monkeys, Jozani National Park, mangrove tour, wildlife Zanzibar, Kima Punju",
 }
 
 export default function JozaniForestTourPage() {
-  const whatsappNumber = "255710885320"
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hi, I'm interested in booking the Jozani Forest Walking Tour. Can you provide more details?`
-
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation />
@@ -46,7 +45,9 @@ export default function JozaniForestTourPage() {
               <span className="text-sm font-semibold">5-Star Rated</span>
             </div>
             <h1 className="text-5xl md:text-6xl font-display font-bold mb-4">Jozani Forest Walking Tour</h1>
-            <p className="text-2xl md:text-3xl font-light mb-6">Meet the Rare Red Colobus Monkeys & Explore the Mangroves</p>
+            <p className="text-2xl md:text-3xl font-light mb-6">
+              Meet the Rare Red Colobus Monkeys & Explore the Mangroves
+            </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6 text-lg">
               <div className="flex items-center gap-2">
                 <Clock className="w-5 h-5" />
@@ -76,12 +77,20 @@ export default function JozaniForestTourPage() {
                 <p className="text-gray-600 mb-6 text-lg">
                   Join us for an unforgettable wildlife encounter in Zanzibar's indigenous forest
                 </p>
-                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="inline-block w-full sm:w-auto">
-                  <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto">
-                    BOOK VIA WHATSAPP
-                  </Button>
-                </a>
-                <p className="text-sm text-gray-500 mt-4">✓ Best Price Guarantee | ✓ Easy Online Booking | ✓ Expert Local Guides</p>
+                <BookingModal
+                  tourName="Jozani Forest Walking Tour"
+                  trigger={
+                    <Button
+                      size="lg"
+                      className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto"
+                    >
+                      BOOK VIA WHATSAPP
+                    </Button>
+                  }
+                />
+                <p className="text-sm text-gray-500 mt-4">
+                  ✓ Best Price Guarantee | ✓ Easy Online Booking | ✓ Expert Local Guides
+                </p>
               </div>
             </CardContent>
           </Card>
@@ -91,15 +100,16 @@ export default function JozaniForestTourPage() {
             <h2 className="text-3xl font-display font-bold text-ocean mb-6">Overview & Experience</h2>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
               <p>
-                <strong>Jozani Chwaka Bay National Park</strong> is Zanzibar's biggest national park and one of its most iconic natural attractions. 
-                This <strong>3-hour guided walking tour</strong> takes you deep into the lush, green heart of the forest, 
-                the last remaining sanctuary of the endangered <strong>Zanzibar Red Colobus Monkey</strong> (locally known as 'Kima Punju'). 
-                This is a species found nowhere else on Earth!
+                <strong>Jozani Chwaka Bay National Park</strong> is Zanzibar's biggest national park and one of its most
+                iconic natural attractions. This <strong>3-hour guided walking tour</strong> takes you deep into the
+                lush, green heart of the forest, the last remaining sanctuary of the endangered{" "}
+                <strong>Zanzibar Red Colobus Monkey</strong> (locally known as 'Kima Punju'). This is a species found
+                nowhere else on Earth!
               </p>
               <p>
-                Beyond the famous monkeys, you'll explore the magical mangrove reserve on elevated boardwalks, 
-                learning about how this vital ecosystem protects Zanzibar's coastline and supports local marine life. 
-                Your expert local guide will share fascinating insights about the forest's rare flora, including medicinal plants 
+                Beyond the famous monkeys, you'll explore the magical mangrove reserve on elevated boardwalks, learning
+                about how this vital ecosystem protects Zanzibar's coastline and supports local marine life. Your expert
+                local guide will share fascinating insights about the forest's rare flora, including medicinal plants
                 and towering mahogany and eucalyptus trees.
               </p>
             </div>
@@ -131,36 +141,43 @@ export default function JozaniForestTourPage() {
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-lg shadow">
                 <h3 className="font-bold text-ocean text-xl mb-3 flex items-center gap-2">
-                  <span className="bg-green-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">1</span>
+                  <span className="bg-green-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">
+                    1
+                  </span>
                   Red Colobus Monkey Sanctuary
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Enjoy a peaceful walk through the forest's towering trees where the curious and playful 
-                  <strong> Zanzibar Red Colobus Monkeys</strong> often come down to interact with visitors. 
-                  These endangered primates are found only in Zanzibar and are known for their distinctive red caps and friendly nature.
+                  Enjoy a peaceful walk through the forest's towering trees where the curious and playful
+                  <strong> Zanzibar Red Colobus Monkeys</strong> often come down to interact with visitors. These
+                  endangered primates are found only in Zanzibar and are known for their distinctive red caps and
+                  friendly nature.
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow">
                 <h3 className="font-bold text-ocean text-xl mb-3 flex items-center gap-2">
-                  <span className="bg-green-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">2</span>
+                  <span className="bg-green-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">
+                    2
+                  </span>
                   Mangrove Boardwalk Experience
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Walk through the mangrove forest on specially built boardwalks, learning about this vital ecosystem 
-                  that protects Zanzibar's coastline and supports local marine life. Your guide will explain the unique 
+                  Walk through the mangrove forest on specially built boardwalks, learning about this vital ecosystem
+                  that protects Zanzibar's coastline and supports local marine life. Your guide will explain the unique
                   adaptations of mangrove trees and their importance to the island's ecology.
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow">
                 <h3 className="font-bold text-ocean text-xl mb-3 flex items-center gap-2">
-                  <span className="bg-green-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">3</span>
+                  <span className="bg-green-600 text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">
+                    3
+                  </span>
                   Indigenous Flora & Medicinal Plants
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Learn about the forest's history and its rare flora, including traditional medicinal plants still used 
-                  by local communities today. See towering mahogany and eucalyptus trees, and discover how the forest 
+                  Learn about the forest's history and its rare flora, including traditional medicinal plants still used
+                  by local communities today. See towering mahogany and eucalyptus trees, and discover how the forest
                   ecosystem supports biodiversity unique to Zanzibar.
                 </p>
               </div>
@@ -170,7 +187,7 @@ export default function JozaniForestTourPage() {
           {/* Inclusions & Pricing */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
             <h2 className="text-3xl font-display font-bold text-ocean mb-6">Price & Inclusions</h2>
-            
+
             <div className="mb-8">
               <h3 className="text-xl font-bold text-ocean mb-4">Tour Pricing</h3>
               <div className="overflow-x-auto">
@@ -202,7 +219,7 @@ export default function JozaniForestTourPage() {
                 </table>
               </div>
             </div>
-            
+
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h3 className="font-bold text-ocean mb-4 text-lg">The Tour Price Includes:</h3>
@@ -220,12 +237,12 @@ export default function JozaniForestTourPage() {
                   ))}
                 </div>
               </div>
-              
+
               <div className="bg-amber-50 p-6 rounded-lg border-l-4 border-golden">
                 <h3 className="font-bold text-ocean mb-3">Important Note on Pricing</h3>
                 <p className="text-gray-700 text-sm leading-relaxed mb-4">
-                  <strong>TRANSPORT IS EXCLUDED:</strong> The displayed price is exclusive of transport costs to 
-                  Jozani Forest (Chwaka Village, East Coast). The final price depends entirely on your hotel's location.
+                  <strong>TRANSPORT IS EXCLUDED:</strong> The displayed price is exclusive of transport costs to Jozani
+                  Forest (Chwaka Village, East Coast). The final price depends entirely on your hotel's location.
                 </p>
                 <p className="text-gray-700 text-sm leading-relaxed">
                   Please contact us via WhatsApp and we will provide you with the full price including hotel transfers.
@@ -238,26 +255,37 @@ export default function JozaniForestTourPage() {
           <div className="bg-gradient-to-r from-green-600 to-emerald-600 text-white rounded-lg shadow-lg p-8 mb-8">
             <h2 className="text-2xl font-display font-bold mb-4">Conservation & Protection</h2>
             <p className="leading-relaxed">
-              The Zanzibar Red Colobus Monkey is classified as <strong>endangered</strong> with only about 2,000 individuals remaining. 
-              Your visit directly supports conservation efforts and helps protect this unique species and their habitat. 
-              By choosing this tour, you're contributing to the preservation of Zanzibar's natural heritage for future generations.
+              The Zanzibar Red Colobus Monkey is classified as <strong>endangered</strong> with only about 2,000
+              individuals remaining. Your visit directly supports conservation efforts and helps protect this unique
+              species and their habitat. By choosing this tour, you're contributing to the preservation of Zanzibar's
+              natural heritage for future generations.
             </p>
           </div>
 
           {/* Final CTA */}
-          <div className="bg-gradient-to-r from-ocean to-blue-600 text-white shadow-2xl rounded-lg p-10 text-center">
+          <div className="bg-blue-600 text-white shadow-2xl rounded-lg p-10 text-center">
             <h2 className="text-3xl font-display font-bold mb-4">Visit Jozani Forest Today!</h2>
             <p className="text-xl text-white mb-8">
               A must-visit for nature lovers and a unique opportunity to interact with the world's rarest primates
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto">
-                  BOOK VIA WHATSAPP
-                </Button>
-              </a>
+              <BookingModal
+                tourName="Jozani Forest Walking Tour"
+                trigger={
+                  <Button
+                    size="lg"
+                    className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto"
+                  >
+                    BOOK VIA WHATSAPP
+                  </Button>
+                }
+              />
               <Link href="/contact" className="w-full sm:w-auto">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-ocean font-semibold px-8 py-6 bg-transparent w-full sm:w-auto">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-white text-white hover:bg-white hover:text-ocean font-semibold px-8 py-6 bg-transparent w-full sm:w-auto"
+                >
                   Contact Us
                 </Button>
               </Link>

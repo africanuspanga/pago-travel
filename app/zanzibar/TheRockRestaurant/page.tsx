@@ -3,22 +3,21 @@ import WhatsAppFloat from "@/components/whatsapp-float"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Clock, Users, Check, Star, Utensils } from 'lucide-react'
+import { Clock, Users, Check, Star, Utensils } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 import type { Metadata } from "next"
+import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
   title: "The Rock Restaurant Zanzibar - Iconic Ocean Dining Experience | ZANZIONE TOURS",
   description:
     "Visit the world-famous Rock Restaurant built on a rock in the Indian Ocean. Enjoy fresh seafood, snorkeling at Michamvi Beach, and unforgettable dining with stunning ocean views. Book your Rock Restaurant tour today!",
-  keywords: "Rock Restaurant Zanzibar, Michamvi Pingwe, ocean dining, seafood restaurant, Zanzibar restaurants, unique dining experience",
+  keywords:
+    "Rock Restaurant Zanzibar, Michamvi Pingwe, ocean dining, seafood restaurant, Zanzibar restaurants, unique dining experience",
 }
 
 export default function TheRockRestaurantPage() {
-  const whatsappNumber = "255710885320"
-  const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hi, I'm interested in booking The Rock Restaurant tour. Can you provide more details?`
-
   return (
     <div className="min-h-screen bg-gray-50">
       <Navigation />
@@ -73,15 +72,21 @@ export default function TheRockRestaurantPage() {
             <CardContent className="p-8">
               <div className="text-center">
                 <h2 className="text-3xl font-display font-bold text-ocean mb-4">Experience Iconic Ocean Dining</h2>
-                <p className="text-gray-600 mb-6 text-lg">
-                  Book your visit to Zanzibar's most famous restaurant
+                <p className="text-gray-600 mb-6 text-lg">Book your visit to Zanzibar's most famous restaurant</p>
+                <BookingModal
+                  tourName="The Rock Restaurant Tour"
+                  trigger={
+                    <Button
+                      size="lg"
+                      className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto"
+                    >
+                      BOOK VIA WHATSAPP
+                    </Button>
+                  }
+                />
+                <p className="text-sm text-gray-500 mt-4">
+                  ✓ Best Price Guarantee | ✓ Instant Confirmation | ✓ Perfect for Couples & Families
                 </p>
-                <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="inline-block w-full sm:w-auto">
-                  <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto">
-                    BOOK VIA WHATSAPP
-                  </Button>
-                </a>
-                <p className="text-sm text-gray-500 mt-4">✓ Best Price Guarantee | ✓ Instant Confirmation | ✓ Perfect for Couples & Families</p>
               </div>
             </CardContent>
           </Card>
@@ -91,18 +96,20 @@ export default function TheRockRestaurantPage() {
             <h2 className="text-3xl font-display font-bold text-ocean mb-6">Overview</h2>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
               <p>
-                One of the most popular restaurants in Zanzibar, you have probably seen pictures on different social media of travelers 
-                eating out or taking photos near <strong>The Rock Restaurant</strong>, built on top of a rock surrounded by the ocean during high tide.
+                One of the most popular restaurants in Zanzibar, you have probably seen pictures on different social
+                media of travelers eating out or taking photos near <strong>The Rock Restaurant</strong>, built on top
+                of a rock surrounded by the ocean during high tide.
               </p>
               <p>
-                The Rock Restaurant, located on the <strong>southeast coast of Zanzibar at Michamvi Pingwe beach village</strong>, 
-                is an ideal destination for couples, families, and friends. They offer a variety of fresh seafood like Octopus, Squid, Oysters, 
+                The Rock Restaurant, located on the{" "}
+                <strong>southeast coast of Zanzibar at Michamvi Pingwe beach village</strong>, is an ideal destination
+                for couples, families, and friends. They offer a variety of fresh seafood like Octopus, Squid, Oysters,
                 Lobster & Prawns, and more.
               </p>
               <p>
-                In this tour, you will start with <strong>snorkeling in Michamvi beach corals</strong> near The Rock Restaurant. 
-                After you finish snorkeling, you will spend your time having lunch at the world-famous Rock Restaurant, 
-                enjoying spectacular ocean views and fresh seafood cuisine.
+                In this tour, you will start with <strong>snorkeling in Michamvi beach corals</strong> near The Rock
+                Restaurant. After you finish snorkeling, you will spend your time having lunch at the world-famous Rock
+                Restaurant, enjoying spectacular ocean views and fresh seafood cuisine.
               </p>
             </div>
           </div>
@@ -163,7 +170,9 @@ export default function TheRockRestaurantPage() {
                 </div>
                 <div className="mt-4 p-3 bg-amber-50 border border-amber-200 rounded">
                   <p className="text-sm text-gray-600">
-                    <strong>Important:</strong> Restaurant meals are paid separately at The Rock Restaurant. The tour price includes transportation and snorkeling equipment only. Contact us for complete pricing based on your hotel location.
+                    <strong>Important:</strong> Restaurant meals are paid separately at The Rock Restaurant. The tour
+                    price includes transportation and snorkeling equipment only. Contact us for complete pricing based
+                    on your hotel location.
                   </p>
                 </div>
               </CardContent>
@@ -176,33 +185,40 @@ export default function TheRockRestaurantPage() {
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-lg shadow">
                 <h3 className="font-bold text-ocean text-xl mb-3 flex items-center gap-2">
-                  <span className="bg-golden text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">1</span>
+                  <span className="bg-golden text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">
+                    1
+                  </span>
                   Snorkeling Adventure
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Begin your tour with snorkeling in the beautiful coral reefs of Michamvi Beach. 
-                  Explore the underwater world and discover colorful tropical fish and marine life in crystal-clear waters.
+                  Begin your tour with snorkeling in the beautiful coral reefs of Michamvi Beach. Explore the underwater
+                  world and discover colorful tropical fish and marine life in crystal-clear waters.
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow">
                 <h3 className="font-bold text-ocean text-xl mb-3 flex items-center gap-2">
-                  <span className="bg-golden text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">2</span>
+                  <span className="bg-golden text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">
+                    2
+                  </span>
                   Iconic Dining Experience
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  After snorkeling, enjoy a memorable lunch at The Rock Restaurant. Choose from a variety of fresh seafood 
-                  including Octopus, Squid, Oysters, Lobster, and Prawns, all while surrounded by the stunning Indian Ocean.
+                  After snorkeling, enjoy a memorable lunch at The Rock Restaurant. Choose from a variety of fresh
+                  seafood including Octopus, Squid, Oysters, Lobster, and Prawns, all while surrounded by the stunning
+                  Indian Ocean.
                 </p>
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow">
                 <h3 className="font-bold text-ocean text-xl mb-3 flex items-center gap-2">
-                  <span className="bg-golden text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">3</span>
+                  <span className="bg-golden text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">
+                    3
+                  </span>
                   Photography Paradise
                 </h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Capture unforgettable photos of the restaurant perched on its rock, especially during high tide when 
+                  Capture unforgettable photos of the restaurant perched on its rock, especially during high tide when
                   it's completely surrounded by water. This is one of Zanzibar's most Instagram-worthy locations!
                 </p>
               </div>
@@ -216,14 +232,15 @@ export default function TheRockRestaurantPage() {
               <div className="p-4 bg-amber-50 border-l-4 border-golden rounded">
                 <h3 className="font-bold text-ocean mb-2">Location</h3>
                 <p className="text-gray-700">
-                  The Rock Restaurant is located at <strong>Michamvi Pingwe beach village</strong> on the southeast coast of Zanzibar.
+                  The Rock Restaurant is located at <strong>Michamvi Pingwe beach village</strong> on the southeast
+                  coast of Zanzibar.
                 </p>
               </div>
 
               <div className="p-4 bg-blue-50 border-l-4 border-ocean rounded">
                 <h3 className="font-bold text-ocean mb-2">Best Time to Visit</h3>
                 <p className="text-gray-700">
-                  Visit during high tide for the full experience when the restaurant is completely surrounded by water. 
+                  Visit during high tide for the full experience when the restaurant is completely surrounded by water.
                   Check tide times when booking your tour.
                 </p>
               </div>
@@ -231,34 +248,45 @@ export default function TheRockRestaurantPage() {
               <div className="p-4 bg-green-50 border-l-4 border-green-600 rounded">
                 <h3 className="font-bold text-ocean mb-2">What to Bring</h3>
                 <p className="text-gray-700">
-                  Swimwear, towel, sunscreen, camera, and cash for the restaurant (meals are not included in the tour price).
+                  Swimwear, towel, sunscreen, camera, and cash for the restaurant (meals are not included in the tour
+                  price).
                 </p>
               </div>
 
               <div className="p-4 bg-purple-50 border-l-4 border-purple-600 rounded">
                 <h3 className="font-bold text-ocean mb-2">Pricing Note</h3>
                 <p className="text-gray-700">
-                  <strong>Restaurant meals are paid separately.</strong> The tour includes transportation and snorkeling equipment. 
-                  Contact us via WhatsApp for complete pricing based on your hotel location.
+                  <strong>Restaurant meals are paid separately.</strong> The tour includes transportation and snorkeling
+                  equipment. Contact us via WhatsApp for complete pricing based on your hotel location.
                 </p>
               </div>
             </div>
           </div>
 
           {/* Final CTA */}
-          <div className="bg-gradient-to-r from-ocean to-blue-600 text-white shadow-2xl rounded-lg p-10 text-center">
-            <h2 className="text-3xl font-display font-bold mb-4">Ready to Dine at Zanzibar's Most Famous Restaurant?</h2>
-            <p className="text-xl text-white mb-8">
-              Book your unforgettable experience at The Rock Restaurant today
-            </p>
+          <div className="bg-blue-600 text-white shadow-2xl rounded-lg p-10 text-center">
+            <h2 className="text-3xl font-display font-bold mb-4">
+              Ready to Dine at Zanzibar's Most Famous Restaurant?
+            </h2>
+            <p className="text-xl text-white mb-8">Book your unforgettable experience at The Rock Restaurant today</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
-                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto">
-                  BOOK VIA WHATSAPP
-                </Button>
-              </a>
+              <BookingModal
+                tourName="The Rock Restaurant Tour"
+                trigger={
+                  <Button
+                    size="lg"
+                    className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto"
+                  >
+                    BOOK VIA WHATSAPP
+                  </Button>
+                }
+              />
               <Link href="/contact" className="w-full sm:w-auto">
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-ocean font-semibold px-8 py-6 bg-transparent w-full sm:w-auto">
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="border-white text-white hover:bg-white hover:text-ocean font-semibold px-8 py-6 bg-transparent w-full sm:w-auto"
+                >
                   Contact Us
                 </Button>
               </Link>

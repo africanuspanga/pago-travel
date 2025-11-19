@@ -7,6 +7,7 @@ import { Clock, MapPin, Users, Check, Star, ArrowLeft } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
+import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
   title: "3 Days Serengeti Safari from Zanzibar - $2,048 | ZANZIONE TOURS",
@@ -183,11 +184,10 @@ export default function Serengeti3DaysPage() {
                       </div>
                     </div>
                     <p className="text-sm text-gray-500 mb-6">Price per person</p>
-                    <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                      <Button className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-6">
-                        Book via WhatsApp
-                      </Button>
-                    </a>
+                    <BookingModal 
+                      tourName="3 Days Serengeti Safari from Zanzibar" 
+                      className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-6"
+                    />
                   </CardContent>
                 </Card>
 
@@ -231,11 +231,10 @@ export default function Serengeti3DaysPage() {
             Book your 3-day Serengeti safari today and witness the incredible wildlife and landscapes of Tanzania's most famous park.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4">
-                Book via WhatsApp
-              </Button>
-            </a>
+            <BookingModal 
+              tourName="3 Days Serengeti Safari from Zanzibar" 
+              className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4"
+            />
             <Link href="/itineraries">
               <Button
                 size="lg"

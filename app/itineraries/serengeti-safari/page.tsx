@@ -3,10 +3,11 @@ import WhatsAppFloat from "@/components/whatsapp-float"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Star, Clock, Users, Plane, Utensils, Hotel, Camera } from "lucide-react"
+import { Star, Clock, Users, Plane, Utensils, Hotel, Camera } from 'lucide-react'
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
+import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
   title: "Serengeti 2 Days 1 Night Safari Package - $1,676 | ZANZIONE TOURS",
@@ -137,11 +138,14 @@ export default function SerengetiSafariPage() {
                     </div>
                   </div>
 
-                  <Link href="/contact">
-                    <Button className="w-full bg-golden hover:bg-golden/90 text-white font-semibold py-6 text-lg">
-                      BOOK THIS TRIP
-                    </Button>
-                  </Link>
+                  <BookingModal 
+                    tourName="Serengeti 2 Days 1 Night Safari" 
+                    trigger={
+                      <Button className="w-full bg-golden hover:bg-golden/90 text-white font-semibold py-6 text-lg">
+                        BOOK THIS TRIP
+                      </Button>
+                    }
+                  />
                 </CardContent>
               </Card>
             </div>
@@ -263,11 +267,14 @@ export default function SerengetiSafariPage() {
             safari today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
-              <Button size="lg" className="bg-golden hover:bg-golden/90 text-white font-semibold px-8 py-6 text-lg">
-                BOOK THIS TRIP
-              </Button>
-            </Link>
+            <BookingModal 
+              tourName="Serengeti 2 Days 1 Night Safari" 
+              trigger={
+                <Button size="lg" className="bg-golden hover:bg-golden/90 text-white font-semibold px-8 py-6 text-lg">
+                  BOOK THIS TRIP
+                </Button>
+              }
+            />
             <Link href="/itineraries">
               <Button
                 size="lg"
