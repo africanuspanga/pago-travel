@@ -4,6 +4,7 @@ import Link from "next/link"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import WhatsAppFloat from "@/components/whatsapp-float"
+import BookingModal from "@/components/booking-modal"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { MapPin, DollarSign } from "lucide-react"
@@ -179,11 +180,14 @@ export default function TransfersPage() {
           <p className="text-xl text-blue-50 mb-8">
             Contact us for custom transfer arrangements or multi-stop itineraries
           </p>
-          <Link href="/contact">
-            <Button size="lg" className="bg-golden hover:bg-golden/90 text-white px-8 py-6 text-lg">
-              Contact Us Now
-            </Button>
-          </Link>
+          <BookingModal
+            tourName="Custom Transfer Route"
+            trigger={
+              <Button size="lg" className="bg-golden hover:bg-golden/90 text-white px-8 py-6 text-lg">
+                BOOK A TRANSFER
+              </Button>
+            }
+          />
         </div>
       </section>
 

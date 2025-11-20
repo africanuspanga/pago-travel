@@ -51,19 +51,23 @@ export default function HomePage() {
             Premium tours, authentic experiences, and unforgettable adventures in the heart of the Indian Ocean
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
-            <Button
-              size="lg"
-              className="bg-golden hover:bg-golden/90 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg min-h-[48px]"
-            >
-              Explore Tours
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-blue-season font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg bg-transparent min-h-[48px]"
-            >
-              Plan Your Journey
-            </Button>
+            <Link href="/itineraries">
+              <Button
+                size="lg"
+                className="bg-golden hover:bg-golden/90 text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg min-h-[48px]"
+              >
+                Explore Tours
+              </Button>
+            </Link>
+            <Link href="/contact">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-blue-season font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg bg-transparent min-h-[48px]"
+              >
+                Get in Touch
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
