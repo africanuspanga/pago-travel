@@ -58,7 +58,7 @@ export default function ServicesPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-96 bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center">
+      <section className="relative h-96 bg-gradient-to-r from-[#3d1a14] to-[#5a2a22] flex items-center justify-center">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-6xl font-display font-bold mb-6">Our Services</h1>
@@ -82,7 +82,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {services.map((service) => (
               <Card key={service.id} className="overflow-hidden hover:shadow-xl transition-shadow flex flex-col">
-                <div className="h-48 bg-gradient-to-br from-blue-400 to-teal-500 flex items-center justify-center">
+                <div className="h-48 bg-gradient-to-br from-[#3d1a14] to-[#5a2a22] flex items-center justify-center">
                   <div className="text-center text-white">
                     <service.icon className="w-16 h-16 mx-auto mb-4" />
                     <p className="text-lg font-semibold">{service.title}</p>
@@ -220,11 +220,11 @@ export default function ServicesPage() {
       </section>
 
       {/* Booking Process */}
-      <section className="py-20 bg-blue-season text-white">
+      <section className="py-20 bg-[#2f140f] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-display font-bold mb-6">Simple Booking Process</h2>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            <p className="text-xl text-white/80 max-w-3xl mx-auto">
               Booking our services is quick and easy. Here's how it works:
             </p>
           </div>
@@ -235,7 +235,7 @@ export default function ServicesPage() {
                 <span className="text-2xl font-bold text-white">1</span>
               </div>
               <h3 className="text-xl font-display font-semibold mb-3">Contact Us</h3>
-              <p className="text-blue-100 text-sm">
+              <p className="text-white/80 text-sm">
                 Reach out via WhatsApp, email, or phone with your travel details and service needs.
               </p>
             </div>
@@ -245,7 +245,7 @@ export default function ServicesPage() {
                 <span className="text-2xl font-bold text-white">2</span>
               </div>
               <h3 className="text-xl font-display font-semibold mb-3">Get Quote</h3>
-              <p className="text-blue-100 text-sm">
+              <p className="text-white/80 text-sm">
                 Receive a detailed quote with transparent pricing and service inclusions within hours.
               </p>
             </div>
@@ -255,7 +255,7 @@ export default function ServicesPage() {
                 <span className="text-2xl font-bold text-white">3</span>
               </div>
               <h3 className="text-xl font-display font-semibold mb-3">Confirm Booking</h3>
-              <p className="text-blue-100 text-sm">
+              <p className="text-white/80 text-sm">
                 Confirm your booking with a simple deposit and receive confirmation details.
               </p>
             </div>
@@ -265,7 +265,7 @@ export default function ServicesPage() {
                 <span className="text-2xl font-bold text-white">4</span>
               </div>
               <h3 className="text-xl font-display font-semibold mb-3">Enjoy Service</h3>
-              <p className="text-blue-100 text-sm">
+              <p className="text-white/80 text-sm">
                 Relax and enjoy professional, punctual service throughout your stay in Zanzibar.
               </p>
             </div>
@@ -274,7 +274,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-golden">
+      <section className="py-20 bg-[#5a2a22]">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-display font-bold text-white mb-6">Need Our Services?</h2>
           <p className="text-xl text-white/90 mb-8">

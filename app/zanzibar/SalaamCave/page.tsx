@@ -10,7 +10,7 @@ import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "Salaam Cave Tour - Sea Turtle Sanctuary & Natural Swimming Pool | ZANZIONE TOURS",
+  title: "Salaam Cave Tour - Sea Turtle Sanctuary & Natural Swimming Pool | Pago Travel Experience",
   description:
     "Visit Salaam Cave in Kizimkazi - a unique sea turtle sanctuary and natural coral grotto. Swim with turtles, learn about conservation, and explore crystal-clear saltwater pools in this unforgettable Zanzibar experience.",
   keywords:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 }
 
 export default function SalaamCavePage() {
-  const whatsappNumber = "255710885320"
+  const whatsappNumber = "255614363504"
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hi, I'm interested in booking the Salaam Cave tour. Can you provide more details?`
 
   return (
@@ -26,7 +26,7 @@ export default function SalaamCavePage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-[500px] bg-gradient-to-r from-teal-600 to-cyan-500">
+      <section className="relative h-[500px] bg-gradient-to-r from-[#3d1a14] to-[#5a2a22]">
         <div className="absolute inset-0">
           <Image
             src="/images/salam-20cave.jpeg"
@@ -58,7 +58,7 @@ export default function SalaamCavePage() {
                 <Users className="w-5 h-5" />
                 <span>2-25 People</span>
               </div>
-              <div className="bg-golden px-4 py-2 rounded-full font-bold">From $25 per person</div>
+              <div className="bg-golden px-4 py-2 rounded-full font-bold">From $35 per person</div>
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@ export default function SalaamCavePage() {
           <Card className="mb-12 shadow-2xl border-t-4 border-golden">
             <CardContent className="p-8">
               <div className="text-center">
-                <h2 className="text-3xl font-display font-bold text-ocean mb-4">Book Your Salaam Cave Adventure</h2>
+                <h2 className="text-3xl font-display font-bold text-blue-season mb-4">Book Your Salaam Cave Adventure</h2>
                 <p className="text-gray-600 mb-6 text-lg">Swim with sea turtles and support conservation</p>
                 <BookingModal tourName="Salaam Cave Tour" />
                 <p className="text-sm text-gray-500 mt-4">
@@ -83,7 +83,7 @@ export default function SalaamCavePage() {
 
           {/* Overview Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">Overview & Experience</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Overview & Experience</h2>
             <h3 className="text-2xl font-bold text-blue-season mb-4">The Sea Turtle Haven of Kizimkazi</h3>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
               <p>
@@ -101,7 +101,7 @@ export default function SalaamCavePage() {
 
           {/* Highlights Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">What You Will Experience</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">What You Will Experience</h2>
             <div className="grid md:grid-cols-2 gap-4">
               {[
                 "Swim with sea turtles in their protected habitat",
@@ -111,8 +111,8 @@ export default function SalaamCavePage() {
                 "Explore natural limestone cave structures",
                 "Support vital marine conservation efforts",
               ].map((highlight, index) => (
-                <div key={index} className="flex items-start gap-3 p-4 bg-teal-50 rounded-lg">
-                  <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <div key={index} className="flex items-start gap-3 p-4 bg-[#f8f3f1] rounded-lg">
+                  <Check className="w-6 h-6 text-blue-season flex-shrink-0 mt-1" />
                   <span className="text-gray-700">{highlight}</span>
                 </div>
               ))}
@@ -121,24 +121,24 @@ export default function SalaamCavePage() {
 
           {/* Pricing Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">Pricing Overview</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Pricing Overview</h2>
             <p className="text-gray-600 mb-6">
               The price per person decreases with larger groups, offering excellent value for families and friends.
             </p>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
-                  <tr className="bg-ocean text-white">
+                  <tr className="bg-blue-season text-white">
                     <th className="p-4 text-left border border-gray-300">Group Size</th>
                     <th className="p-4 text-left border border-gray-300">Price Per Person</th>
                   </tr>
                 </thead>
                 <tbody>
                   {[
-                    { size: "1 - 2 persons", price: "$35.00 p.p" },
-                    { size: "3 - 6 persons", price: "$33.00 p.p" },
-                    { size: "7 - 10 persons", price: "$30.00 p.p" },
-                    { size: "11 - 25 persons", price: "$25.00 p.p" },
+                    { size: "1 - 2 persons", price: "$45.00 p.p" },
+                    { size: "3 - 6 persons", price: "$43.00 p.p" },
+                    { size: "7 - 10 persons", price: "$40.00 p.p" },
+                    { size: "11 - 25 persons", price: "$35.00 p.p" },
                   ].map((item, index) => (
                     <tr key={index} className={index % 2 === 0 ? "bg-gray-50" : "bg-white"}>
                       <td className="p-4 border border-gray-300 font-semibold">{item.size}</td>
@@ -152,7 +152,7 @@ export default function SalaamCavePage() {
 
           {/* Inclusions Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">What's Included</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">What's Included</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-4">
                 {[
@@ -168,7 +168,7 @@ export default function SalaamCavePage() {
                 ))}
               </div>
               <div className="bg-amber-50 p-6 rounded-lg border-l-4 border-golden">
-                <h3 className="font-bold text-ocean mb-3">Important Information</h3>
+                <h3 className="font-bold text-blue-season mb-3">Important Information</h3>
                 <p className="text-gray-700 text-sm leading-relaxed mb-3">
                   <strong>Location:</strong> Kizimkazi, South Coast of Unguja Island
                 </p>
@@ -184,8 +184,8 @@ export default function SalaamCavePage() {
           </div>
 
           {/* Conservation Impact */}
-          <div className="bg-gradient-to-br from-teal-50 to-cyan-50 rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">Conservation Impact</h2>
+          <div className="bg-gradient-to-br from-[#f8f3f1] to-[#f3ebe8] rounded-lg shadow-lg p-8 mb-8">
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Conservation Impact</h2>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
               <p>
                 By visiting Salaam Cave, you directly support the <strong>local conservation efforts</strong> that
@@ -200,7 +200,7 @@ export default function SalaamCavePage() {
           </div>
 
           {/* Final CTA */}
-          <div className="bg-blue-600 text-white shadow-2xl rounded-lg p-10 text-center">
+          <div className="bg-blue-season text-white shadow-2xl rounded-lg p-10 text-center">
             <h2 className="text-3xl font-display font-bold mb-4">Ready to Meet the Sea Turtles?</h2>
             <p className="text-xl text-white mb-8">Book your unforgettable turtle sanctuary experience today</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -209,7 +209,7 @@ export default function SalaamCavePage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-ocean font-semibold px-8 py-6 bg-transparent w-full sm:w-auto"
+                  className="border-white text-white hover:bg-white hover:text-blue-season font-semibold px-8 py-6 bg-transparent w-full sm:w-auto"
                 >
                   Contact Us
                 </Button>

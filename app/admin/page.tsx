@@ -49,7 +49,7 @@ export default function AdminDashboard() {
           <div className="flex justify-between items-center">
             <div>
               <h1 className="text-3xl font-display font-bold">Admin Dashboard</h1>
-              <p className="text-blue-100 mt-1">Welcome back, {adminEmail}</p>
+              <p className="text-white/80 mt-1">Welcome back, {adminEmail}</p>
             </div>
             <Button
               onClick={handleLogout}
@@ -73,7 +73,7 @@ export default function AdminDashboard() {
                 <div>
                   <p className="text-sm text-muted-foreground">Total Bookings</p>
                   <p className="text-3xl font-bold text-blue-season">234</p>
-                  <p className="text-xs text-green-600 mt-1">+12% from last month</p>
+                  <p className="text-xs text-blue-season mt-1">+12% from last month</p>
                 </div>
                 <div className="w-12 h-12 bg-blue-season/10 rounded-full flex items-center justify-center">
                   <Calendar className="w-6 h-6 text-blue-season" />
@@ -87,8 +87,8 @@ export default function AdminDashboard() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-sm text-muted-foreground">Revenue</p>
-                  <p className="text-3xl font-bold text-blue-season">$45,678</p>
-                  <p className="text-xs text-green-600 mt-1">+8% from last month</p>
+                  <p className="text-3xl font-bold text-blue-season">$45,688</p>
+                  <p className="text-xs text-blue-season mt-1">+8% from last month</p>
                 </div>
                 <div className="w-12 h-12 bg-golden/10 rounded-full flex items-center justify-center">
                   <DollarSign className="w-6 h-6 text-golden" />
@@ -103,10 +103,10 @@ export default function AdminDashboard() {
                 <div>
                   <p className="text-sm text-muted-foreground">Active Tours</p>
                   <p className="text-3xl font-bold text-blue-season">18</p>
-                  <p className="text-xs text-blue-600 mt-1">3 scheduled today</p>
+                  <p className="text-xs text-[#3d1a14] mt-1">3 scheduled today</p>
                 </div>
-                <div className="w-12 h-12 bg-blue-500/10 rounded-full flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-blue-500" />
+                <div className="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center">
+                  <MapPin className="w-6 h-6 text-blue-season" />
                 </div>
               </div>
             </CardContent>
@@ -118,10 +118,10 @@ export default function AdminDashboard() {
                 <div>
                   <p className="text-sm text-muted-foreground">New Customers</p>
                   <p className="text-3xl font-bold text-blue-season">89</p>
-                  <p className="text-xs text-green-600 mt-1">+24% from last month</p>
+                  <p className="text-xs text-blue-season mt-1">+24% from last month</p>
                 </div>
-                <div className="w-12 h-12 bg-purple-500/10 rounded-full flex items-center justify-center">
-                  <Users className="w-6 h-6 text-purple-500" />
+                <div className="w-12 h-12 bg-green-500/10 rounded-full flex items-center justify-center">
+                  <Users className="w-6 h-6 text-blue-season" />
                 </div>
               </div>
             </CardContent>
@@ -140,11 +140,11 @@ export default function AdminDashboard() {
             <CardContent>
               <div className="space-y-4">
                 {[
-                  { name: "John Smith", tour: "Safari Blue", date: "2024-01-15", amount: "$120" },
-                  { name: "Maria Garcia", tour: "Spice Farm Tour", date: "2024-01-14", amount: "$50" },
-                  { name: "David Chen", tour: "Stone Town Walking", date: "2024-01-14", amount: "$45" },
-                  { name: "Emma Wilson", tour: "Dolphin Tour", date: "2024-01-13", amount: "$80" },
-                  { name: "Ahmed Hassan", tour: "Jozani Forest", date: "2024-01-13", amount: "$60" },
+                  { name: "John Smith", tour: "Safari Blue", date: "2024-01-15", amount: "$130" },
+                  { name: "Maria Garcia", tour: "Spice Farm Tour", date: "2024-01-14", amount: "$60" },
+                  { name: "David Chen", tour: "Stone Town Walking", date: "2024-01-14", amount: "$55" },
+                  { name: "Emma Wilson", tour: "Dolphin Tour", date: "2024-01-13", amount: "$90" },
+                  { name: "Ahmed Hassan", tour: "Jozani Forest", date: "2024-01-13", amount: "$70" },
                 ].map((booking, index) => (
                   <div key={index} className="flex items-center justify-between py-3 border-b last:border-0">
                     <div>
@@ -210,9 +210,9 @@ export default function AdminDashboard() {
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
               {[
-                { name: "Safari Blue Trip", bookings: 45, revenue: "$5,400" },
-                { name: "Spice Farm Tour", bookings: 38, revenue: "$1,900" },
-                { name: "Stone Town Walking", bookings: 32, revenue: "$1,600" },
+                { name: "Safari Blue Trip", bookings: 45, revenue: "$5,410" },
+                { name: "Spice Farm Tour", bookings: 38, revenue: "$1,910" },
+                { name: "Stone Town Walking", bookings: 32, revenue: "$1,610" },
               ].map((tour, index) => (
                 <div key={index} className="p-4 bg-gray-50 rounded-lg">
                   <h4 className="font-semibold text-blue-season mb-2">{tour.name}</h4>

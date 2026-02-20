@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button"
 import { MapPin, DollarSign } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Airport & Hotel Transfers in Zanzibar - Reliable Transport | ZANZIONE TOURS",
+  title: "Airport & Hotel Transfers in Zanzibar - Reliable Transport | Pago Travel Experience",
   description:
     "Book reliable and comfortable transfer services across Zanzibar. Airport transfers starting at $15, hotel transfers, and ferry connections to Stone Town, Nungwi, Paje, Jambiani, and all major destinations. Professional drivers and modern vehicles available 24/7.",
   keywords:
@@ -58,7 +58,7 @@ const transferRoutes: TransferRoute[] = [
 
 export default function TransfersPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+    <div className="min-h-screen bg-gradient-to-b from-[#f8f3f1] to-white">
       {/* Navigation Component */}
       <Navigation />
 
@@ -174,10 +174,10 @@ export default function TransfersPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-cyan-500 py-16">
+      <section className="bg-gradient-to-r from-[#3d1a14] to-[#5a2a22] py-16">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-white mb-6">Need a Custom Transfer Route?</h2>
-          <p className="text-xl text-blue-50 mb-8">
+          <p className="text-xl text-white/90 mb-8">
             Contact us for custom transfer arrangements or multi-stop itineraries
           </p>
           <BookingModal

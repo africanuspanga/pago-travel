@@ -10,7 +10,7 @@ import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "The Rock Restaurant Zanzibar - Iconic Ocean Dining Experience | ZANZIONE TOURS",
+  title: "The Rock Restaurant Zanzibar - Iconic Ocean Dining Experience | Pago Travel Experience",
   description:
     "Visit the world-famous Rock Restaurant built on a rock in the Indian Ocean. Enjoy fresh seafood, snorkeling at Michamvi Beach, and unforgettable dining with stunning ocean views. Book your Rock Restaurant tour today!",
   keywords:
@@ -23,7 +23,7 @@ export default function TheRockRestaurantPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-[500px] bg-gradient-to-r from-blue-600 to-cyan-500">
+      <section className="relative h-[500px] bg-gradient-to-r from-[#3d1a14] to-[#5a2a22]">
         <div className="absolute inset-0">
           <Image
             src="/images/tours/the-rock-restaurant.jpg"
@@ -71,14 +71,14 @@ export default function TheRockRestaurantPage() {
           <Card className="mb-12 shadow-2xl border-t-4 border-golden">
             <CardContent className="p-8">
               <div className="text-center">
-                <h2 className="text-3xl font-display font-bold text-ocean mb-4">Experience Iconic Ocean Dining</h2>
+                <h2 className="text-3xl font-display font-bold text-blue-season mb-4">Experience Iconic Ocean Dining</h2>
                 <p className="text-gray-600 mb-6 text-lg">Book your visit to Zanzibar's most famous restaurant</p>
                 <BookingModal
                   tourName="The Rock Restaurant Tour"
                   trigger={
                     <Button
                       size="lg"
-                      className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto"
+                      className="bg-blue-season hover:bg-blue-season/90 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto"
                     >
                       BOOK VIA WHATSAPP
                     </Button>
@@ -93,7 +93,7 @@ export default function TheRockRestaurantPage() {
 
           {/* Overview Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">Overview</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Overview</h2>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
               <p>
                 One of the most popular restaurants in Zanzibar, you have probably seen pictures on different social
@@ -116,7 +116,7 @@ export default function TheRockRestaurantPage() {
 
           {/* Highlights Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">Experience Highlights</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Experience Highlights</h2>
             <div className="grid md:grid-cols-2 gap-4">
               {[
                 "Iconic restaurant built on a rock in the ocean",
@@ -126,8 +126,8 @@ export default function TheRockRestaurantPage() {
                 "Visit during high tide for the full experience",
                 "Perfect for couples, families, and friends",
               ].map((highlight, index) => (
-                <div key={index} className="flex items-start gap-3 p-4 bg-blue-50 rounded-lg">
-                  <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <div key={index} className="flex items-start gap-3 p-4 bg-[#f8f3f1] rounded-lg">
+                  <Check className="w-6 h-6 text-blue-season flex-shrink-0 mt-1" />
                   <span className="text-gray-700">{highlight}</span>
                 </div>
               ))}
@@ -136,34 +136,34 @@ export default function TheRockRestaurantPage() {
 
           {/* Tour Pricing Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">Tour Pricing</h2>
-            <Card className="bg-blue-50 border-blue-200">
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Tour Pricing</h2>
+            <Card className="bg-[#f8f3f1] border-[#d8c7c2]">
               <CardContent className="p-6">
-                <p className="text-lg font-semibold text-ocean mb-4">Price per Person (Tour Only):</p>
+                <p className="text-lg font-semibold text-blue-season mb-4">Price per Person (Tour Only):</p>
                 <div className="overflow-x-auto">
                   <table className="w-full border-collapse">
                     <thead>
-                      <tr className="bg-ocean text-white">
+                      <tr className="bg-blue-season text-white">
                         <th className="py-3 px-4 text-left font-semibold">Group Size</th>
                         <th className="py-3 px-4 text-right font-semibold">Price per Person</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr className="border-b border-blue-200">
+                      <tr className="border-b border-[#d8c7c2]">
                         <td className="py-3 px-4 text-gray-700">1 - 2 persons</td>
-                        <td className="py-3 px-4 text-right font-semibold text-ocean">$45</td>
+                        <td className="py-3 px-4 text-right font-semibold text-blue-season">$55</td>
                       </tr>
-                      <tr className="border-b border-blue-200 bg-blue-50/50">
+                      <tr className="border-b border-[#d8c7c2] bg-[#f8f3f1]/50">
                         <td className="py-3 px-4 text-gray-700">3 - 6 persons</td>
-                        <td className="py-3 px-4 text-right font-semibold text-ocean">$40</td>
+                        <td className="py-3 px-4 text-right font-semibold text-blue-season">$50</td>
                       </tr>
-                      <tr className="border-b border-blue-200">
+                      <tr className="border-b border-[#d8c7c2]">
                         <td className="py-3 px-4 text-gray-700">7 - 10 persons</td>
-                        <td className="py-3 px-4 text-right font-semibold text-ocean">$37</td>
+                        <td className="py-3 px-4 text-right font-semibold text-blue-season">$47</td>
                       </tr>
-                      <tr className="bg-blue-50/50">
+                      <tr className="bg-[#f8f3f1]/50">
                         <td className="py-3 px-4 text-gray-700">11 - 28 persons</td>
-                        <td className="py-3 px-4 text-right font-semibold text-ocean">$35</td>
+                        <td className="py-3 px-4 text-right font-semibold text-blue-season">$45</td>
                       </tr>
                     </tbody>
                   </table>
@@ -180,11 +180,11 @@ export default function TheRockRestaurantPage() {
           </div>
 
           {/* What to Expect */}
-          <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">What to Expect</h2>
+          <div className="bg-gradient-to-br from-[#f8f3f1] to-[#f3ebe8] rounded-lg shadow-lg p-8 mb-8">
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">What to Expect</h2>
             <div className="space-y-6">
               <div className="bg-white p-6 rounded-lg shadow">
-                <h3 className="font-bold text-ocean text-xl mb-3 flex items-center gap-2">
+                <h3 className="font-bold text-blue-season text-xl mb-3 flex items-center gap-2">
                   <span className="bg-golden text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">
                     1
                   </span>
@@ -197,7 +197,7 @@ export default function TheRockRestaurantPage() {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow">
-                <h3 className="font-bold text-ocean text-xl mb-3 flex items-center gap-2">
+                <h3 className="font-bold text-blue-season text-xl mb-3 flex items-center gap-2">
                   <span className="bg-golden text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">
                     2
                   </span>
@@ -211,7 +211,7 @@ export default function TheRockRestaurantPage() {
               </div>
 
               <div className="bg-white p-6 rounded-lg shadow">
-                <h3 className="font-bold text-ocean text-xl mb-3 flex items-center gap-2">
+                <h3 className="font-bold text-blue-season text-xl mb-3 flex items-center gap-2">
                   <span className="bg-golden text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">
                     3
                   </span>
@@ -227,34 +227,34 @@ export default function TheRockRestaurantPage() {
 
           {/* Important Information */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">Important Information</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Important Information</h2>
             <div className="space-y-4">
               <div className="p-4 bg-amber-50 border-l-4 border-golden rounded">
-                <h3 className="font-bold text-ocean mb-2">Location</h3>
+                <h3 className="font-bold text-blue-season mb-2">Location</h3>
                 <p className="text-gray-700">
                   The Rock Restaurant is located at <strong>Michamvi Pingwe beach village</strong> on the southeast
                   coast of Zanzibar.
                 </p>
               </div>
 
-              <div className="p-4 bg-blue-50 border-l-4 border-ocean rounded">
-                <h3 className="font-bold text-ocean mb-2">Best Time to Visit</h3>
+              <div className="p-4 bg-[#f8f3f1] border-l-4 border-blue-season rounded">
+                <h3 className="font-bold text-blue-season mb-2">Best Time to Visit</h3>
                 <p className="text-gray-700">
                   Visit during high tide for the full experience when the restaurant is completely surrounded by water.
                   Check tide times when booking your tour.
                 </p>
               </div>
 
-              <div className="p-4 bg-green-50 border-l-4 border-green-600 rounded">
-                <h3 className="font-bold text-ocean mb-2">What to Bring</h3>
+              <div className="p-4 bg-[#f8f3f1] border-l-4 border-blue-season rounded">
+                <h3 className="font-bold text-blue-season mb-2">What to Bring</h3>
                 <p className="text-gray-700">
                   Swimwear, towel, sunscreen, camera, and cash for the restaurant (meals are not included in the tour
                   price).
                 </p>
               </div>
 
-              <div className="p-4 bg-purple-50 border-l-4 border-purple-600 rounded">
-                <h3 className="font-bold text-ocean mb-2">Pricing Note</h3>
+              <div className="p-4 bg-[#f8f3f1] border-l-4 border-blue-season rounded">
+                <h3 className="font-bold text-blue-season mb-2">Pricing Note</h3>
                 <p className="text-gray-700">
                   <strong>Restaurant meals are paid separately.</strong> The tour includes transportation and snorkeling
                   equipment. Contact us via WhatsApp for complete pricing based on your hotel location.
@@ -264,7 +264,7 @@ export default function TheRockRestaurantPage() {
           </div>
 
           {/* Final CTA */}
-          <div className="bg-blue-600 text-white shadow-2xl rounded-lg p-10 text-center">
+          <div className="bg-blue-season text-white shadow-2xl rounded-lg p-10 text-center">
             <h2 className="text-3xl font-display font-bold mb-4">
               Ready to Dine at Zanzibar's Most Famous Restaurant?
             </h2>
@@ -275,7 +275,7 @@ export default function TheRockRestaurantPage() {
                 trigger={
                   <Button
                     size="lg"
-                    className="bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto"
+                    className="bg-blue-season hover:bg-blue-season/90 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto"
                   >
                     BOOK VIA WHATSAPP
                   </Button>
@@ -285,7 +285,7 @@ export default function TheRockRestaurantPage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-ocean font-semibold px-8 py-6 bg-transparent w-full sm:w-auto"
+                  className="border-white text-white hover:bg-white hover:text-blue-season font-semibold px-8 py-6 bg-transparent w-full sm:w-auto"
                 >
                   Contact Us
                 </Button>

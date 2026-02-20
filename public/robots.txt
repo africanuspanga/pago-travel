@@ -1,11 +1,11 @@
-# robots.txt for www.zanzionetours.com
+# robots.txt for www.pagotravelexperience.co.tz
 
 # Allow all search engines to crawl all pages
 User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://www.zanzionetours.com/sitemap.xml
+Sitemap: https://www.pagotravelexperience.co.tz/sitemap.xml
 
 # Crawl delay (optional, helps prevent server overload)
 Crawl-delay: 1

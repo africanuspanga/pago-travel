@@ -12,25 +12,70 @@ import BookingModal from "@/components/booking-modal"
 export const metadata: Metadata = {
   title: "Home - Premium Zanzibar Tours, Tanzania Safari & Kilimanjaro Climbing",
   description:
-    "Discover the magic of East Africa with ZANZIONE TOURS & TRAVELS. Based in Shangani, Stone Town, we offer authentic Zanzibar island tours, wildlife safaris in Serengeti & Ngorongoro, and Kilimanjaro climbing expeditions with expert multilingual guides.",
+    "Welcome to Pago Travel Experience, a Zanzibar based tour operator offering personalized Tanzania safaris and Zanzibar excursions with experienced guides, reliable vehicles, and carefully selected hotels and lodges.",
   openGraph: {
-    title: "ZANZIONE TOURS & TRAVELS - Your Gateway to East African Adventures",
+    title: "Pago Travel Experience - Your Gateway to East African Adventures",
     description:
       "Premium tours, authentic experiences, and unforgettable adventures in Zanzibar, Tanzania, and Mount Kilimanjaro.",
-    url: "https://www.zanzionetours.com",
+    url: "https://www.pagotravelexperience.co.tz",
     images: [
       {
-        url: "/images/hero-bg.jpg",
+        url: "/pg/hero.jpg",
         width: 1200,
         height: 630,
-        alt: "Zanzibar Beach Paradise",
+        alt: "Pago Travel Experience Hero",
       },
     ],
   },
   alternates: {
-    canonical: "https://www.zanzionetours.com",
+    canonical: "https://www.pagotravelexperience.co.tz",
   },
 }
+
+const travelerTestimonials = [
+  {
+    name: "Giulia Rossi",
+    country: "Italy",
+    flag: "🇮🇹",
+    quote:
+      "Everything was smooth from airport pickup to our final beach day. The team planned each detail and we felt fully supported throughout Zanzibar and safari days.",
+  },
+  {
+    name: "Michael Johnson",
+    country: "United States",
+    flag: "🇺🇸",
+    quote:
+      "Our guide was knowledgeable, punctual, and genuinely friendly. We saw incredible wildlife and learned so much about local culture during every stop.",
+  },
+  {
+    name: "Lars Nielsen",
+    country: "Denmark",
+    flag: "🇩🇰",
+    quote:
+      "The itinerary was well balanced and personalized. Transfers, hotels, and excursions were all coordinated perfectly, which made the trip stress free.",
+  },
+  {
+    name: "Emma Andersson",
+    country: "Sweden",
+    flag: "🇸🇪",
+    quote:
+      "From Stone Town to the national parks, the experience was excellent. Communication was clear and the team adapted quickly when we changed plans.",
+  },
+  {
+    name: "Sophie Tremblay",
+    country: "Canada",
+    flag: "🇨🇦",
+    quote:
+      "Professional service, great drivers, and fantastic guides. We loved the mix of wildlife, culture, and beach time. I would book with Pago again.",
+  },
+  {
+    name: "Lukas Schneider",
+    country: "Germany",
+    flag: "🇩🇪",
+    quote:
+      "A very reliable operator with strong local expertise. The safari days were unforgettable and the Zanzibar excursions were exactly what we wanted.",
+  },
+]
 
 export default function HomePage() {
   return (
@@ -40,15 +85,16 @@ export default function HomePage() {
       {/* Hero Section */}
       <section
         className="relative h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url(/images/hero-bg.jpg)" }}
+        style={{ backgroundImage: "url(/pg/hero.jpg)" }}
       >
         <div className="absolute inset-0 bg-black/40"></div>
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-3xl sm:text-5xl md:text-7xl font-display font-bold mb-4 sm:mb-6 leading-tight">
-            Discover the Magic of <span className="text-golden">Zanzibar</span>
+            Welcome to <span className="text-white">Pago Travel Experience</span>
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl mb-6 sm:mb-8 leading-relaxed px-2">
-            Premium tours, authentic experiences, and unforgettable adventures in the heart of the Indian Ocean
+            Personalized safari tours across Tanzania and unforgettable excursions in Zanzibar, planned by experienced
+            local professionals.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4">
             <Link href="/itineraries">
@@ -72,17 +118,17 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* About ZANZIONE TOURS & TRAVELS */}
+      {/* About Pago Travel Experience */}
       <section className="py-12 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-blue-season mb-4 sm:mb-6">
-              About ZANZIONE TOURS & TRAVELS
+              About Pago Travel Experience
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed px-2">
-              Based in the historic Shangani area of Stone Town, Zanzibar, we are your gateway to extraordinary African
-              adventures. Our multilingual team of expert guides brings years of local knowledge and passion for
-              authentic experiences.
+              Pago Travel Experience is a Zanzibar based tour operator also operating in mainland Tanzania. We craft
+              tailor made journeys around your travel goals, from wildlife and birding to culture and beach relaxation,
+              with attentive consultants, dedicated guides, and reliable vehicles.
             </p>
           </div>
 
@@ -94,7 +140,7 @@ export default function HomePage() {
                 </div>
                 <h3 className="text-xl sm:text-2xl font-display font-semibold text-blue-season">Expert Local Guides</h3>
                 <p className="text-gray-600">
-                  Our multilingual team knows every hidden gem and cultural treasure Zanzibar has to offer.
+                  Our consultants and guides deliver informed, personalized trips with deep local knowledge.
                 </p>
               </CardContent>
             </Card>
@@ -403,7 +449,7 @@ export default function HomePage() {
                 <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-2">
                   Mikumi Day Trip Safari
                 </h3>
-                <p className="text-lg font-semibold text-golden mb-3">From $400</p>
+                <p className="text-lg font-semibold text-golden mb-3">From $410</p>
                 <p className="text-gray-600 mb-4 text-sm sm:text-base">
                   Full-day flying safari to Mikumi National Park. Experience incredible wildlife viewing including
                   elephants, giraffes, lions, and zebras.
@@ -438,7 +484,7 @@ export default function HomePage() {
                 <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-2">
                   Zanzibar 5-Day Tour Package
                 </h3>
-                <p className="text-lg font-semibold text-golden mb-3">From $390</p>
+                <p className="text-lg font-semibold text-golden mb-3">From $400</p>
                 <p className="text-gray-600 mb-4 text-sm sm:text-base">
                   Comprehensive exploration of Zanzibar's culture, nature, and beaches. Includes Safari Blue, Jozani
                   Forest, Stone Town, and more.
@@ -473,7 +519,7 @@ export default function HomePage() {
                 <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-2">
                   Serengeti 2 Days 1 Night Safari
                 </h3>
-                <p className="text-lg font-semibold text-golden mb-3">From $1,676</p>
+                <p className="text-lg font-semibold text-golden mb-3">From $1,686</p>
                 <p className="text-gray-600 mb-4 text-sm sm:text-base">
                   Experience the magic of Serengeti with a fly-in safari. Witness the Great Migration and spot the Big
                   Five across endless plains.
@@ -506,7 +552,7 @@ export default function HomePage() {
             <Card className="overflow-hidden hover:shadow-xl transition-shadow">
               <div className="relative h-48 sm:h-64 w-full">
                 <Image
-                  src="/images/vehicles/alphard-gold.jpg"
+                  src="/20080512_01_01_2.jpg"
                   alt="Airport to Stone Town Transfer"
                   fill
                   className="object-cover"
@@ -534,7 +580,7 @@ export default function HomePage() {
             <Card className="overflow-hidden hover:shadow-xl transition-shadow">
               <div className="relative h-48 sm:h-64 w-full">
                 <Image
-                  src="/images/vehicles/alphard-white.png"
+                  src="/11637336.jpg"
                   alt="Airport to Nungwi Transfer"
                   fill
                   className="object-cover"
@@ -545,7 +591,7 @@ export default function HomePage() {
                 <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-2">
                   Airport to Nungwi - Kendwa
                 </h3>
-                <p className="text-2xl font-bold text-golden mb-3">$35</p>
+                <p className="text-2xl font-bold text-golden mb-3">$45</p>
                 <p className="text-gray-600 mb-4 text-sm sm:text-base">
                   Direct transfer to the beautiful northern beaches of Nungwi and Kendwa. Enjoy a comfortable ride in
                   our modern vehicles.
@@ -562,7 +608,7 @@ export default function HomePage() {
             <Card className="overflow-hidden hover:shadow-xl transition-shadow">
               <div className="relative h-48 sm:h-64 w-full">
                 <Image
-                  src="/images/vehicles/alphard-black.jpg"
+                  src="/01_l3.jpg"
                   alt="Airport to Paje Transfer"
                   fill
                   className="object-cover"
@@ -573,7 +619,7 @@ export default function HomePage() {
                 <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-2">
                   Airport to Paje - Jambiani
                 </h3>
-                <p className="text-2xl font-bold text-golden mb-3">$35</p>
+                <p className="text-2xl font-bold text-golden mb-3">$45</p>
                 <p className="text-gray-600 mb-4 text-sm sm:text-base">
                   Travel to the stunning east coast beaches of Paje and Jambiani. Perfect for kitesurf enthusiasts and
                   beach lovers.
@@ -680,16 +726,15 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Why Choose ZANZIONE TOURS & TRAVELS? */}
+      {/* Why Choose Pago Travel Experience? */}
       <section className="py-12 sm:py-20 bg-blue-season text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-4 sm:mb-6">
-              Why Choose ZANZIONE TOURS & TRAVELS?
+              Why Choose Pago Travel Experience?
             </h2>
-            <p className="text-lg sm:text-xl text-blue-100 max-w-3xl mx-auto px-2">
-              We don't just show you destinations – we create transformative experiences that connect you with the soul
-              of East Africa.
+            <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto px-2">
+              We do more than show destinations. We create meaningful experiences that connect you with East Africa.
             </p>
           </div>
 
@@ -699,7 +744,7 @@ export default function HomePage() {
                 <Clock className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl sm:text-2xl font-display font-semibold mb-3">Years of Experience</h3>
-              <p className="text-blue-100">
+              <p className="text-white/80">
                 Deep local knowledge and expertise built over years of guiding travelers through East Africa.
               </p>
             </div>
@@ -709,7 +754,7 @@ export default function HomePage() {
                 <Users className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl sm:text-2xl font-display font-semibold mb-3">Multilingual Team</h3>
-              <p className="text-blue-100">
+              <p className="text-white/80">
                 Our guides speak multiple languages, ensuring clear communication and cultural understanding.
               </p>
             </div>
@@ -719,7 +764,7 @@ export default function HomePage() {
                 <Shield className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl sm:text-2xl font-display font-semibold mb-3">Safety First</h3>
-              <p className="text-blue-100">
+              <p className="text-white/80">
                 Your safety and comfort are our top priorities, with comprehensive insurance and safety protocols.
               </p>
             </div>
@@ -729,7 +774,7 @@ export default function HomePage() {
                 <Star className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl sm:text-2xl font-display font-semibold mb-3">Authentic Experiences</h3>
-              <p className="text-blue-100">
+              <p className="text-white/80">
                 We provide genuine cultural encounters and off-the-beaten-path adventures you won't find elsewhere.
               </p>
             </div>
@@ -745,71 +790,38 @@ export default function HomePage() {
               What Our Travelers Say
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-2">
-              Don't just take our word for it – hear from the adventurers who've experienced the magic of ZANZIONE TOURS
-              & TRAVELS.
+              Hear from travelers who explored Tanzania and Zanzibar with Pago Travel Experience.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-            <Card className="p-6 sm:p-8">
-              <CardContent className="space-y-4">
-                <div className="flex text-golden">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-600 italic">
-                  "An absolutely incredible experience! The team at ZANZIONE TOURS & TRAVELS made our Zanzibar honeymoon
-                  unforgettable. Every detail was perfect."
-                </p>
-                <div>
-                  <p className="font-semibold text-blue-season">Sarah & James</p>
-                  <p className="text-sm text-gray-500">United Kingdom</p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6 sm:p-8">
-              <CardContent className="space-y-4">
-                <div className="flex text-golden">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-600 italic">
-                  "The safari was beyond our wildest dreams. Our guide's knowledge of wildlife and local culture made
-                  every moment educational and exciting."
-                </p>
-                <div>
-                  <p className="font-semibold text-blue-season">Michael Chen</p>
-                  <p className="text-sm text-gray-500">Australia</p>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card className="p-6 sm:p-8">
-              <CardContent className="space-y-4">
-                <div className="flex text-golden">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="w-5 h-5 fill-current" />
-                  ))}
-                </div>
-                <p className="text-gray-600 italic">
-                  "Professional, friendly, and incredibly knowledgeable. ZANZIONE TOURS & TRAVELS turned our family
-                  vacation into a lifetime of memories."
-                </p>
-                <div>
-                  <p className="font-semibold text-blue-season">The Rodriguez Family</p>
-                  <p className="text-sm text-gray-500">Spain</p>
-                </div>
-              </CardContent>
-            </Card>
+          <div className="flex gap-6 overflow-x-auto pb-3 snap-x snap-mandatory">
+            {travelerTestimonials.map((testimonial) => (
+              <Card
+                key={testimonial.name}
+                className="p-6 sm:p-8 min-w-[290px] sm:min-w-[340px] max-w-[360px] flex-shrink-0 snap-start border border-[#e8dfdc]"
+              >
+                <CardContent className="space-y-4">
+                  <div className="flex text-golden">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="w-5 h-5 fill-current" />
+                    ))}
+                  </div>
+                  <p className="text-gray-600 italic">"{testimonial.quote}"</p>
+                  <div>
+                    <p className="font-semibold text-blue-season">{testimonial.name}</p>
+                    <p className="text-sm text-gray-500">
+                      {testimonial.flag} {testimonial.country}
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
       {/* Contact CTA */}
-      <section className="py-12 sm:py-20 bg-golden">
+      <section className="py-12 sm:py-20 bg-[#5a2a22]">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-white mb-4 sm:mb-6">
             Ready for Your Adventure?
@@ -830,13 +842,15 @@ export default function HomePage() {
                 </Button>
               }
             />
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-white text-white hover:bg-white hover:text-golden font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg bg-transparent min-h-[48px]"
-            >
-              Call Us Now
-            </Button>
+            <Link href="tel:+255614363504">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-golden font-semibold px-6 sm:px-8 py-3 sm:py-4 text-base sm:text-lg bg-transparent min-h-[48px]"
+              >
+                Call Us Now
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

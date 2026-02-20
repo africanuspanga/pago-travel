@@ -38,11 +38,11 @@
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 
-  /* ZANZIONE TOURS & TRAVELS brand colors */
-  --blue-season-primary: #103968;
-  --blue-season-secondary: #f7a10d;
-  --blue-season-light: #f8fafc;
-  --blue-season-dark: #0f172a;
+  /* Pago Travel Experience brand colors */
+  --blue-season-primary: #3d1a14;
+  --blue-season-secondary: #ffffff;
+  --blue-season-light: #ffffff;
+  --blue-season-dark: #24100d;
 }
 
 .dark {
@@ -105,6 +105,8 @@
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
+  --color-blue-season: var(--blue-season-primary);
+  --color-golden: var(--blue-season-primary);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -118,9 +120,9 @@
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
 
-  /* Added brand color utilities */
-  --font-sans: var(--font-inter);
-  --font-display: var(--font-poppins);
+  /* Added brand typography utilities */
+  --font-sans: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  --font-display: "Trebuchet MS", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 @layer base {
@@ -137,7 +139,7 @@
   }
 
   .font-display {
-    font-family: var(--font-poppins);
+    font-family: var(--font-display);
   }
 
   .text-blue-season {
@@ -145,7 +147,7 @@
   }
 
   .text-golden {
-    color: var(--blue-season-secondary);
+    color: var(--blue-season-primary);
   }
 
   .bg-blue-season {
@@ -153,7 +155,11 @@
   }
 
   .bg-golden {
-    background-color: var(--blue-season-secondary);
+    background-color: var(--blue-season-primary);
+  }
+
+  .border-blue-season {
+    border-color: var(--blue-season-primary);
   }
 
   /* Added mobile-specific optimizations */

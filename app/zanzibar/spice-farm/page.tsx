@@ -9,16 +9,16 @@ import Link from "next/link"
 import type { Metadata } from "next"
 
 export const metadata: Metadata = {
-  title: "Zanzibar Spice Farm Tour - Experience the Spice Island | ZANZIONE TOURS",
+  title: "Zanzibar Spice Farm Tour - Experience the Spice Island | Pago Travel Experience",
   description:
-    "Discover why Zanzibar is the Spice Island. Half-day walking tour through spice plantations to taste, smell, and learn about turmeric, cardamom, cinnamon, cloves, and nutmeg. Includes spiced rice lunch. $25 per person.",
+    "Discover why Zanzibar is the Spice Island. Half-day walking tour through spice plantations to taste, smell, and learn about turmeric, cardamom, cinnamon, cloves, and nutmeg. Includes spiced rice lunch. $35 per person.",
   alternates: {
-    canonical: "https://www.zanzionetours.com/zanzibar/spice-farm",
+    canonical: "https://www.pagotravelexperience.co.tz/zanzibar/spice-farm",
   },
 }
 
 export default function SpiceFarmPage() {
-  const whatsappNumber = "255710885320"
+  const whatsappNumber = "255614363504"
   const whatsappMessage = encodeURIComponent(
     "Hi, I'm interested in booking the Spice Farm Tour. Can you provide more details?"
   )
@@ -58,7 +58,7 @@ export default function SpiceFarmPage() {
             <div className="hidden sm:block">•</div>
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5" />
-              <span>$25 Per Person</span>
+              <span>$35 Per Person</span>
             </div>
           </div>
         </div>
@@ -120,7 +120,7 @@ export default function SpiceFarmPage() {
               </div>
 
               <h3 className="text-2xl font-display font-bold text-blue-season mb-4">Tour Details & Inclusions</h3>
-              <div className="bg-blue-50 rounded-lg p-6 mb-6">
+              <div className="bg-[#f8f3f1] rounded-lg p-6 mb-6">
                 <h4 className="font-semibold text-blue-season mb-3">The tour price includes:</h4>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-start gap-2">
@@ -190,7 +190,7 @@ export default function SpiceFarmPage() {
                 <CardContent className="p-6">
                   <div className="text-center mb-6">
                     <p className="text-gray-500 text-sm mb-1">From</p>
-                    <p className="text-4xl font-bold text-golden mb-2">$25</p>
+                    <p className="text-4xl font-bold text-golden mb-2">$35</p>
                     <p className="text-gray-600">Per Person</p>
                     <div className="flex items-center justify-center gap-1 mt-2">
                       <div className="flex text-golden">
@@ -234,11 +234,11 @@ export default function SpiceFarmPage() {
 
                   <div className="mt-6 pt-6 border-t">
                     <div className="flex items-center gap-2 text-sm text-gray-600 mb-2">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
+                      <CheckCircle className="w-4 h-4 text-blue-season" />
                       <span>Best Price Guarantee</span>
                     </div>
                     <div className="flex items-center gap-2 text-sm text-gray-600">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
+                      <CheckCircle className="w-4 h-4 text-blue-season" />
                       <span>Easy Online Booking</span>
                     </div>
                   </div>
@@ -255,7 +255,7 @@ export default function SpiceFarmPage() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-6">
             Ready to Discover the Spice Island?
           </h2>
-          <p className="text-lg sm:text-xl text-blue-100 mb-8 leading-relaxed">
+          <p className="text-lg sm:text-xl text-white/80 mb-8 leading-relaxed">
             Book your Spice Farm tour today and experience the aromatic journey through Zanzibar's spice plantations.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

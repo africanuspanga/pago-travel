@@ -10,16 +10,16 @@ import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "Stone Town Walking Tour - UNESCO Heritage Site | ZANZIONE TOURS",
+  title: "Stone Town Walking Tour - UNESCO Heritage Site | Pago Travel Experience",
   description:
-    "Explore Zanzibar's UNESCO World Heritage Stone Town with expert local guides. Half-day walking tour featuring historic sites, House of Wonders, Sultans' Palace, Freddie Mercury House, and bustling Darajani Market. $25 per person.",
+    "Explore Zanzibar's UNESCO World Heritage Stone Town with expert local guides. Half-day walking tour featuring historic sites, House of Wonders, Sultans' Palace, Freddie Mercury House, and bustling Darajani Market. $35 per person.",
   alternates: {
-    canonical: "https://www.zanzionetours.com/zanzibar/stone-town",
+    canonical: "https://www.pagotravelexperience.co.tz/zanzibar/stone-town",
   },
 }
 
 export default function StoneTownTourPage() {
-  const whatsappNumber = "255710885320"
+  const whatsappNumber = "255614363504"
   const whatsappMessage = encodeURIComponent(
     "Hi, I'm interested in booking the Stone Town Walking Tour. Can you provide more details?"
   )
@@ -59,7 +59,7 @@ export default function StoneTownTourPage() {
             <div className="hidden sm:block">•</div>
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5" />
-              <span>$25 Per Person</span>
+              <span>$35 Per Person</span>
             </div>
           </div>
         </div>
@@ -123,7 +123,7 @@ export default function StoneTownTourPage() {
               </div>
 
               <h3 className="text-2xl font-display font-bold text-blue-season mb-4">Tour Details & Inclusions</h3>
-              <div className="bg-blue-50 rounded-lg p-6 mb-6">
+              <div className="bg-[#f8f3f1] rounded-lg p-6 mb-6">
                 <h4 className="font-semibold text-blue-season mb-3">The tour price includes:</h4>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-start gap-2">
@@ -169,7 +169,7 @@ export default function StoneTownTourPage() {
                 <CardContent className="p-6">
                   <div className="text-center mb-6">
                     <p className="text-gray-500 text-sm mb-1">From</p>
-                    <p className="text-4xl font-bold text-golden mb-2">$25</p>
+                    <p className="text-4xl font-bold text-golden mb-2">$35</p>
                     <p className="text-gray-600">Per Person</p>
                     <div className="flex items-center justify-center gap-1 mt-2">
                       <div className="flex text-golden">
@@ -212,11 +212,11 @@ export default function StoneTownTourPage() {
 
                   <div className="mt-6 pt-6 border-t">
                     <div className="flex items-center gap-2 text-sm text-gray-600 mb-2">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
+                      <CheckCircle className="w-4 h-4 text-blue-season" />
                       <span>Best Price Guarantee</span>
                     </div>
                     <div className="flex items-center gap-2 text-sm text-gray-600">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
+                      <CheckCircle className="w-4 h-4 text-blue-season" />
                       <span>Easy Online Booking</span>
                     </div>
                   </div>
@@ -233,7 +233,7 @@ export default function StoneTownTourPage() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-6">
             Ready to Explore Stone Town?
           </h2>
-          <p className="text-lg sm:text-xl text-blue-100 mb-8 leading-relaxed">
+          <p className="text-lg sm:text-xl text-white/80 mb-8 leading-relaxed">
             Book your Stone Town walking tour today and discover the heart of Zanzibar with our expert local guides.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

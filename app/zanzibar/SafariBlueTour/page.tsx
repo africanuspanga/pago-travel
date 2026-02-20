@@ -10,14 +10,14 @@ import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "Zanzibar Safari Blue Trip - Full Day Snorkeling & Seafood BBQ Tour | ZANZIONE TOURS",
+  title: "Zanzibar Safari Blue Trip - Full Day Snorkeling & Seafood BBQ Tour | Pago Travel Experience",
   description:
     "Experience Zanzibar's best marine adventure! Safari Blue full-day tour in Menai Bay with snorkeling, sandbanks, Kwale Island lagoon, seafood BBQ lunch, and traditional dhow sailing. Book now with expert local guides.",
   keywords: "Safari Blue Zanzibar, Menai Bay tour, Zanzibar snorkeling, sandbank trip, seafood BBQ, dhow sailing, Kwale Island, marine safari",
 }
 
 export default function SafariBlueTourPage() {
-  const whatsappNumber = "255710885320"
+  const whatsappNumber = "255614363504"
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hi, I'm interested in booking the Safari Blue Trip tour. Can you provide more details?`
 
   return (
@@ -25,7 +25,7 @@ export default function SafariBlueTourPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-[500px] bg-gradient-to-r from-blue-600 to-cyan-500">
+      <section className="relative h-[500px] bg-gradient-to-r from-[#3d1a14] to-[#5a2a22]">
         <div className="absolute inset-0">
           <Image
             src="/images/tours/safari-blue-day.jpg"
@@ -72,7 +72,7 @@ export default function SafariBlueTourPage() {
           <Card className="mb-12 shadow-2xl border-t-4 border-golden">
             <CardContent className="p-8">
               <div className="text-center">
-                <h2 className="text-3xl font-display font-bold text-ocean mb-4">Book Your Safari Blue Adventure</h2>
+                <h2 className="text-3xl font-display font-bold text-blue-season mb-4">Book Your Safari Blue Adventure</h2>
                 <p className="text-gray-600 mb-6 text-lg">
                   Secure your spot for Zanzibar's most popular marine tour
                 </p>
@@ -84,7 +84,7 @@ export default function SafariBlueTourPage() {
 
           {/* Overview Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">Overview & Experience</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Overview & Experience</h2>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
               <p>
                 Safari Blue trip is a <strong>full day tour along Menai Bay</strong>, which is one of the best coral reefs in Zanzibar. 
@@ -105,7 +105,7 @@ export default function SafariBlueTourPage() {
 
           {/* Highlights Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">Tour Highlights</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Tour Highlights</h2>
             <div className="grid md:grid-cols-2 gap-4">
               {[
                 "Swimming and Snorkeling around Menai Bay area",
@@ -115,8 +115,8 @@ export default function SafariBlueTourPage() {
                 "Visit Kwale Island Natural Lagoon & Sandbank",
                 "Explore the Barrier Reef Ecosystem",
               ].map((highlight, index) => (
-                <div key={index} className="flex items-start gap-3 p-4 bg-blue-50 rounded-lg">
-                  <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <div key={index} className="flex items-start gap-3 p-4 bg-[#f8f3f1] rounded-lg">
+                  <Check className="w-6 h-6 text-blue-season flex-shrink-0 mt-1" />
                   <span className="text-gray-700">{highlight}</span>
                 </div>
               ))}
@@ -125,31 +125,31 @@ export default function SafariBlueTourPage() {
 
           {/* Pricing Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">Pricing</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Pricing</h2>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
-                  <tr className="bg-blue-600 text-white">
+                  <tr className="bg-blue-season text-white">
                     <th className="py-4 px-6 text-left font-semibold">Group Size</th>
                     <th className="py-4 px-6 text-left font-semibold">Price per Person</th>
                   </tr>
                 </thead>
                 <tbody>
-                  <tr className="border-b border-gray-200 hover:bg-blue-50 transition-colors">
+                  <tr className="border-b border-gray-200 hover:bg-[#f8f3f1] transition-colors">
                     <td className="py-4 px-6 font-medium text-gray-700">1 - 2 persons</td>
-                    <td className="py-4 px-6 text-gray-900 font-bold">$55.00 p.p</td>
+                    <td className="py-4 px-6 text-gray-900 font-bold">$65.00 p.p</td>
                   </tr>
-                  <tr className="border-b border-gray-200 hover:bg-blue-50 transition-colors">
+                  <tr className="border-b border-gray-200 hover:bg-[#f8f3f1] transition-colors">
                     <td className="py-4 px-6 font-medium text-gray-700">3 - 5 persons</td>
-                    <td className="py-4 px-6 text-gray-900 font-bold">$50.00 p.p</td>
+                    <td className="py-4 px-6 text-gray-900 font-bold">$60.00 p.p</td>
                   </tr>
-                  <tr className="border-b border-gray-200 hover:bg-blue-50 transition-colors">
+                  <tr className="border-b border-gray-200 hover:bg-[#f8f3f1] transition-colors">
                     <td className="py-4 px-6 font-medium text-gray-700">6 - 10 persons</td>
-                    <td className="py-4 px-6 text-gray-900 font-bold">$44.00 p.p</td>
+                    <td className="py-4 px-6 text-gray-900 font-bold">$54.00 p.p</td>
                   </tr>
-                  <tr className="border-b border-gray-200 hover:bg-blue-50 transition-colors">
+                  <tr className="border-b border-gray-200 hover:bg-[#f8f3f1] transition-colors">
                     <td className="py-4 px-6 font-medium text-gray-700">11 - 25 persons</td>
-                    <td className="py-4 px-6 text-gray-900 font-bold">$40.00 p.p</td>
+                    <td className="py-4 px-6 text-gray-900 font-bold">$50.00 p.p</td>
                   </tr>
                 </tbody>
               </table>
@@ -164,7 +164,7 @@ export default function SafariBlueTourPage() {
 
           {/* Inclusions Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">What's Included</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">What's Included</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-4">
                 {[
@@ -180,7 +180,7 @@ export default function SafariBlueTourPage() {
                 ))}
               </div>
               <div className="bg-amber-50 p-6 rounded-lg border-l-4 border-golden">
-                <h3 className="font-bold text-ocean mb-3">Important Note on Pricing</h3>
+                <h3 className="font-bold text-blue-season mb-3">Important Note on Pricing</h3>
                 <p className="text-gray-700 text-sm leading-relaxed">
                   <strong>TRANSPORT IS EXCLUDED:</strong> The final price depends on your hotel location. 
                   Please contact us via WhatsApp and we will provide you with the full price including hotel transfers.
@@ -190,8 +190,8 @@ export default function SafariBlueTourPage() {
           </div>
 
           {/* About Menai Bay */}
-          <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">About Menai Bay Conservation Area</h2>
+          <div className="bg-gradient-to-br from-[#f8f3f1] to-[#f3ebe8] rounded-lg shadow-lg p-8 mb-8">
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">About Menai Bay Conservation Area</h2>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
               <p>
                 Safari Blue is one of the most enjoyable things you can do during your Zanzibar vacation. 
@@ -211,7 +211,7 @@ export default function SafariBlueTourPage() {
         </div>
       </section>
 
-      <section className="w-full bg-blue-600 text-white py-12">
+      <section className="w-full bg-blue-season text-white py-12">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-display font-bold mb-4">Ready for the Best Day of Your Zanzibar Trip?</h2>
           <p className="text-xl text-white mb-8">
@@ -220,7 +220,7 @@ export default function SafariBlueTourPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <BookingModal tourName="Safari Blue Trip" />
             <Link href="/contact" className="w-full sm:w-auto">
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600 font-semibold px-8 py-6 bg-transparent w-full sm:w-auto">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-[#3d1a14] font-semibold px-8 py-6 bg-transparent w-full sm:w-auto">
                 Contact Us
               </Button>
             </Link>

@@ -18,16 +18,16 @@ export default function Navigation() {
           <div className="flex items-center gap-6">
             <div className="flex items-center gap-2">
               <Phone className="w-4 h-4" />
-              <span className="hidden xs:inline">+255 773 929 583</span>
+              <span className="hidden xs:inline">+255 614 363 504</span>
               <span className="xs:hidden">Call Us</span>
             </div>
             <div className="hidden sm:flex items-center gap-2">
               <Mail className="w-4 h-4" />
-              <span>zanzionetoursandtravel@gmail.com</span>
+              <span>pagotravelexperience@gmail.com</span>
             </div>
           </div>
           <div className="hidden md:block">
-            <span>Shangani, Stone Town, Zanzibar</span>
+            <span>Stone Town, Zanzibar</span>
           </div>
         </div>
       </div>
@@ -38,15 +38,15 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/images/logo-zanzione.png"
-              alt="ZANZIONE TOURS & TRAVELS"
+              src="/pg/logo.png"
+              alt="Pago Travel Experience"
               width={60}
               height={60}
               className="h-8 sm:h-12 w-auto"
             />
             <div className="ml-2 sm:ml-3">
-              <h1 className="text-lg sm:text-xl font-display font-bold text-blue-season">ZANZIONE TOURS</h1>
-              <p className="text-xs sm:text-sm text-gray-600 hidden sm:block">Premium Zanzibar Experience</p>
+              <h1 className="text-lg sm:text-xl font-display font-bold text-blue-season">Pago Travel Experience</h1>
+              <p className="text-xs sm:text-sm text-gray-600 hidden sm:block">Personalized Safari and Zanzibar Excursions</p>
             </div>
           </Link>
 

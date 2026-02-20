@@ -12,12 +12,12 @@ export default function AboutPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-96 bg-gradient-to-r from-blue-600 to-teal-600 flex items-center justify-center">
+      <section className="relative h-96 bg-gradient-to-r from-[#3d1a14] to-[#5a2a22] flex items-center justify-center">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-6xl font-display font-bold mb-6">About ZANZIONE TOURS & TRAVELS</h1>
+          <h1 className="text-5xl md:text-6xl font-display font-bold mb-6">About Pago Travel Experience</h1>
           <p className="text-xl md:text-2xl leading-relaxed">
-            Your trusted partner for authentic East African adventures since our founding in Stone Town
+            Personalized Tanzania safaris and Zanzibar excursions designed around your travel goals
           </p>
         </div>
       </section>
@@ -27,24 +27,31 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-display font-bold text-blue-season mb-6">Our Story</h2>
+              <h2 className="text-4xl font-display font-bold text-blue-season mb-6">About The Brand</h2>
               <div className="space-y-6 text-gray-600 leading-relaxed">
                 <p>
-                  Born in the historic Shangani area of Stone Town, Zanzibar, ZANZIONE TOURS & TRAVELS emerged from a
-                  passion for sharing the incredible beauty and rich culture of East Africa with travelers from around
-                  the world. Our journey began with a simple mission: to create authentic, transformative experiences
-                  that connect people with the soul of this magnificent region.
+                  Welcome to Pago Travel Experience. We are dedicated to providing personalized safari tours of Tanzania
+                  and excursions in Zanzibar. Explore world class destinations and plan a safari beyond belief with our
+                  professional team.
                 </p>
                 <p>
-                  What started as a small local operation has grown into a trusted name in East African tourism, but
-                  we've never lost sight of our roots. We remain deeply connected to our local communities, committed to
-                  sustainable tourism practices, and dedicated to showcasing the authentic spirit of Zanzibar, Tanzania,
-                  and beyond.
+                  Pago Travel Experience is a Zanzibar based tour operator also operating in mainland Tanzania. The
+                  company is privately owned and managed by experienced travel professionals.
                 </p>
                 <p>
-                  Today, we're proud to be your gateway to extraordinary adventures, from the spice-scented streets of
-                  Stone Town to the endless plains of the Serengeti, from pristine coral reefs to the snow-capped peak
-                  of Kilimanjaro.
+                  Our knowledgeable tour consultants provide personalized service with close attention to detail. We
+                  design culturally informative, historical, botanical, and ornithological journeys that are also fun
+                  and memorable. Our goal is to showcase the richness of Tanzania’s flora, fauna, and culture through
+                  efficient office support, dedicated guides, and well maintained vehicles.
+                </p>
+                <p>
+                  Kenya and Tanzania, each with bird lists of more than one thousand species, are among Africa’s top
+                  birding destinations. Alongside exceptional birding, our tours also place you close to one of the
+                  finest mammal viewing experiences on the planet.
+                </p>
+                <p>
+                  After the wild landscapes of Tanzania, Zanzibar offers white beaches and clear blue water. End your
+                  safari by exploring historic Stone Town and relaxing by the Indian Ocean.
                 </p>
               </div>
             </div>
@@ -126,11 +133,11 @@ export default function AboutPage() {
       </section>
 
       {/* Certifications & Partnerships */}
-      <section className="py-20 bg-blue-season text-white">
+      <section className="py-20 bg-[#2f140f] text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-display font-bold mb-6">Certifications & Partnerships</h2>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            <p className="text-xl text-white/80 max-w-3xl mx-auto">
               We maintain the highest standards through official certifications and partnerships with leading
               organizations.
             </p>
@@ -142,7 +149,7 @@ export default function AboutPage() {
                 <Award className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-lg font-display font-semibold mb-2">Licensed Tour Operator</h3>
-              <p className="text-blue-100 text-sm">Fully licensed by Tanzania Tourism Authority</p>
+              <p className="text-white/80 text-sm">Fully licensed by Tanzania Tourism Authority</p>
             </div>
 
             <div className="text-center">
@@ -150,7 +157,7 @@ export default function AboutPage() {
                 <Award className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-lg font-display font-semibold mb-2">TATO Member</h3>
-              <p className="text-blue-100 text-sm">Tanzania Association of Tour Operators</p>
+              <p className="text-white/80 text-sm">Tanzania Association of Tour Operators</p>
             </div>
 
             <div className="text-center">
@@ -158,7 +165,7 @@ export default function AboutPage() {
                 <Award className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-lg font-display font-semibold mb-2">Safety Certified</h3>
-              <p className="text-blue-100 text-sm">Wilderness first aid and safety protocols</p>
+              <p className="text-white/80 text-sm">Wilderness first aid and safety protocols</p>
             </div>
 
             <div className="text-center">
@@ -166,14 +173,14 @@ export default function AboutPage() {
                 <Award className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-lg font-display font-semibold mb-2">Eco-Tourism</h3>
-              <p className="text-blue-100 text-sm">Committed to sustainable tourism practices</p>
+              <p className="text-white/80 text-sm">Committed to sustainable tourism practices</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-golden">
+      <section className="py-20 bg-[#5a2a22]">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-display font-bold text-white mb-6">Ready to Experience East Africa?</h2>
           <p className="text-xl text-white/90 mb-8">

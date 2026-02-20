@@ -4,16 +4,16 @@ import ContactClientPage from "./ContactClientPage"
 export const metadata: Metadata = {
   title: "Contact Us - Book Your Zanzibar Tour or Tanzania Safari",
   description:
-    "Contact ZANZIONE TOURS & TRAVELS in Shangani, Stone Town, Zanzibar. WhatsApp: +255 710 885 320, Call: +255 773 929 583, Email: zanzionetoursandtravel@gmail.com. Available 24/7 for tour bookings and travel planning.",
+    "Contact Pago Travel Experience in Stone Town, Zanzibar. WhatsApp: +255 614 363 504, Call: +255 614 363 504, Email: pagotravelexperience@gmail.com. Available 24/7 for tour bookings and travel planning.",
   keywords:
-    "contact Zanzibar tours, book Tanzania safari, Shangani Stone Town, Zanzibar travel agency, tour booking, safari inquiry",
+    "contact Zanzibar tours, book Tanzania safari, Stone Town Zanzibar travel agency, tour booking, safari inquiry",
   openGraph: {
-    title: "Contact ZANZIONE TOURS & TRAVELS",
-    description: "Get in touch to plan your perfect East African adventure. Based in Shangani, Stone Town, Zanzibar.",
-    url: "https://www.zanzionetours.com/contact",
+    title: "Contact Pago Travel Experience",
+    description: "Get in touch to plan your perfect East African adventure. Based in Stone Town, Zanzibar.",
+    url: "https://www.pagotravelexperience.co.tz/contact",
   },
   alternates: {
-    canonical: "https://www.zanzionetours.com/contact",
+    canonical: "https://www.pagotravelexperience.co.tz/contact",
   },
 }
 

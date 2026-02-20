@@ -1,4 +1,4 @@
-# ZANZIONE TOURS & TRAVELS
+# Pago Travel Experience
 
 Premium Zanzibar Tours, Tanzania Safari & Kilimanjaro Climbing Expeditions
 
@@ -9,7 +9,7 @@ Premium Zanzibar Tours, Tanzania Safari & Kilimanjaro Climbing Expeditions
 
 ## About
 
-ZANZIONE TOURS & TRAVELS is a premier tour operator based in Shangani, Stone Town, Zanzibar. We specialize in authentic East African adventures including:
+Pago Travel Experience is a premier tour operator based in Stone Town, Zanzibar. We specialize in authentic East African adventures including:
 
 - **Zanzibar Island Tours** - Pristine beaches, spice farms, Stone Town heritage, and marine life
 - **Tanzania Safaris** - Big Five game viewing in Serengeti, Ngorongoro, and other iconic parks
@@ -35,8 +35,8 @@ ZANZIONE TOURS & TRAVELS is a premier tour operator based in Shangani, Stone Tow
 
 1. Clone the repository:
 \`\`\`bash
-git clone https://github.com/YOUR-USERNAME/zanzione-tours.git
-cd zanzione-tours
+git clone https://github.com/YOUR-USERNAME/pago-travel-experience.git
+cd pago-travel-experience
 \`\`\`
 
 2. Install dependencies:
@@ -86,7 +86,7 @@ Continue building your app on:
 ## Project Structure
 
 \`\`\`
-zanzione-tours/
+pago-travel-experience/
 ├── app/                    # Next.js app directory
 │   ├── page.tsx           # Homepage
 │   ├── about/             # About page
@@ -124,17 +124,17 @@ zanzione-tours/
 ## Admin Access
 
 - **Login URL:** `/admin-login`
-- **Email:** admin@zanzionetours.com
-- **Password:** Zanzi@1964
+- **Email:** admin@pagotravelexperience.co.tz
+- **Password:** Pago@1964
 
 Note: Admin dashboard is for demonstration purposes with sample data.
 
 ## Contact Information
 
-**ZANZIONE TOURS & TRAVELS**
-- **Location:** Shangani, Stone Town, Zanzibar
-- **Email:** zanzionetoursandtravel@gmail.com
-- **Facebook:** [ZANZIONE TOURS](https://www.facebook.com/share/17Wn8GXrd8/)
+**Pago Travel Experience**
+- **Location:** Stone Town, Zanzibar
+- **Email:** pagotravelexperience@gmail.com
+- **Facebook:** [Pago Travel Experience](https://www.facebook.com/share/17Wn8GXrd8/)
 
 ## How It Works
 
@@ -145,7 +145,7 @@ Note: Admin dashboard is for demonstration purposes with sample data.
 
 ## License
 
-© 2025 ZANZIONE TOURS & TRAVELS. All rights reserved.
+© 2025 Pago Travel Experience. All rights reserved.
 
 ## Support
 

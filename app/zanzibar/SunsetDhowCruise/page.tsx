@@ -11,7 +11,7 @@ import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "Sunset Dhow Cruise Zanzibar - Romantic Evening Sailing | ZANZIONE TOURS",
+  title: "Sunset Dhow Cruise Zanzibar - Romantic Evening Sailing | Pago Travel Experience",
   description:
     "Experience an unforgettable romantic evening on a traditional Arabian dhow. Enjoy stunning sunset views, local delights, and traditional music while sailing from Stone Town, Nungwi, or Kendwa Beach.",
 }
@@ -63,7 +63,7 @@ export default function SunsetDhowCruisePage() {
               <span>Stone Town, Nungwi, Kendwa</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-golden font-bold text-xl">From $35</span>
+              <span className="text-golden font-bold text-xl">From $45</span>
             </div>
           </div>
         </div>
@@ -82,7 +82,7 @@ export default function SunsetDhowCruisePage() {
                   <p className="text-lg leading-relaxed mb-4">
                     A Sunset Dhow Cruise is one of the best and most romantic activities to do during your Zanzibar
                     holiday. Experience the breathtaking coastal views in the evening while sailing on a traditional
-                    Arabian dhow—a memorable way to spend time with your loved ones.
+                    Arabian dhow, a memorable way to spend time with your loved ones.
                   </p>
                   <p className="text-lg leading-relaxed">We offer daily sunset cruises departing from:</p>
                   <ul className="list-disc pl-6 text-lg space-y-2">
@@ -139,29 +139,29 @@ export default function SunsetDhowCruisePage() {
                     <table className="w-full border-collapse">
                       <thead>
                         <tr className="bg-blue-season text-white">
-                          <th className="border border-blue-700 px-4 py-3 text-left">Group Size</th>
-                          <th className="border border-blue-700 px-4 py-3 text-left">Price per Person</th>
+                          <th className="border border-blue-season px-4 py-3 text-left">Group Size</th>
+                          <th className="border border-blue-season px-4 py-3 text-left">Price per Person</th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr className="bg-white hover:bg-blue-50">
+                        <tr className="bg-white hover:bg-[#f8f3f1]">
                           <td className="border border-gray-300 px-4 py-3">1 - 5 persons</td>
-                          <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">$35</td>
+                          <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">$45</td>
                         </tr>
-                        <tr className="bg-gray-50 hover:bg-blue-50">
+                        <tr className="bg-gray-50 hover:bg-[#f8f3f1]">
                           <td className="border border-gray-300 px-4 py-3">6 - 10 persons</td>
-                          <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">$30</td>
+                          <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">$40</td>
                         </tr>
-                        <tr className="bg-white hover:bg-blue-50">
+                        <tr className="bg-white hover:bg-[#f8f3f1]">
                           <td className="border border-gray-300 px-4 py-3">11 - 25 persons</td>
-                          <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">$25</td>
+                          <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">$35</td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
                 </div>
 
-                <Card className="bg-blue-50 border-blue-200">
+                <Card className="bg-[#f8f3f1] border-[#d8c7c2]">
                   <CardContent className="p-6">
                     <p className="text-lg font-semibold text-blue-season mb-4">
                       The cruise price is comprehensive and includes:
@@ -207,7 +207,7 @@ export default function SunsetDhowCruisePage() {
                 <CardContent className="p-6 space-y-6">
                   <div>
                     <h3 className="text-2xl font-display font-bold text-blue-season mb-2">Book This Experience</h3>
-                    <div className="text-3xl font-bold text-golden mb-4">From $35</div>
+                    <div className="text-3xl font-bold text-golden mb-4">From $45</div>
                     <p className="text-gray-600 text-sm">per person</p>
                   </div>
 
@@ -258,7 +258,7 @@ export default function SunsetDhowCruisePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-blue-season text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Ready for a Romantic Evening?</h2>
           <p className="text-xl text-white mb-8">
@@ -268,7 +268,7 @@ export default function SunsetDhowCruisePage() {
             <BookingModal
               tourName="Sunset Dhow Cruise"
               trigger={
-                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8">
+                <Button size="lg" className="bg-blue-season hover:bg-blue-season/90 text-white font-semibold px-8">
                   Book Now on WhatsApp
                 </Button>
               }
@@ -277,7 +277,7 @@ export default function SunsetDhowCruisePage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-ocean bg-transparent"
+                className="border-white text-white hover:bg-white hover:text-blue-season bg-transparent"
               >
                 View All Tours
               </Button>

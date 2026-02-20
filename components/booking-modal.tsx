@@ -13,7 +13,6 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { CalendarIcon } from 'lucide-react'
 
 interface BookingModalProps {
   tourName: string
@@ -41,7 +40,7 @@ export default function BookingModal({ tourName, trigger, className }: BookingMo
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     
-    const whatsappNumber = "255710885320"
+    const whatsappNumber = "255614363504"
     const message = `*New Booking Request*
 *Tour:* ${tourName}
 *Name:* ${formData.fullName}
@@ -64,14 +63,14 @@ export default function BookingModal({ tourName, trigger, className }: BookingMo
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
         {trigger || (
-          <Button size="lg" className={`bg-green-600 hover:bg-green-700 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto ${className}`}>
+          <Button size="lg" className={`bg-blue-season hover:bg-blue-season/90 text-white font-bold text-lg px-12 py-6 w-full sm:w-auto ${className}`}>
             BOOK VIA WHATSAPP
           </Button>
         )}
       </DialogTrigger>
       <DialogContent className="sm:max-w-[600px] max-h-[90vh] overflow-y-auto">
         <DialogHeader>
-          <DialogTitle className="text-3xl font-display font-bold text-center text-[#103968]">Book This Tour</DialogTitle>
+          <DialogTitle className="text-3xl font-display font-bold text-center text-blue-season">Book This Tour</DialogTitle>
           <DialogDescription className="text-center text-lg text-gray-600">
             {tourName}
           </DialogDescription>
@@ -192,7 +191,7 @@ export default function BookingModal({ tourName, trigger, className }: BookingMo
           <Button 
             type="submit" 
             size="lg" 
-            className="w-full bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-bold text-lg py-6 mt-4"
+            className="w-full bg-blue-season hover:bg-blue-season/90 text-white font-bold text-lg py-6 mt-4"
           >
             Submit Booking Request
           </Button>

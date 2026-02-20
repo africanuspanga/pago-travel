@@ -10,16 +10,16 @@ import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "Nakupenda Sandbank Trip - Swim & Snorkel Paradise | ZANZIONE TOURS",
+  title: "Nakupenda Sandbank Trip - Swim & Snorkel Paradise | Pago Travel Experience",
   description:
-    "Visit Nakupenda 'I Love You' Sandbank near Stone Town. Half-day tour with snorkeling, seafood BBQ lunch, tropical fruits, and pristine white sand beaches. Listed among Africa's best beaches. $49 per person.",
+    "Visit Nakupenda 'I Love You' Sandbank near Stone Town. Half-day tour with snorkeling, seafood BBQ lunch, tropical fruits, and pristine white sand beaches. Listed among Africa's best beaches. $59 per person.",
   alternates: {
-    canonical: "https://www.zanzionetours.com/zanzibar/nakupenda-sandbank",
+    canonical: "https://www.pagotravelexperience.co.tz/zanzibar/nakupenda-sandbank",
   },
 }
 
 export default function NakupendaSandbankPage() {
-  const whatsappNumber = "255710885320"
+  const whatsappNumber = "255614363504"
   const whatsappMessage = encodeURIComponent(
     "Hi, I'm interested in booking the Nakupenda Sandbank Trip. Can you provide more details?"
   )
@@ -59,7 +59,7 @@ export default function NakupendaSandbankPage() {
             <div className="hidden sm:block">•</div>
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5" />
-              <span>$49 Per Person</span>
+              <span>$59 Per Person</span>
             </div>
           </div>
         </div>
@@ -119,7 +119,7 @@ export default function NakupendaSandbankPage() {
               </div>
 
               <h3 className="text-2xl font-display font-bold text-blue-season mb-4">Tour Details & Inclusions</h3>
-              <div className="bg-blue-50 rounded-lg p-6 mb-6">
+              <div className="bg-[#f8f3f1] rounded-lg p-6 mb-6">
                 <h4 className="font-semibold text-blue-season mb-3">The tour price is comprehensive and includes:</h4>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-start gap-2">
@@ -168,7 +168,7 @@ export default function NakupendaSandbankPage() {
                 <CardContent className="p-6">
                   <div className="text-center mb-6">
                     <p className="text-gray-500 text-sm mb-1">From</p>
-                    <p className="text-4xl font-bold text-golden mb-2">$49</p>
+                    <p className="text-4xl font-bold text-golden mb-2">$59</p>
                     <p className="text-gray-600">Per Person</p>
                     <div className="flex items-center justify-center gap-1 mt-2">
                       <div className="flex text-golden">
@@ -211,11 +211,11 @@ export default function NakupendaSandbankPage() {
 
                   <div className="mt-6 pt-6 border-t">
                     <div className="flex items-center gap-2 text-sm text-gray-600 mb-2">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
+                      <CheckCircle className="w-4 h-4 text-blue-season" />
                       <span>Best Price Guarantee</span>
                     </div>
                     <div className="flex items-center gap-2 text-sm text-gray-600">
-                      <CheckCircle className="w-4 h-4 text-green-600" />
+                      <CheckCircle className="w-4 h-4 text-blue-season" />
                       <span>Easy Online Booking</span>
                     </div>
                   </div>
@@ -232,7 +232,7 @@ export default function NakupendaSandbankPage() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-6">
             Ready to Experience Paradise?
           </h2>
-          <p className="text-lg sm:text-xl text-blue-100 mb-8 leading-relaxed">
+          <p className="text-lg sm:text-xl text-white/80 mb-8 leading-relaxed">
             Book your Nakupenda Sandbank trip today and create unforgettable memories in one of Africa's most beautiful
             locations.
           </p>

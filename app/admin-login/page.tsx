@@ -7,7 +7,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Lock, Mail, Eye, EyeOff } from 'lucide-react'
-import type { Metadata } from "next"
 import Image from "next/image"
 
 export default function AdminLoginPage() {
@@ -24,7 +23,7 @@ export default function AdminLoginPage() {
     setLoading(true)
 
     // Simple client-side authentication
-    if (email === "admin@zanzionetours.com" && password === "Zanzi@1964") {
+    if (email === "pagotravelexperience@gmail.com" && password === "Pago@1964") {
       // Store auth token in localStorage
       localStorage.setItem("admin_authenticated", "true")
       localStorage.setItem("admin_email", email)
@@ -36,20 +35,20 @@ export default function AdminLoginPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-ocean to-blue-900 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-gradient-to-br from-[#3d1a14] to-[#24100d] flex items-center justify-center p-4">
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-3 text-center">
           <div className="mx-auto">
             <Image
-              src="/images/admin-logo.png"
-              alt="Zanzione Tours Logo"
+              src="/pg/logo.png"
+              alt="Pago Travel Experience Logo"
               width={150}
               height={150}
               className="mx-auto"
             />
           </div>
-          <CardTitle className="text-3xl font-display text-ocean">Admin Login</CardTitle>
-          <p className="text-muted-foreground">ZANZIONE TOURS & TRAVELS</p>
+          <CardTitle className="text-3xl font-display text-blue-season">Admin Login</CardTitle>
+          <p className="text-muted-foreground">Pago Travel Experience</p>
         </CardHeader>
         <CardContent>
           <form onSubmit={handleLogin} className="space-y-4">
@@ -60,7 +59,7 @@ export default function AdminLoginPage() {
                 <Input
                   id="email"
                   type="email"
-                  placeholder="admin@zanzionetours.com"
+                  placeholder="pagotravelexperience@gmail.com"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   className="pl-10"
@@ -102,7 +101,7 @@ export default function AdminLoginPage() {
               </div>
             )}
 
-            <Button type="submit" className="w-full bg-ocean hover:bg-ocean/90" disabled={loading}>
+            <Button type="submit" className="w-full bg-blue-season hover:bg-blue-season/90" disabled={loading}>
               {loading ? "Signing in..." : "Sign In"}
             </Button>
           </form>

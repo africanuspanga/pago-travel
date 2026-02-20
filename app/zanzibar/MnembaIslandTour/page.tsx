@@ -11,7 +11,7 @@ import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "Mnemba Island Snorkeling Tour - Best Snorkeling in Zanzibar | ZANZIONE TOURS",
+  title: "Mnemba Island Snorkeling Tour - Best Snorkeling in Zanzibar | Pago Travel Experience",
   description:
     "Dive into Zanzibar's best snorkeling spot at Mnemba Island. Explore pristine coral reefs, swim with tropical fish, green turtles, and spot dolphins in this protected marine sanctuary.",
 }
@@ -61,7 +61,7 @@ export default function MnembaIslandTourPage() {
               <span>Northeast Coast (Matemwe/Muyuni)</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-golden font-bold text-xl">From $42</span>
+              <span className="text-golden font-bold text-xl">From $52</span>
             </div>
           </div>
         </div>
@@ -116,7 +116,7 @@ export default function MnembaIslandTourPage() {
               <div>
                 <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Price & Inclusions</h2>
 
-                <Card className="bg-blue-50 border-blue-200 mb-6">
+                <Card className="bg-[#f8f3f1] border-[#d8c7c2] mb-6">
                   <CardContent className="p-6">
                     <p className="text-lg font-semibold text-blue-season mb-4">Tour Pricing (Per Person):</p>
                     <div className="overflow-x-auto">
@@ -128,21 +128,21 @@ export default function MnembaIslandTourPage() {
                           </tr>
                         </thead>
                         <tbody>
-                          <tr className="border-b border-blue-200">
+                          <tr className="border-b border-[#d8c7c2]">
                             <td className="py-3 px-4 text-gray-700">1 - 2 persons</td>
-                            <td className="py-3 px-4 text-right font-semibold text-blue-season">$55</td>
+                            <td className="py-3 px-4 text-right font-semibold text-blue-season">$65</td>
                           </tr>
-                          <tr className="border-b border-blue-200 bg-blue-50/50">
+                          <tr className="border-b border-[#d8c7c2] bg-[#f8f3f1]/50">
                             <td className="py-3 px-4 text-gray-700">3 - 5 persons</td>
-                            <td className="py-3 px-4 text-right font-semibold text-blue-season">$53</td>
+                            <td className="py-3 px-4 text-right font-semibold text-blue-season">$63</td>
                           </tr>
-                          <tr className="border-b border-blue-200">
+                          <tr className="border-b border-[#d8c7c2]">
                             <td className="py-3 px-4 text-gray-700">6 - 10 persons</td>
-                            <td className="py-3 px-4 text-right font-semibold text-blue-season">$40</td>
+                            <td className="py-3 px-4 text-right font-semibold text-blue-season">$50</td>
                           </tr>
-                          <tr className="bg-blue-50/50">
+                          <tr className="bg-[#f8f3f1]/50">
                             <td className="py-3 px-4 text-gray-700">11 - 25 persons</td>
-                            <td className="py-3 px-4 text-right font-semibold text-blue-season">$35</td>
+                            <td className="py-3 px-4 text-right font-semibold text-blue-season">$45</td>
                           </tr>
                         </tbody>
                       </table>
@@ -156,7 +156,7 @@ export default function MnembaIslandTourPage() {
                   </CardContent>
                 </Card>
 
-                <Card className="bg-blue-50 border-blue-200">
+                <Card className="bg-[#f8f3f1] border-[#d8c7c2]">
                   <CardContent className="p-6">
                     <p className="text-lg font-semibold text-blue-season mb-4">The tour price includes:</p>
                     <ul className="space-y-3">
@@ -172,7 +172,7 @@ export default function MnembaIslandTourPage() {
                         </li>
                       ))}
                     </ul>
-                    <div className="mt-4 pt-4 border-t border-blue-200">
+                    <div className="mt-4 pt-4 border-t border-[#d8c7c2]">
                       <p className="text-sm text-gray-600">
                         <strong>Lunch Option (Extra Cost):</strong> Seafood BBQ Lunch (Octopus, Lobsters, Squids,
                         Prawns, etc.) is available at an extra cost.
@@ -228,7 +228,7 @@ export default function MnembaIslandTourPage() {
                 <CardContent className="p-6 space-y-6">
                   <div>
                     <h3 className="text-2xl font-display font-bold text-blue-season mb-2">Book This Experience</h3>
-                    <div className="text-3xl font-bold text-golden mb-4">From $42</div>
+                    <div className="text-3xl font-bold text-golden mb-4">From $52</div>
                     <p className="text-gray-600 text-sm">per person (transport extra)</p>
                   </div>
 
@@ -279,7 +279,7 @@ export default function MnembaIslandTourPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-blue-season text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">
             Ready to Explore the Underwater Paradise?
@@ -291,7 +291,7 @@ export default function MnembaIslandTourPage() {
             <BookingModal
               tourName="Mnemba Island Snorkeling Tour"
               trigger={
-                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8">
+                <Button size="lg" className="bg-blue-season hover:bg-blue-season/90 text-white font-semibold px-8">
                   Book Now on WhatsApp
                 </Button>
               }
@@ -300,7 +300,7 @@ export default function MnembaIslandTourPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-ocean bg-transparent"
+                className="border-white text-white hover:bg-white hover:text-blue-season bg-transparent"
               >
                 View All Tours
               </Button>

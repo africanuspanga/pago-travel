@@ -10,7 +10,7 @@ import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "3 Days Serengeti Safari from Zanzibar - $2,048 | ZANZIONE TOURS",
+  title: "3 Days Serengeti Safari from Zanzibar - $2,058 | Pago Travel Experience",
   description:
     "Experience the magic of Serengeti National Park on this 3-day safari from Zanzibar. Witness the Big Five, incredible wildlife, and breathtaking landscapes with expert guides.",
 }
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function Serengeti3DaysPage() {
   const whatsappNumber = "255628734126"
   const message = encodeURIComponent(
-    "Hello! I'm interested in booking the 3 Days 2 Nights Serengeti Safari from Zanzibar ($2,048 per person). Can you provide more details?"
+    "Hello! I'm interested in booking the 3 Days 2 Nights Serengeti Safari from Zanzibar ($2,058 per person). Can you provide more details?"
   )
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${message}`
 
@@ -70,7 +70,7 @@ export default function Serengeti3DaysPage() {
               <span className="text-gray-600">5 Stars Rated</span>
             </div>
             <div className="text-center sm:text-right">
-              <p className="text-3xl sm:text-4xl font-bold text-golden">$2,048</p>
+              <p className="text-3xl sm:text-4xl font-bold text-golden">$2,058</p>
               <p className="text-gray-600">Per Adult</p>
             </div>
           </div>
@@ -176,17 +176,17 @@ export default function Serengeti3DaysPage() {
                     <div className="space-y-3 mb-6">
                       <div className="flex justify-between items-center pb-3 border-b">
                         <span className="text-gray-600">Price per Adult</span>
-                        <span className="text-2xl font-bold text-golden">$2,048</span>
+                        <span className="text-2xl font-bold text-golden">$2,058</span>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600">Price per Kid (3-9 Years)</span>
-                        <span className="text-2xl font-bold text-golden">$1,525</span>
+                        <span className="text-2xl font-bold text-golden">$1,535</span>
                       </div>
                     </div>
                     <p className="text-sm text-gray-500 mb-6">Price per person</p>
                     <BookingModal 
                       tourName="3 Days Serengeti Safari from Zanzibar" 
-                      className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-6"
+                      className="w-full bg-blue-season hover:bg-blue-season/90 text-white text-lg py-6"
                     />
                   </CardContent>
                 </Card>
@@ -208,7 +208,7 @@ export default function Serengeti3DaysPage() {
                         "All Taxes/VAT",
                       ].map((item, idx) => (
                         <li key={idx} className="flex items-start gap-3">
-                          <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                          <Check className="w-5 h-5 text-blue-season flex-shrink-0 mt-0.5" />
                           <span className="text-gray-600">{item}</span>
                         </li>
                       ))}
@@ -227,13 +227,13 @@ export default function Serengeti3DaysPage() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-6">
             Ready for the Serengeti Adventure?
           </h2>
-          <p className="text-lg sm:text-xl text-blue-100 mb-8 leading-relaxed">
+          <p className="text-lg sm:text-xl text-white/80 mb-8 leading-relaxed">
             Book your 3-day Serengeti safari today and witness the incredible wildlife and landscapes of Tanzania's most famous park.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <BookingModal 
               tourName="3 Days Serengeti Safari from Zanzibar" 
-              className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4"
+              className="bg-blue-season hover:bg-blue-season/90 text-white font-semibold px-8 py-4"
             />
             <Link href="/itineraries">
               <Button

@@ -11,13 +11,13 @@ import BookingModal from "@/components/booking-modal"
 export default function Zanzibar8DaysPackage() {
   const whatsappNumber = "255718881882"
   const packageName = "Zanzibar 8 Days 7 Nights Package"
-  const whatsappMessage = `Hi, I'm interested in booking the ${packageName} ($1,340). Can you provide more details?`
+  const whatsappMessage = `Hi, I'm interested in booking the ${packageName} ($1,350). Can you provide more details?`
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`
 
   return (
     <>
       <Navigation />
-      <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+      <div className="min-h-screen bg-gradient-to-b from-[#f8f3f1] to-white">
         {/* Hero Section */}
         <div className="relative h-[60vh] min-h-[500px]">
           <Image
@@ -76,7 +76,7 @@ export default function Zanzibar8DaysPackage() {
                   
                   <div className="space-y-6">
                     {/* Day 1 */}
-                    <div className="border-l-4 border-blue-500 pl-6 py-2">
+                    <div className="border-l-4 border-[#3d1a14] pl-6 py-2">
                       <h3 className="text-xl font-bold text-gray-900 mb-2">DAY 1: Transfer to Hotel</h3>
                       <div className="space-y-2 text-gray-700">
                         <p>In this day you will arrive at Zanzibar International Airport</p>
@@ -87,7 +87,7 @@ export default function Zanzibar8DaysPackage() {
                     </div>
 
                     {/* Day 2 */}
-                    <div className="border-l-4 border-blue-500 pl-6 py-2">
+                    <div className="border-l-4 border-[#3d1a14] pl-6 py-2">
                       <h3 className="text-xl font-bold text-gray-900 mb-2">DAY 2: Full-Day Safari Blue Trip</h3>
                       <div className="space-y-2 text-gray-700">
                         <p>This will be full day sailing around mangroves and snorkeling along Menai bay, which is one of the best coral reefs in Zanzibar.</p>
@@ -98,7 +98,7 @@ export default function Zanzibar8DaysPackage() {
                     </div>
 
                     {/* Day 3 */}
-                    <div className="border-l-4 border-blue-500 pl-6 py-2">
+                    <div className="border-l-4 border-[#3d1a14] pl-6 py-2">
                       <h3 className="text-xl font-bold text-gray-900 mb-2">DAY 3: Half day Jozani Forest Tour</h3>
                       <div className="space-y-2 text-gray-700">
                         <p>Delight in playful encounters with the unique Red Colobus Monkey, exclusive to the Zanzibar Islands</p>
@@ -109,7 +109,7 @@ export default function Zanzibar8DaysPackage() {
                     </div>
 
                     {/* Day 4 */}
-                    <div className="border-l-4 border-blue-500 pl-6 py-2">
+                    <div className="border-l-4 border-[#3d1a14] pl-6 py-2">
                       <h3 className="text-xl font-bold text-gray-900 mb-2">DAY 4: Tour – Spice Farm, Prison Island & Stone Town</h3>
                       <div className="space-y-2 text-gray-700">
                         <p>Feeding and taking stunning photos with giant Aldabra tortoises at Prison Island</p>
@@ -120,7 +120,7 @@ export default function Zanzibar8DaysPackage() {
                     </div>
 
                     {/* Day 5 */}
-                    <div className="border-l-4 border-blue-500 pl-6 py-2">
+                    <div className="border-l-4 border-[#3d1a14] pl-6 py-2">
                       <h3 className="text-xl font-bold text-gray-900 mb-2">DAY 5: Pick up to your next Hotel in Nungwi Beach</h3>
                       <div className="space-y-2 text-gray-700">
                         <p>In this day, you will change Hotel from South coast Hotel to another Hotel in Nungwi Beach (North)</p>
@@ -130,7 +130,7 @@ export default function Zanzibar8DaysPackage() {
                     </div>
 
                     {/* Day 6 */}
-                    <div className="border-l-4 border-blue-500 pl-6 py-2">
+                    <div className="border-l-4 border-[#3d1a14] pl-6 py-2">
                       <h3 className="text-xl font-bold text-gray-900 mb-2">DAY 6: Chilling day!</h3>
                       <div className="space-y-2 text-gray-700">
                         <p>On this day you will have enough time for relaxation on the resort; Sun bathing, enjoying the sunset from the beach.</p>
@@ -138,7 +138,7 @@ export default function Zanzibar8DaysPackage() {
                     </div>
 
                     {/* Day 7 */}
-                    <div className="border-l-4 border-blue-500 pl-6 py-2">
+                    <div className="border-l-4 border-[#3d1a14] pl-6 py-2">
                       <h3 className="text-xl font-bold text-gray-900 mb-2">DAY 7: Half Day – Mnemba Dolphins & Snorkeling</h3>
                       <div className="space-y-2 text-gray-700">
                         <p>Swimming with Dolphins and taking stunning photos</p>
@@ -149,7 +149,7 @@ export default function Zanzibar8DaysPackage() {
                     </div>
 
                     {/* Day 8 */}
-                    <div className="border-l-4 border-blue-500 pl-6 py-2">
+                    <div className="border-l-4 border-[#3d1a14] pl-6 py-2">
                       <h3 className="text-xl font-bold text-gray-900 mb-2">DAY 8: Transfer to the Airport, Goodbye!</h3>
                       <div className="space-y-2 text-gray-700">
                         <p>After eight days of your Zanzibar vacation, this day you will take your flight back home.</p>
@@ -178,7 +178,7 @@ export default function Zanzibar8DaysPackage() {
                       "Local SIM Cards"
                     ].map((item, index) => (
                       <div key={index} className="flex items-start gap-3">
-                        <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                        <Check className="w-5 h-5 text-blue-season flex-shrink-0 mt-0.5" />
                         <span className="text-gray-700">{item}</span>
                       </div>
                     ))}
@@ -191,36 +191,36 @@ export default function Zanzibar8DaysPackage() {
             <div className="lg:col-span-1">
               <div className="sticky top-24 space-y-6">
                 {/* Pricing Card */}
-                <Card className="border-2 border-blue-500">
+                <Card className="border-2 border-[#3d1a14]">
                   <CardContent className="p-6">
                     <div className="text-center mb-6">
                       <p className="text-gray-600 text-sm mb-2">Starting from</p>
-                      <p className="text-5xl font-bold text-blue-600">$1,340</p>
+                      <p className="text-5xl font-bold text-[#3d1a14]">$1,350</p>
                       <p className="text-gray-500 text-sm mt-2">per person</p>
                     </div>
                     
                     <div className="space-y-3 mb-6">
                       <div className="flex items-center gap-2 text-gray-700">
-                        <Calendar className="w-5 h-5 text-blue-500" />
+                        <Calendar className="w-5 h-5 text-blue-season" />
                         <span>7 Nights / 8 Days</span>
                       </div>
                       <div className="flex items-center gap-2 text-gray-700">
-                        <Utensils className="w-5 h-5 text-blue-500" />
+                        <Utensils className="w-5 h-5 text-blue-season" />
                         <span>Breakfast & Dinner Included</span>
                       </div>
                       <div className="flex items-center gap-2 text-gray-700">
-                        <Users className="w-5 h-5 text-blue-500" />
+                        <Users className="w-5 h-5 text-blue-season" />
                         <span>Professional Guide</span>
                       </div>
                       <div className="flex items-center gap-2 text-gray-700">
-                        <Car className="w-5 h-5 text-blue-500" />
+                        <Car className="w-5 h-5 text-blue-season" />
                         <span>Airport Transfers</span>
                       </div>
                     </div>
 
                     <BookingModal 
                       tourName="Zanzibar 8 Days 7 Nights Package" 
-                      className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-6"
+                      className="w-full bg-blue-season hover:bg-blue-season/90 text-white text-lg py-6"
                     />
                   </CardContent>
                 </Card>
@@ -244,7 +244,7 @@ export default function Zanzibar8DaysPackage() {
       </div>
 
       {/* CTA Section */}
-      <section className="py-12 sm:py-20 bg-blue-500 text-white">
+      <section className="py-12 sm:py-20 bg-blue-season text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
             Ready for Your 8-Day Zanzibar Adventure?
@@ -256,12 +256,12 @@ export default function Zanzibar8DaysPackage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <BookingModal 
               tourName="Zanzibar 8 Days 7 Nights Package" 
-              className="bg-white text-blue-500 hover:bg-gray-100 font-semibold px-8 py-6 text-lg"
+              className="bg-white text-blue-season hover:bg-gray-100 font-semibold px-8 py-6 text-lg"
             />
             <Button
               size="lg"
               variant="outline"
-              className="border-white text-white hover:bg-white hover:text-blue-500 font-semibold px-8 py-6 text-lg bg-transparent"
+              className="border-white text-white hover:bg-white hover:text-blue-season font-semibold px-8 py-6 text-lg bg-transparent"
               asChild
             >
               <Link href="/itineraries">View All Packages</Link>

@@ -10,7 +10,7 @@ import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "3 Days Serengeti Safari & Hot Air Balloon from Zanzibar - $2,793 | ZANZIONE TOURS",
+  title: "3 Days Serengeti Safari & Hot Air Balloon from Zanzibar - $2,803 | Pago Travel Experience",
   description:
     "Ultimate Serengeti adventure with hot air balloon safari at sunrise. Witness wildlife from the sky, enjoy game drives, night safari, and bush breakfast. Unforgettable 3-day package from Zanzibar.",
 }
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function SerengetiBalloonSafariPage() {
   const whatsappNumber = "255628734126"
   const message = encodeURIComponent(
-    "Hello! I'm interested in booking the 3 Days Serengeti Safari & Hot Air Balloon from Zanzibar ($2,793 per person). Can you provide more details?"
+    "Hello! I'm interested in booking the 3 Days Serengeti Safari & Hot Air Balloon from Zanzibar ($2,803 per person). Can you provide more details?"
   )
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${message}`
 
@@ -70,7 +70,7 @@ export default function SerengetiBalloonSafariPage() {
               <span className="text-gray-600">5 Stars Rated</span>
             </div>
             <div className="text-center sm:text-right">
-              <p className="text-3xl sm:text-4xl font-bold text-golden">$2,793</p>
+              <p className="text-3xl sm:text-4xl font-bold text-golden">$2,803</p>
               <p className="text-gray-600">Per Adult</p>
             </div>
           </div>
@@ -179,17 +179,17 @@ export default function SerengetiBalloonSafariPage() {
                     <div className="space-y-3 mb-6">
                       <div className="flex justify-between items-center pb-3 border-b">
                         <span className="text-gray-600">Price per Adult</span>
-                        <span className="text-2xl font-bold text-golden">$2,793</span>
+                        <span className="text-2xl font-bold text-golden">$2,803</span>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600">Price per Kid (3-9 Years)</span>
-                        <span className="text-2xl font-bold text-golden">$1,225</span>
+                        <span className="text-2xl font-bold text-golden">$1,235</span>
                       </div>
                     </div>
                     <p className="text-sm text-gray-500 mb-6">Price per person</p>
                     <BookingModal 
                       tourName="3 Days Serengeti Safari & Hot Air Balloon" 
-                      className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-6"
+                      className="w-full bg-blue-season hover:bg-blue-season/90 text-white text-lg py-6"
                     />
                   </CardContent>
                 </Card>
@@ -211,7 +211,7 @@ export default function SerengetiBalloonSafariPage() {
                         "All Taxes/VAT",
                       ].map((item, idx) => (
                         <li key={idx} className="flex items-start gap-3">
-                          <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                          <Check className="w-5 h-5 text-blue-season flex-shrink-0 mt-0.5" />
                           <span className="text-gray-600">{item}</span>
                         </li>
                       ))}
@@ -230,13 +230,13 @@ export default function SerengetiBalloonSafariPage() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-6">
             Ready for the Ultimate Serengeti Experience?
           </h2>
-          <p className="text-lg sm:text-xl text-blue-100 mb-8 leading-relaxed">
+          <p className="text-lg sm:text-xl text-white/80 mb-8 leading-relaxed">
             Book your Serengeti safari with hot air balloon today and experience the park from both land and sky in this once-in-a-lifetime adventure.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <BookingModal 
               tourName="3 Days Serengeti Safari & Hot Air Balloon" 
-              className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4"
+              className="bg-blue-season hover:bg-blue-season/90 text-white font-semibold px-8 py-4"
             />
             <Link href="/itineraries">
               <Button

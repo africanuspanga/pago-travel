@@ -10,7 +10,7 @@ import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "Maalum Cave Tour - Natural Freshwater Swimming Pool & Limestone Grotto | ZANZIONE TOURS",
+  title: "Maalum Cave Tour - Natural Freshwater Swimming Pool & Limestone Grotto | Pago Travel Experience",
   description:
     "Discover Maalum Cave in Paje - a hidden natural limestone oasis with crystal-clear freshwater pools. Swim in mineral-rich waters, explore stunning stalactites, and relax in this unique geological wonder.",
   keywords:
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 }
 
 export default function MaalumCavePage() {
-  const whatsappNumber = "255710885320"
+  const whatsappNumber = "255614363504"
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hi, I'm interested in booking the Maalum Cave tour. Can you provide more details?`
 
   return (
@@ -26,7 +26,7 @@ export default function MaalumCavePage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-[500px] bg-gradient-to-r from-emerald-600 to-teal-500">
+      <section className="relative h-[500px] bg-gradient-to-r from-[#3d1a14] to-[#5a2a22]">
         <div className="absolute inset-0">
           <Image
             src="/images/maalum-20cave.jpeg"
@@ -58,7 +58,7 @@ export default function MaalumCavePage() {
                 <Users className="w-5 h-5" />
                 <span>2-25 People</span>
               </div>
-              <div className="bg-golden px-4 py-2 rounded-full font-bold">From $27 per person</div>
+              <div className="bg-golden px-4 py-2 rounded-full font-bold">From $37 per person</div>
             </div>
           </div>
         </div>
@@ -71,7 +71,7 @@ export default function MaalumCavePage() {
           <Card className="mb-12 shadow-2xl border-t-4 border-golden">
             <CardContent className="p-8">
               <div className="text-center">
-                <h2 className="text-3xl font-display font-bold text-ocean mb-4">Book Your Maalum Cave Adventure</h2>
+                <h2 className="text-3xl font-display font-bold text-blue-season mb-4">Book Your Maalum Cave Adventure</h2>
                 <p className="text-gray-600 mb-6 text-lg">Experience Zanzibar's hidden natural swimming pool</p>
                 <BookingModal tourName="Maalum Cave Tour" />
                 <p className="text-sm text-gray-500 mt-4">
@@ -83,7 +83,7 @@ export default function MaalumCavePage() {
 
           {/* Overview Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">Overview & Experience</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Overview & Experience</h2>
             <h3 className="text-2xl font-bold text-blue-season mb-4">The Hidden Oasis of Paje</h3>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
               <p>
@@ -102,7 +102,7 @@ export default function MaalumCavePage() {
 
           {/* Highlights Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">What You Will Experience</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">What You Will Experience</h2>
             <div className="grid md:grid-cols-2 gap-4">
               {[
                 "Swim in crystal-clear, mineral-rich freshwater",
@@ -112,8 +112,8 @@ export default function MaalumCavePage() {
                 "Hear local legends and folklore",
                 "Enjoy the peaceful jungle surroundings",
               ].map((highlight, index) => (
-                <div key={index} className="flex items-start gap-3 p-4 bg-emerald-50 rounded-lg">
-                  <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <div key={index} className="flex items-start gap-3 p-4 bg-[#f8f3f1] rounded-lg">
+                  <Check className="w-6 h-6 text-blue-season flex-shrink-0 mt-1" />
                   <span className="text-gray-700">{highlight}</span>
                 </div>
               ))}
@@ -122,7 +122,7 @@ export default function MaalumCavePage() {
 
           {/* Pricing Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">Pricing Overview</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Pricing Overview</h2>
             <p className="text-gray-600 mb-6">
               The price per person decreases as your group size increases, offering excellent value for shared
               experiences.
@@ -130,17 +130,17 @@ export default function MaalumCavePage() {
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
-                  <tr className="bg-ocean text-white">
+                  <tr className="bg-blue-season text-white">
                     <th className="p-4 text-left border border-gray-300">Group Size</th>
                     <th className="p-4 text-left border border-gray-300">Price Per Person</th>
                   </tr>
                 </thead>
                 <tbody>
                   {[
-                    { size: "1 - 2 persons", price: "$35.00 p.p" },
-                    { size: "3 - 6 persons", price: "$33.00 p.p" },
-                    { size: "7 - 10 persons", price: "$30.00 p.p" },
-                    { size: "11 - 25 persons", price: "$27.00 p.p" },
+                    { size: "1 - 2 persons", price: "$45.00 p.p" },
+                    { size: "3 - 6 persons", price: "$43.00 p.p" },
+                    { size: "7 - 10 persons", price: "$40.00 p.p" },
+                    { size: "11 - 25 persons", price: "$37.00 p.p" },
                   ].map((item, index) => (
                     <tr key={index} className={index % 2 === 0 ? "bg-gray-50" : "bg-white"}>
                       <td className="p-4 border border-gray-300 font-semibold">{item.size}</td>
@@ -154,7 +154,7 @@ export default function MaalumCavePage() {
 
           {/* Inclusions Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">What's Included & Logistics</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">What's Included & Logistics</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div>
                 <h3 className="font-bold text-blue-season mb-4 text-lg">Inclusions</h3>
@@ -173,8 +173,8 @@ export default function MaalumCavePage() {
                 </div>
               </div>
               <div className="space-y-4">
-                <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-ocean">
-                  <h3 className="font-bold text-ocean mb-3">What to Bring</h3>
+                <div className="bg-[#f8f3f1] p-6 rounded-lg border-l-4 border-blue-season">
+                  <h3 className="font-bold text-blue-season mb-3">What to Bring</h3>
                   <ul className="text-gray-700 text-sm space-y-2">
                     <li>• Swimwear</li>
                     <li>• Towel</li>
@@ -185,7 +185,7 @@ export default function MaalumCavePage() {
                   </p>
                 </div>
                 <div className="bg-amber-50 p-6 rounded-lg border-l-4 border-golden">
-                  <h3 className="font-bold text-ocean mb-3">Duration</h3>
+                  <h3 className="font-bold text-blue-season mb-3">Duration</h3>
                   <p className="text-gray-700 text-sm leading-relaxed">
                     The experience slot is typically <strong>90 minutes to 2 hours</strong> inside the cave area.
                   </p>
@@ -195,8 +195,8 @@ export default function MaalumCavePage() {
           </div>
 
           {/* Geological Wonder */}
-          <div className="bg-gradient-to-br from-emerald-50 to-teal-50 rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">A Geological Wonder</h2>
+          <div className="bg-gradient-to-br from-[#f8f3f1] to-[#f3ebe8] rounded-lg shadow-lg p-8 mb-8">
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">A Geological Wonder</h2>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
               <p>
                 Maalum Cave is a <strong>natural limestone phenomenon</strong> formed over thousands of years by
@@ -216,7 +216,7 @@ export default function MaalumCavePage() {
           </div>
 
           {/* Final CTA */}
-          <div className="bg-blue-600 text-white shadow-2xl rounded-lg p-10 text-center">
+          <div className="bg-blue-season text-white shadow-2xl rounded-lg p-10 text-center">
             <h2 className="text-3xl font-display font-bold mb-4">Ready to Discover This Hidden Oasis?</h2>
             <p className="text-xl text-white mb-8">Book your Maalum Cave experience and dive into natural beauty</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -225,7 +225,7 @@ export default function MaalumCavePage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-ocean font-semibold px-8 py-6 bg-transparent w-full sm:w-auto"
+                  className="border-white text-white hover:bg-white hover:text-blue-season font-semibold px-8 py-6 bg-transparent w-full sm:w-auto"
                 >
                   Contact Us
                 </Button>

@@ -11,7 +11,7 @@ import ScrollToTop from "@/components/scroll-to-top"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "Prison Island Tour - Meet Giant Tortoises | ZANZIONE TOURS",
+  title: "Prison Island Tour - Meet Giant Tortoises | Pago Travel Experience",
   description:
     "Visit Changuu Island (Prison Island) and meet giant Aldabra tortoises over 100 years old. Half-day boat trip with swimming and relaxation on beautiful beaches.",
 }
@@ -134,19 +134,19 @@ export default function PrisonIslandTourPage() {
                       <tbody>
                         <tr className="hover:bg-gray-50">
                           <td className="border border-gray-300 px-4 py-3">1 - 2 persons</td>
-                          <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-season">$50 p.p</td>
+                          <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-season">$60 p.p</td>
                         </tr>
                         <tr className="hover:bg-gray-50">
                           <td className="border border-gray-300 px-4 py-3">3 - 5 persons</td>
-                          <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-season">$46 p.p</td>
+                          <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-season">$56 p.p</td>
                         </tr>
                         <tr className="hover:bg-gray-50">
                           <td className="border border-gray-300 px-4 py-3">6 - 10 persons</td>
-                          <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-season">$38 p.p</td>
+                          <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-season">$48 p.p</td>
                         </tr>
                         <tr className="hover:bg-gray-50">
                           <td className="border border-gray-300 px-4 py-3">11 - 25 persons</td>
-                          <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-season">$35 p.p</td>
+                          <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-season">$45 p.p</td>
                         </tr>
                       </tbody>
                     </table>
@@ -205,7 +205,7 @@ export default function PrisonIslandTourPage() {
                       <CheckCircle2 className="w-5 h-5 text-golden flex-shrink-0 mt-0.5" />
                       <span>
                         <strong>Deep Knowledge:</strong> They provide deep, firsthand knowledge of the island's
-                        fascinating past—from its history to its vibrant Swahili culture and diverse marine life—which
+                        fascinating past, from its history to its vibrant Swahili culture and diverse marine life, which
                         goes beyond any guidebook
                       </span>
                     </li>
@@ -235,7 +235,7 @@ export default function PrisonIslandTourPage() {
                 <CardHeader className="bg-white">
                   <CardTitle className="text-2xl text-gray-900">Book This Tour</CardTitle>
                   <div className="flex items-center gap-2 mt-2">
-                    <span className="text-3xl font-bold text-gray-900">$30</span>
+                    <span className="text-3xl font-bold text-gray-900">$40</span>
                     <span className="text-gray-600">per person</span>
                   </div>
                 </CardHeader>
@@ -247,15 +247,15 @@ export default function PrisonIslandTourPage() {
                       ))}
                     </div>
                     <div className="flex items-center gap-2 text-sm text-gray-600">
-                      <CheckCircle2 className="w-4 h-4 text-green-600" />
+                      <CheckCircle2 className="w-4 h-4 text-blue-season" />
                       <span>5-Star Rated</span>
                     </div>
                     <div className="flex items-center gap-2 text-sm text-gray-600">
-                      <CheckCircle2 className="w-4 h-4 text-green-600" />
+                      <CheckCircle2 className="w-4 h-4 text-blue-season" />
                       <span>Best Price Guarantee</span>
                     </div>
                     <div className="flex items-center gap-2 text-sm text-gray-600">
-                      <CheckCircle2 className="w-4 h-4 text-green-600" />
+                      <CheckCircle2 className="w-4 h-4 text-blue-season" />
                       <span>Easy Online Booking</span>
                     </div>
                   </div>
@@ -264,7 +264,7 @@ export default function PrisonIslandTourPage() {
                     <BookingModal
                       tourName="Prison Island Tour"
                       trigger={
-                        <Button className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-6">
+                        <Button className="w-full bg-blue-season hover:bg-blue-season/90 text-white text-lg py-6">
                           <svg className="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24">
                             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                           </svg>
@@ -292,7 +292,7 @@ export default function PrisonIslandTourPage() {
         </div>
       </section>
 
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-blue-season text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Ready to Meet the Giant Tortoises?</h2>
           <p className="text-xl text-white mb-8">
@@ -302,7 +302,7 @@ export default function PrisonIslandTourPage() {
             <BookingModal
               tourName="Prison Island Tour"
               trigger={
-                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8">
+                <Button size="lg" className="bg-blue-season hover:bg-blue-season/90 text-white font-semibold px-8">
                   Book Now on WhatsApp
                 </Button>
               }
@@ -311,7 +311,7 @@ export default function PrisonIslandTourPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-ocean bg-transparent"
+                className="border-white text-white hover:bg-white hover:text-blue-season bg-transparent"
               >
                 View All Tours
               </Button>

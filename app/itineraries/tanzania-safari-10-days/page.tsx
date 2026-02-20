@@ -10,14 +10,14 @@ import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "10 Days Tanzania Safari Package - Complete Northern Circuit Tour | ZANZIONE TOURS",
+  title: "10 Days Tanzania Safari Package - Complete Northern Circuit Tour | Pago Travel Experience",
   description:
     "Unforgettable 10-day safari across Tanzania's breathtaking northern parks. From Tarangire and Lake Manyara to expansive Serengeti and majestic Ngorongoro Crater with Wildebeest Migration viewing.",
 }
 
 export default function TanzaniaSafari10Days() {
   const whatsappMessage = encodeURIComponent(
-    "Hello! I'm interested in booking the 10 Days Tanzania Safari Package ($3,720 per person). Can you provide more details?"
+    "Hello! I'm interested in booking the 10 Days Tanzania Safari Package ($3,730 per person). Can you provide more details?"
   )
 
   return (
@@ -64,7 +64,7 @@ export default function TanzaniaSafari10Days() {
               <p className="text-gray-600">5 Parks + Cultural Tour</p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="text-3xl font-bold text-golden mb-2">$3,720</div>
+              <div className="text-3xl font-bold text-golden mb-2">$3,730</div>
               <p className="font-semibold text-gray-900">Price</p>
               <p className="text-gray-600">Per Person</p>
             </div>
@@ -231,11 +231,11 @@ export default function TanzaniaSafari10Days() {
                 <div className="space-y-3">
                   <div className="flex justify-between items-center border-b pb-2">
                     <span className="text-gray-600">Price per Adult</span>
-                    <span className="text-2xl font-bold text-golden">$3,720</span>
+                    <span className="text-2xl font-bold text-golden">$3,730</span>
                   </div>
                   <div className="flex justify-between items-center border-b pb-2">
                     <span className="text-gray-600">Price per Child (3-9 yrs)</span>
-                    <span className="text-xl font-bold text-golden">$1,750</span>
+                    <span className="text-xl font-bold text-golden">$1,760</span>
                   </div>
                   <p className="text-sm text-gray-500 italic mt-4">
                     *Price is per person for a group of two. Rate decreases as group size increases.
@@ -250,11 +250,11 @@ export default function TanzaniaSafari10Days() {
                 <div className="space-y-3">
                   <div className="flex justify-between items-center border-b pb-2">
                     <span className="text-gray-600">Price per Adult</span>
-                    <span className="text-2xl font-bold text-golden">$3,050</span>
+                    <span className="text-2xl font-bold text-golden">$3,060</span>
                   </div>
                   <div className="flex justify-between items-center border-b pb-2">
                     <span className="text-gray-600">Price per Child (3-9 yrs)</span>
-                    <span className="text-xl font-bold text-golden">$2,080</span>
+                    <span className="text-xl font-bold text-golden">$2,090</span>
                   </div>
                   <p className="text-sm text-gray-500 italic mt-4">
                     *Price is per person for a group of two. Rate decreases as group size increases.
@@ -289,7 +289,7 @@ export default function TanzaniaSafari10Days() {
                     "All Taxes/VAT",
                   ].map((item, idx) => (
                     <li key={idx} className="flex items-start gap-3">
-                      <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                      <Check className="w-5 h-5 text-blue-season flex-shrink-0 mt-0.5" />
                       <span className="text-gray-600">{item}</span>
                     </li>
                   ))}
@@ -325,7 +325,7 @@ export default function TanzaniaSafari10Days() {
       <section className="py-12 sm:py-20 bg-blue-season text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-6">Ready to Book Your Safari?</h2>
-          <p className="text-lg sm:text-xl text-blue-100 mb-8 leading-relaxed">
+          <p className="text-lg sm:text-xl text-white/80 mb-8 leading-relaxed">
             Contact us today to reserve your 10-day Tanzania Safari adventure. Our team is ready to help you plan the
             ultimate wildlife and cultural experience across Tanzania's northern circuit.
           </p>
@@ -333,7 +333,7 @@ export default function TanzaniaSafari10Days() {
             {/* Replaced WhatsApp link with BookingModal */}
             <BookingModal 
               tourName="10 Days Tanzania Safari Package" 
-              className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4 w-full sm:w-auto"
+              className="bg-blue-season hover:bg-blue-season/90 text-white font-semibold px-8 py-4 w-full sm:w-auto"
             />
             <Link href="/itineraries">
               <Button

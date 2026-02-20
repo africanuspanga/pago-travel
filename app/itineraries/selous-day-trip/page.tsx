@@ -10,7 +10,7 @@ import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "Selous Day Trip Safari from Zanzibar - $450 | ZANZIONE TOURS",
+  title: "Selous Day Trip Safari from Zanzibar - $460 | Pago Travel Experience",
   description:
     "Unforgettable day trip to Selous Game Reserve (Nyerere National Park), Africa's largest reserve. Experience lions, elephants, giraffes, and stunning Rufiji River landscapes from Zanzibar.",
 }
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function SelousDayTripPage() {
   const whatsappNumber = "255628734126"
   const message = encodeURIComponent(
-    "Hello! I'm interested in booking the Selous Day Trip Safari from Zanzibar ($450 per person). Can you provide more details?"
+    "Hello! I'm interested in booking the Selous Day Trip Safari from Zanzibar ($460 per person). Can you provide more details?"
   )
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${message}`
 
@@ -70,7 +70,7 @@ export default function SelousDayTripPage() {
               <span className="text-gray-600">5 Stars Rated</span>
             </div>
             <div className="text-center sm:text-right">
-              <p className="text-3xl sm:text-4xl font-bold text-golden">$450</p>
+              <p className="text-3xl sm:text-4xl font-bold text-golden">$460</p>
               <p className="text-gray-600">Per Person (Sharing Vehicle)</p>
             </div>
           </div>
@@ -196,17 +196,17 @@ export default function SelousDayTripPage() {
                     <div className="space-y-3 mb-6">
                       <div className="flex justify-between items-center pb-3 border-b">
                         <span className="text-gray-600">Sharing Vehicle</span>
-                        <span className="text-2xl font-bold text-golden">$450</span>
+                        <span className="text-2xl font-bold text-golden">$460</span>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600">Private Vehicle</span>
-                        <span className="text-2xl font-bold text-golden">$680</span>
+                        <span className="text-2xl font-bold text-golden">$690</span>
                       </div>
                     </div>
                     <p className="text-sm text-gray-500 mb-6">Price per person</p>
                     <BookingModal 
                       tourName="Selous Day Trip Safari" 
-                      className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-6"
+                      className="w-full bg-blue-season hover:bg-blue-season/90 text-white text-lg py-6"
                     />
                   </CardContent>
                 </Card>
@@ -227,7 +227,7 @@ export default function SelousDayTripPage() {
                         "All Taxes/VAT",
                       ].map((item, idx) => (
                         <li key={idx} className="flex items-start gap-3">
-                          <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                          <Check className="w-5 h-5 text-blue-season flex-shrink-0 mt-0.5" />
                           <span className="text-gray-600">{item}</span>
                         </li>
                       ))}
@@ -244,13 +244,13 @@ export default function SelousDayTripPage() {
       <section className="py-12 sm:py-20 bg-blue-season text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-6">Ready for Your Safari?</h2>
-          <p className="text-lg sm:text-xl text-blue-100 mb-8 leading-relaxed">
+          <p className="text-lg sm:text-xl text-white/80 mb-8 leading-relaxed">
             Book your Selous day trip today and experience Africa's largest game reserve in all its glory.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <BookingModal 
               tourName="Selous Day Trip Safari" 
-              className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4"
+              className="bg-blue-season hover:bg-blue-season/90 text-white font-semibold px-8 py-4"
             />
             <Link href="/itineraries">
               <Button

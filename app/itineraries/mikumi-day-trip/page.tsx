@@ -10,7 +10,7 @@ import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "Mikumi Day Trip Safari from Zanzibar - $430 | ZANZIONE TOURS",
+  title: "Mikumi Day Trip Safari from Zanzibar - $440 | Pago Travel Experience",
   description:
     "Experience incredible wildlife in Mikumi National Park on this day trip from Zanzibar. Round-trip flights included. Spot lions, elephants, giraffes, zebras, and more in Tanzania's accessible park.",
 }
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function MikumiDayTripPage() {
   const whatsappNumber = "255628734126"
   const message = encodeURIComponent(
-    "Hello! I'm interested in booking the Mikumi Day Trip Safari from Zanzibar ($430 per person). Can you provide more details?"
+    "Hello! I'm interested in booking the Mikumi Day Trip Safari from Zanzibar ($440 per person). Can you provide more details?"
   )
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${message}`
 
@@ -70,7 +70,7 @@ export default function MikumiDayTripPage() {
               <span className="text-gray-600">5 Stars Rated</span>
             </div>
             <div className="text-center sm:text-right">
-              <p className="text-3xl sm:text-4xl font-bold text-golden">$430</p>
+              <p className="text-3xl sm:text-4xl font-bold text-golden">$440</p>
               <p className="text-gray-600">Per Person (Sharing Vehicle)</p>
             </div>
           </div>
@@ -199,17 +199,17 @@ export default function MikumiDayTripPage() {
                     <div className="space-y-3 mb-6">
                       <div className="flex justify-between items-center pb-3 border-b">
                         <span className="text-gray-600">Sharing Vehicle</span>
-                        <span className="text-2xl font-bold text-golden">$430</span>
+                        <span className="text-2xl font-bold text-golden">$440</span>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600">Private Vehicle</span>
-                        <span className="text-2xl font-bold text-golden">$680</span>
+                        <span className="text-2xl font-bold text-golden">$690</span>
                       </div>
                     </div>
                     <p className="text-sm text-gray-500 mb-6">Price per person</p>
                     <BookingModal 
                       tourName="Mikumi Day Trip Safari" 
-                      className="w-full bg-green-600 hover:bg-green-700 text-white text-lg py-6"
+                      className="w-full bg-blue-season hover:bg-blue-season/90 text-white text-lg py-6"
                     />
                   </CardContent>
                 </Card>
@@ -230,7 +230,7 @@ export default function MikumiDayTripPage() {
                         "All Taxes/VAT",
                       ].map((item, idx) => (
                         <li key={idx} className="flex items-start gap-3">
-                          <Check className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                          <Check className="w-5 h-5 text-blue-season flex-shrink-0 mt-0.5" />
                           <span className="text-gray-600">{item}</span>
                         </li>
                       ))}
@@ -247,13 +247,13 @@ export default function MikumiDayTripPage() {
       <section className="py-12 sm:py-20 bg-blue-season text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-6">Ready for Your Safari?</h2>
-          <p className="text-lg sm:text-xl text-blue-100 mb-8 leading-relaxed">
+          <p className="text-lg sm:text-xl text-white/80 mb-8 leading-relaxed">
             Book your Mikumi day trip today and experience Tanzania's incredible wildlife in comfort and style.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <BookingModal 
               tourName="Mikumi Day Trip Safari" 
-              className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8 py-4"
+              className="bg-blue-season hover:bg-blue-season/90 text-white font-semibold px-8 py-4"
             />
             <Link href="/itineraries">
               <Button

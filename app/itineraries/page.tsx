@@ -10,17 +10,17 @@ import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "Safari & Tour Packages - Serengeti, Zanzibar & Mikumi | ZANZIONE TOURS",
+  title: "Safari & Tour Packages - Serengeti, Zanzibar & Mikumi | Pago Travel Experience",
   description:
     "Explore our curated tour packages including 2-day Serengeti safari with the Great Migration, 5-day Zanzibar beach and culture tour, and Mikumi day trip safari. All-inclusive itineraries with expert guides, accommodation, meals, and unforgettable wildlife experiences in Tanzania.",
   openGraph: {
-    title: "Complete Tour Packages - ZANZIONE TOURS & TRAVELS",
+    title: "Complete Tour Packages - Pago Travel Experience",
     description:
       "Choose from our carefully crafted safari and beach tour packages. From the Serengeti plains to Zanzibar beaches.",
-    url: "https://www.zanzionetours.com/itineraries",
+    url: "https://www.pagotravelexperience.co.tz/itineraries",
   },
   alternates: {
-    canonical: "https://www.zanzionetours.com/itineraries",
+    canonical: "https://www.pagotravelexperience.co.tz/itineraries",
   },
 }
 
@@ -28,7 +28,7 @@ const packages = [
   {
     id: "mikumi-safari",
     title: "Mikumi Day Trip Safari",
-    price: "$430",
+    price: "$440",
     priceNote: "Per Person",
     duration: "1 Day",
     image: "/images/packages/mikumi-safari.jpg",
@@ -44,7 +44,7 @@ const packages = [
   {
     id: "zanzibar-tour",
     title: "Zanzibar 5-Day Tour Package",
-    price: "$390",
+    price: "$400",
     priceNote: "Per Person",
     duration: "5 Days / 4 Nights",
     image: "/images/packages/zanzibar-tour.jpg",
@@ -55,7 +55,7 @@ const packages = [
   {
     id: "serengeti-safari",
     title: "Serengeti 2 Days 1 Night Safari Package",
-    price: "$1,676",
+    price: "$1,686",
     priceNote: "Per Adult",
     duration: "2 Days / 1 Night",
     image: "/images/packages/serengeti-safari.jpg",
@@ -71,7 +71,7 @@ const packages = [
   {
     id: "mikumi-day-trip",
     title: "Mikumi Day Trip Safari from Zanzibar",
-    price: "$430",
+    price: "$440",
     priceNote: "Per Person",
     duration: "1 Day",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mikumi-bxYBdPwmmPNbzzdU2RvasPGdoZnptH.jpg",
@@ -87,7 +87,7 @@ const packages = [
   {
     id: "selous-day-trip",
     title: "Selous Day Trip Safari from Zanzibar",
-    price: "$450",
+    price: "$460",
     priceNote: "Per Person",
     duration: "1 Day",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/selous-PLPCwmHRaGPCeRtGO4YFWqPzgbbLuj.jpg",
@@ -103,7 +103,7 @@ const packages = [
   {
     id: "serengeti-3-days",
     title: "3 Days 2 Nights Serengeti Safari from Zanzibar",
-    price: "$2,048",
+    price: "$2,058",
     priceNote: "Per Adult",
     duration: "3 Days / 2 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/serengeti%20-lSPfjdMgugUtgqOQjyHFkanjYQCjbI.jpg",
@@ -119,7 +119,7 @@ const packages = [
   {
     id: "serengeti-balloon-safari",
     title: "3 Days Serengeti Safari & Hot Air Balloon from Zanzibar",
-    price: "$2,793",
+    price: "$2,803",
     priceNote: "Per Adult",
     duration: "3 Days / 2 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/serengeti-VUxSGtAmLFsVZH7cx67afMN8rT2oBn.jpg",
@@ -135,7 +135,7 @@ const packages = [
   {
     id: "zanzibar-3-days",
     title: "Zanzibar 3 Days 2 Nights Package",
-    price: "$398",
+    price: "$408",
     priceNote: "Per Person",
     duration: "3 Days / 2 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-mGZVMQ2iZK1EpkoVsQUYgGmAH9CwNP.jpg",
@@ -151,7 +151,7 @@ const packages = [
   {
     id: "zanzibar-4-days",
     title: "Zanzibar 4 Days 3 Nights Package",
-    price: "$617",
+    price: "$627",
     priceNote: "Per Person",
     duration: "4 Days / 3 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2-b94hGpun4A1YdQW2nQ8PHk6WqCkm8k.jpg",
@@ -167,7 +167,7 @@ const packages = [
   {
     id: "zanzibar-5-days",
     title: "Zanzibar 5 Days 4 Nights Package",
-    price: "$740",
+    price: "$750",
     priceNote: "Per Person",
     duration: "5 Days / 4 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3-pkDJR7WXf4YSlGOacUsAnIpo2RGvl7.jpg",
@@ -183,7 +183,7 @@ const packages = [
   {
     id: "zanzibar-7-days",
     title: "Zanzibar 7 Days 6 Nights Package",
-    price: "$1,298",
+    price: "$1,308",
     priceNote: "Per Person",
     duration: "7 Days / 6 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4-DY5HqYR6uOcnDpyE0cfBG2gUwBTPIU.jpg",
@@ -199,7 +199,7 @@ const packages = [
   {
     id: "zanzibar-8-days",
     title: "Zanzibar 8 Days 7 Nights Package",
-    price: "$1,340",
+    price: "$1,350",
     priceNote: "Per Person",
     duration: "8 Days / 7 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/7-6eePncVQ8Op8dAB1gTA69IbyRlXwOx.jpg",
@@ -215,7 +215,7 @@ const packages = [
   {
     id: "zanzibar-9-days",
     title: "Zanzibar 9 Days 8 Nights Package",
-    price: "$1,430",
+    price: "$1,440",
     priceNote: "Per Person",
     duration: "9 Days / 8 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5-hguPTgqUvdnvQXLPvVHOBq7ruQNM8U.jpg",
@@ -231,7 +231,7 @@ const packages = [
   {
     id: "zanzibar-10-days",
     title: "Zanzibar 10 Days 9 Nights Package",
-    price: "$1,590",
+    price: "$1,600",
     priceNote: "Per Person",
     duration: "10 Days / 9 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/6-Z4TldhxGWRDyxKK89AKFzO1b4FyrP5.jpg",
@@ -247,7 +247,7 @@ const packages = [
   {
     id: "tanzania-safari-5-days",
     title: "5 Days Tanzania Safari Package",
-    price: "$1,770",
+    price: "$1,780",
     priceNote: "Per Person",
     duration: "5 Days / 4 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/istockphoto-2164403934-612x612-HdABUcJJ5XjxbXARXyQB7coV71ddDx.jpg",
@@ -263,7 +263,7 @@ const packages = [
   {
     id: "tanzania-safari-7-days",
     title: "7 Days Tanzania Safari Package",
-    price: "$2,480",
+    price: "$2,490",
     priceNote: "Per Person",
     duration: "7 Days / 6 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/istockphoto-2140549925-612x612-xqVFbqqrcJxrD746BZh8NSB62q3K61.jpg",
@@ -279,7 +279,7 @@ const packages = [
   {
     id: "tanzania-safari-8-days",
     title: "8 Days Tanzania Safari Package",
-    price: "$2,600",
+    price: "$2,610",
     priceNote: "Per Person",
     duration: "8 Days / 7 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/istockphoto-1136053333-612x612-qGo4tXLLhliU6LP9YpvviF7vAU9Om4.jpg",
@@ -295,7 +295,7 @@ const packages = [
   {
     id: "tanzania-safari-10-days",
     title: "10 Days Tanzania Safari Package",
-    price: "$3,720",
+    price: "$3,730",
     priceNote: "Per Person",
     duration: "10 Days / 9 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/istockphoto-93469821-612x612-QhIAeWpzjALB7ZnlEHegynJmpCGhfS.jpg",
@@ -395,16 +395,16 @@ export default function ItinerariesPage() {
                     </ul>
                   </div>
 
-                  <div className="space-y-2">
+                  <div className="space-y-3 pt-2">
                     <Link href={`/itineraries/${pkg.id}`}>
-                      <Button className="w-full bg-blue-season hover:bg-blue-season/90 text-white">
+                      <Button className="w-full bg-white border border-blue-season text-blue-season hover:bg-[#f8f3f1]">
                         View Full Itinerary
                       </Button>
                     </Link>
                     <BookingModal 
                       tourName={pkg.title} 
                       trigger={
-                        <Button className="w-full bg-golden hover:bg-golden/90 text-white">BOOK THIS TRIP</Button>
+                        <Button className="w-full bg-blue-season hover:bg-blue-season/90 text-white">Book This Trip</Button>
                       }
                     />
                   </div>
@@ -419,7 +419,7 @@ export default function ItinerariesPage() {
       <section className="py-12 sm:py-20 bg-blue-season text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-6">Need a Custom Package?</h2>
-          <p className="text-lg sm:text-xl text-blue-100 mb-8 leading-relaxed">
+          <p className="text-lg sm:text-xl text-white/80 mb-8 leading-relaxed">
             Can't find exactly what you're looking for? Let us create a personalized itinerary tailored to your
             preferences, budget, and schedule.
           </p>

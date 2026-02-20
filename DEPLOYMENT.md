@@ -1,6 +1,6 @@
-# ZANZIONE TOURS & TRAVELS - cPanel Deployment Guide
+# Pago Travel Experience - cPanel Deployment Guide
 
-This guide will help you deploy the ZANZIONE TOURS & TRAVELS website as static HTML files to your cPanel hosting.
+This guide will help you deploy the Pago Travel Experience website as static HTML files to your cPanel hosting.
 
 ## Prerequisites
 
@@ -12,11 +12,11 @@ This guide will help you deploy the ZANZIONE TOURS & TRAVELS website as static H
 ## Step 1: Clone the Repository
 
 \`\`\`bash
-git clone https://github.com/YOUR-USERNAME/zanzione-tours.git
-cd zanzione-tours
+git clone https://github.com/YOUR-USERNAME/pago-travel-experience.git
+cd pago-travel-experience
 \`\`\`
 
-Replace `YOUR-USERNAME/zanzione-tours` with your actual GitHub repository URL.
+Replace `YOUR-USERNAME/pago-travel-experience` with your actual GitHub repository URL.
 
 ## Step 2: Install Dependencies
 

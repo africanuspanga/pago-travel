@@ -117,7 +117,7 @@ export const metadata: Metadata = {
     title: "Tanzania Safari Adventures - Witness Africa's Greatest Wildlife",
     description:
       "Encounter the Big Five, witness the Great Migration, and explore Tanzania's world-renowned national parks with expert guides.",
-    url: "https://www.zanzionetours.com/safari",
+    url: "https://www.pagotravelexperience.co.tz/safari",
     images: [
       {
         url: "/images/safari-sunset.jpg",
@@ -128,7 +128,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://www.zanzionetours.com/safari",
+    canonical: "https://www.pagotravelexperience.co.tz/safari",
   },
 }
 
@@ -138,7 +138,7 @@ export default function SafariPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-96 bg-gradient-to-r from-green-600 to-yellow-600 flex items-center justify-center">
+      <section className="relative h-96 bg-gradient-to-r from-[#3d1a14] to-yellow-600 flex items-center justify-center">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-6xl font-display font-bold mb-6">Tanzania Safari Adventures</h1>
@@ -210,7 +210,7 @@ export default function SafariPage() {
       <section className="py-20 bg-blue-season text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-display font-bold mb-6">Begin Your Safari Adventure</h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-white/80 mb-8">
             Let our expert guides show you the wonders of Tanzania's wilderness. Every safari is tailored to your
             interests and comfort level.
           </p>

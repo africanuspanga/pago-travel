@@ -16,7 +16,7 @@ const zanzibarTours = [
     image: "/images/tours/safari-blue-day.jpg",
     duration: "Full Day",
     groupSize: "4-20 people",
-    price: "$40",
+    price: "$50",
     slug: "SafariBlueTour", // Added slug for Safari Blue detail page
     description:
       "Sail on traditional dhows to pristine sandbanks and enjoy the ultimate marine adventure with snorkeling, swimming, and a seafood feast.",
@@ -34,7 +34,7 @@ const zanzibarTours = [
     image: "/images/tours/stone-town-tour.jpg",
     duration: "Half Day",
     groupSize: "2-12 people",
-    price: "$25",
+    price: "$35",
     slug: "StoneTownTour",
     description:
       "Explore the UNESCO World Heritage site with its narrow alleys, historic buildings, and vibrant markets. Discover the cultural heart of Zanzibar.",
@@ -52,7 +52,7 @@ const zanzibarTours = [
     image: "/images/tours/prison-island.jpg",
     duration: "Half Day",
     groupSize: "2-15 people",
-    price: "$30",
+    price: "$40",
     slug: "PrisonIslandTour",
     description:
       "Visit the historic Changuu Island to learn about its fascinating past and meet the famous giant Aldabra tortoises, some over 100 years old.",
@@ -70,7 +70,7 @@ const zanzibarTours = [
     image: "/images/tours/nakupenda-sandbank.jpg",
     duration: "Half Day",
     groupSize: "4-20 people",
-    price: "$49",
+    price: "$59",
     slug: "NakupendaSandbankTour",
     description:
       "Escape to a pristine white sand paradise in the middle of the ocean. Perfect for relaxation, swimming, and enjoying fresh seafood.",
@@ -88,7 +88,7 @@ const zanzibarTours = [
     image: "/images/tours/spice-tour.jpg",
     duration: "Half Day",
     groupSize: "2-15 people",
-    price: "$25",
+    price: "$35",
     slug: "SpiceFarmTour",
     description:
       "Discover why Zanzibar is called the 'Spice Island' with visits to working spice plantations where you'll see, smell, and taste exotic spices.",
@@ -106,7 +106,7 @@ const zanzibarTours = [
     image: "/images/tours/jozani-forest.jpg",
     duration: "Half Day",
     groupSize: "2-15 people",
-    price: "$30",
+    price: "$40",
     slug: "JozaniForestTour", // Added slug for Jozani Forest detail page
     description:
       "Explore Zanzibar's indigenous forest and meet the rare Red Colobus monkeys found nowhere else on Earth. A nature lover's paradise with guided forest walks.",
@@ -124,7 +124,7 @@ const zanzibarTours = [
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Salam%20Cave-maSMMXqzhTperq8CvQZOv47LUaKQYl.jpeg",
     duration: "Half Day",
     groupSize: "2-25 people",
-    price: "$25",
+    price: "$35",
     slug: "SalaamCave", // Added slug for detail page
     description:
       "Experience the unique sea turtle sanctuary in this natural coral grotto. Swim alongside rescued sea turtles in crystal-clear saltwater pools and support vital conservation efforts.",
@@ -142,7 +142,7 @@ const zanzibarTours = [
     image: "/images/tours/kizimkazi-dolphin.jpg",
     duration: "Half Day",
     groupSize: "2-12 people",
-    price: "$35",
+    price: "$45",
     slug: "KizimkaziDolphinsTour",
     description:
       "Swim with wild dolphins in their natural habitat at Kizimkazi. An unforgettable wildlife encounter in the warm waters of the Indian Ocean.",
@@ -178,7 +178,7 @@ const zanzibarTours = [
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Maalum%20Cave-7PuunGmAhTkHZ7MtEO0Mzjuf7H5N4x.jpeg",
     duration: "Half Day",
     groupSize: "2-25 people",
-    price: "$27",
+    price: "$37",
     slug: "MaalumCave", // Added slug for detail page
     description:
       "Discover Zanzibar's hidden oasis featuring a stunning natural limestone cave with crystal-clear freshwater pools. Perfect for swimming and geological exploration in a serene jungle setting.",
@@ -196,7 +196,7 @@ const zanzibarTours = [
     image: "/images/tours/the-rock-restaurant.jpg",
     duration: "Half Day",
     groupSize: "2-8 people",
-    price: "$45",
+    price: "$55",
     slug: "TheRockRestaurant", // Added slug for The Rock Restaurant detail page
     description:
       "Dine at the world-famous restaurant built on a rock in the Indian Ocean. An iconic Zanzibar experience combining great food with stunning views.",
@@ -214,7 +214,7 @@ const zanzibarTours = [
     image: "/images/tours/mnemba-island.jpg",
     duration: "Half Day",
     groupSize: "2-12 people",
-    price: "$42",
+    price: "$52",
     slug: "MnembaIslandTour",
     description:
       "Discover pristine coral reefs and swim in crystal-clear waters around this protected marine sanctuary. Perfect for snorkeling enthusiasts and marine life lovers.",
@@ -232,7 +232,7 @@ const zanzibarTours = [
     image: "/images/tours/sunset-dhow.jpg",
     duration: "Half Day",
     groupSize: "2-20 people",
-    price: "$35",
+    price: "$45",
     slug: "SunsetDhowCruise",
     description:
       "Sail into the golden hour aboard a traditional dhow and watch the spectacular Zanzibar sunset paint the sky in brilliant colors.",
@@ -256,7 +256,7 @@ export const metadata: Metadata = {
     title: "Zanzibar Island Tours - Experience the Spice Island",
     description:
       "From Stone Town's historic alleys to pristine beaches and vibrant marine life - discover authentic Zanzibar experiences.",
-    url: "https://www.zanzionetours.com/zanzibar",
+    url: "https://www.pagotravelexperience.co.tz/zanzibar",
     images: [
       {
         url: "/images/zanzibar-beach.jpg",
@@ -267,7 +267,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://www.zanzionetours.com/zanzibar",
+    canonical: "https://www.pagotravelexperience.co.tz/zanzibar",
   },
 }
 
@@ -277,7 +277,7 @@ export default function ZanzibarPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-96 bg-gradient-to-r from-blue-600 to-blue-800 flex items-center justify-center">
+      <section className="relative h-96 bg-gradient-to-r from-[#3d1a14] to-[#5a2a22] flex items-center justify-center">
         <div className="absolute inset-0 bg-black/20"></div>
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-6xl font-display font-bold mb-6">Zanzibar Island Tours</h1>
@@ -345,7 +345,7 @@ export default function ZanzibarPage() {
                     {tour.slug ? (
                       <>
                         <Link href={`/zanzibar/${tour.slug}`} scroll={true} className="flex-1">
-                          <Button variant="outline" className="w-full border-ocean text-ocean hover:bg-ocean hover:text-white">
+                          <Button variant="outline" className="w-full border-blue-season text-blue-season hover:bg-blue-season hover:text-white">
                             View Details
                           </Button>
                         </Link>
@@ -381,10 +381,10 @@ export default function ZanzibarPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-blue-season text-white">
+      <section className="py-20 bg-[#5a2a22] text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-display font-bold mb-6">Ready to Explore Zanzibar?</h2>
-          <p className="text-xl text-blue-100 mb-8">
+          <p className="text-xl text-white/80 mb-8">
             Let us create a personalized Zanzibar experience that matches your interests and schedule.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

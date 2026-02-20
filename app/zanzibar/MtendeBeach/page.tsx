@@ -10,14 +10,14 @@ import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "Mtende Beach Tour - Zanzibar's Secret Cove | ZANZIONE TOURS",
+  title: "Mtende Beach Tour - Zanzibar's Secret Cove | Pago Travel Experience",
   description:
     "Discover Mtende Beach on Zanzibar's southeast coast - a secluded cove with dramatic rock formations, tide pools, and authentic local culture. Experience extreme tides, natural swimming pools, and the famous rock swing.",
   keywords: "Mtende Beach Zanzibar, Makunduchi beach, secluded beach Zanzibar, tide pools, rock swing Zanzibar",
 }
 
 export default function MtendeBeachPage() {
-  const whatsappNumber = "255710885320"
+  const whatsappNumber = "255614363504"
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=Hi, I'm interested in booking the Mtende Beach tour. Can you provide more details?`
 
   return (
@@ -25,7 +25,7 @@ export default function MtendeBeachPage() {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="relative h-[500px] bg-gradient-to-r from-cyan-600 to-blue-500">
+      <section className="relative h-[500px] bg-gradient-to-r from-[#3d1a14] to-[#5a2a22]">
         <div className="absolute inset-0">
           <Image
             src="/images/mtende-20beach.jpeg"
@@ -70,7 +70,7 @@ export default function MtendeBeachPage() {
           <Card className="mb-12 shadow-2xl border-t-4 border-golden">
             <CardContent className="p-8">
               <div className="text-center">
-                <h2 className="text-3xl font-display font-bold text-ocean mb-4">Book Your Mtende Beach Escape</h2>
+                <h2 className="text-3xl font-display font-bold text-blue-season mb-4">Book Your Mtende Beach Escape</h2>
                 <p className="text-gray-600 mb-6 text-lg">Experience Zanzibar's most secluded and dramatic beach</p>
                 <BookingModal tourName="Mtende Beach Tour" />
                 <p className="text-sm text-gray-500 mt-4">
@@ -82,7 +82,7 @@ export default function MtendeBeachPage() {
 
           {/* Overview Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">Overview & Experience</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Overview & Experience</h2>
             <h3 className="text-2xl font-bold text-blue-season mb-4">Zanzibar's Secluded Cove</h3>
             <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed space-y-4">
               <p>
@@ -100,7 +100,7 @@ export default function MtendeBeachPage() {
 
           {/* Highlights Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">What You Will Experience</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">What You Will Experience</h2>
             <div className="grid md:grid-cols-2 gap-4">
               {[
                 "Dramatic scenery: Natural amphitheater framed by 15-meter cliffs",
@@ -110,8 +110,8 @@ export default function MtendeBeachPage() {
                 "Authentic culture: Glimpse traditional Swahili village life",
                 "Ancient coral cliffs: Explore exposed formations at low tide",
               ].map((highlight, index) => (
-                <div key={index} className="flex items-start gap-3 p-4 bg-cyan-50 rounded-lg">
-                  <Check className="w-6 h-6 text-green-600 flex-shrink-0 mt-1" />
+                <div key={index} className="flex items-start gap-3 p-4 bg-[#f8f3f1] rounded-lg">
+                  <Check className="w-6 h-6 text-blue-season flex-shrink-0 mt-1" />
                   <span className="text-gray-700">{highlight}</span>
                 </div>
               ))}
@@ -120,7 +120,7 @@ export default function MtendeBeachPage() {
 
           {/* Pricing Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">Pricing Overview</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Pricing Overview</h2>
             <p className="text-gray-600 mb-6">
               Highly group-friendly pricing with substantial savings for larger parties exploring this secluded
               paradise.
@@ -128,7 +128,7 @@ export default function MtendeBeachPage() {
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
-                  <tr className="bg-ocean text-white">
+                  <tr className="bg-blue-season text-white">
                     <th className="p-4 text-left border border-gray-300">Group Size</th>
                     <th className="p-4 text-left border border-gray-300">Price Per Person</th>
                   </tr>
@@ -160,7 +160,7 @@ export default function MtendeBeachPage() {
 
           {/* Inclusions Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">What's Included</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">What's Included</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-4">
                 <h3 className="font-bold text-blue-season mb-3">Inclusions</h3>
@@ -176,8 +176,8 @@ export default function MtendeBeachPage() {
                   </div>
                 ))}
               </div>
-              <div className="bg-blue-50 p-6 rounded-lg border-l-4 border-ocean">
-                <h3 className="font-bold text-ocean mb-3">Logistics & Practical Tips</h3>
+              <div className="bg-[#f8f3f1] p-6 rounded-lg border-l-4 border-blue-season">
+                <h3 className="font-bold text-blue-season mb-3">Logistics & Practical Tips</h3>
                 <ul className="space-y-3 text-sm text-gray-700">
                   <li>
                     <strong>Duration:</strong> Recommended 2-3 hours at the beach
@@ -200,8 +200,8 @@ export default function MtendeBeachPage() {
           </div>
 
           {/* Tide Information */}
-          <div className="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-ocean mb-6">Understanding the Tides</h2>
+          <div className="bg-gradient-to-br from-[#f8f3f1] to-[#f3ebe8] rounded-lg shadow-lg p-8 mb-8">
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Understanding the Tides</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white p-6 rounded-lg">
                 <h3 className="font-bold text-blue-season mb-3 text-lg">Low Tide Experience</h3>
@@ -223,7 +223,7 @@ export default function MtendeBeachPage() {
           </div>
 
           {/* Final CTA */}
-          <div className="bg-blue-600 text-white shadow-2xl rounded-lg p-10 text-center">
+          <div className="bg-blue-season text-white shadow-2xl rounded-lg p-10 text-center">
             <h2 className="text-3xl font-display font-bold mb-4">Ready to Discover Mtende Beach?</h2>
             <p className="text-xl text-white mb-8">Book your secluded beach escape to Zanzibar's hidden gem today</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
@@ -232,7 +232,7 @@ export default function MtendeBeachPage() {
                 <Button
                   size="lg"
                   variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-ocean font-semibold px-8 py-6 bg-transparent w-full sm:w-auto"
+                  className="border-white text-white hover:bg-white hover:text-blue-season font-semibold px-8 py-6 bg-transparent w-full sm:w-auto"
                 >
                   Contact Us
                 </Button>

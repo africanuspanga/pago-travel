@@ -10,11 +10,11 @@ import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "Mikumi Day Trip Safari - $430 Per Person | ZANZIONE TOURS",
+  title: "Mikumi Day Trip Safari - $440 Per Person | Pago Travel Experience",
   description:
     "Full-day flying safari to Mikumi National Park from Zanzibar. See elephants, giraffes, lions, and zebras. Includes round-trip flights, game drive, and bush lunch. Perfect day safari experience.",
   alternates: {
-    canonical: "https://www.zanzionetours.com/itineraries/mikumi-safari",
+    canonical: "https://www.pagotravelexperience.co.tz/itineraries/mikumi-safari",
   },
 }
 
@@ -47,7 +47,7 @@ export default function MikumiSafariPage() {
             <div className="hidden sm:block">•</div>
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5" />
-              <span>$430 Per Person</span>
+              <span>$440 Per Person</span>
             </div>
           </div>
         </div>
@@ -105,7 +105,7 @@ export default function MikumiSafariPage() {
               <Card className="sticky top-24">
                 <CardContent className="p-6">
                   <div className="text-center mb-6">
-                    <p className="text-3xl font-bold text-golden mb-2">$430</p>
+                    <p className="text-3xl font-bold text-golden mb-2">$440</p>
                     <p className="text-gray-600">Per Person</p>
                   </div>
 
@@ -233,7 +233,7 @@ export default function MikumiSafariPage() {
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold mb-6">
             Ready for Your Mikumi Adventure?
           </h2>
-          <p className="text-lg sm:text-xl text-blue-100 mb-8 leading-relaxed">
+          <p className="text-lg sm:text-xl text-white/80 mb-8 leading-relaxed">
             Experience the thrill of an African safari in just one day. Perfect for travelers with limited time who want
             to witness Tanzania's incredible wildlife.
           </p>

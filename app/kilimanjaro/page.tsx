@@ -90,14 +90,14 @@ const routes = [
 export const metadata: Metadata = {
   title: "Kilimanjaro Climbing Tours - Summit Africa's Highest Peak with Expert Guides",
   description:
-    "Conquer Mount Kilimanjaro (5,895m) with ZANZIONE TOURS. Choose from Machame, Lemosho, Rongai, or Marangu routes. Experienced mountain guides, quality equipment, and 85% success rate. 5-8 day climbing packages available.",
+    "Conquer Mount Kilimanjaro (5,895m) with Pago Travel Experience. Choose from Machame, Lemosho, Rongai, or Marangu routes. Experienced mountain guides, quality equipment, and 85% success rate. 5-8 day climbing packages available.",
   keywords:
     "Kilimanjaro climbing, Mount Kilimanjaro trek, Machame route, Lemosho route, Rongai route, Marangu route, Uhuru Peak, Tanzania mountain climbing, Africa highest peak, Kilimanjaro expedition",
   openGraph: {
     title: "Climb Mount Kilimanjaro - Reach the Roof of Africa",
     description:
       "Summit Africa's highest peak at 5,895m with expert guides and comprehensive support. Multiple routes for all experience levels.",
-    url: "https://www.zanzionetours.com/kilimanjaro",
+    url: "https://www.pagotravelexperience.co.tz/kilimanjaro",
     images: [
       {
         url: "/images/kilimanjaro-mountain.jpg",
@@ -108,7 +108,7 @@ export const metadata: Metadata = {
     ],
   },
   alternates: {
-    canonical: "https://www.zanzionetours.com/kilimanjaro",
+    canonical: "https://www.pagotravelexperience.co.tz/kilimanjaro",
   },
 }
 
@@ -299,7 +299,7 @@ export default function KilimanjaroPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-display font-bold mb-6">Preparation Guidelines</h2>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            <p className="text-xl text-white/80 max-w-3xl mx-auto">
               Proper preparation is key to a successful climb. We provide comprehensive guidance to help you prepare
               physically and mentally.
             </p>
@@ -311,7 +311,7 @@ export default function KilimanjaroPage() {
                 <TrendingUp className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-display font-semibold mb-3">Physical Training</h3>
-              <p className="text-blue-100 text-sm">
+              <p className="text-white/80 text-sm">
                 Build cardiovascular endurance and leg strength with hiking, running, and stair climbing.
               </p>
             </div>
@@ -321,7 +321,7 @@ export default function KilimanjaroPage() {
                 <Mountain className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-display font-semibold mb-3">Altitude Preparation</h3>
-              <p className="text-blue-100 text-sm">
+              <p className="text-white/80 text-sm">
                 Consider altitude training or arrive early to acclimatize in Tanzania's highlands.
               </p>
             </div>
@@ -331,7 +331,7 @@ export default function KilimanjaroPage() {
                 <Users className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-display font-semibold mb-3">Mental Preparation</h3>
-              <p className="text-blue-100 text-sm">
+              <p className="text-white/80 text-sm">
                 Prepare mentally for the challenge with visualization and positive mindset training.
               </p>
             </div>
@@ -341,7 +341,7 @@ export default function KilimanjaroPage() {
                 <Clock className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-xl font-display font-semibold mb-3">Gear Preparation</h3>
-              <p className="text-blue-100 text-sm">
+              <p className="text-white/80 text-sm">
                 We provide a comprehensive packing list and can arrange gear rental if needed.
               </p>
             </div>
@@ -354,7 +354,7 @@ export default function KilimanjaroPage() {
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-4xl font-display font-bold text-white mb-6">Ready to Climb Kilimanjaro?</h2>
           <p className="text-xl text-white/90 mb-8">
-            Join thousands of successful climbers who have reached Uhuru Peak with ZANZIONE TOURS & TRAVELS. Let us
+            Join thousands of successful climbers who have reached Uhuru Peak with Pago Travel Experience. Let us
             guide you to the roof of Africa.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

@@ -11,7 +11,7 @@ import ScrollToTop from "@/components/scroll-to-top"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "Kizimkazi Wild Dolphin Tour - Swim with Dolphins in Zanzibar | ZANZIONE TOURS",
+  title: "Kizimkazi Wild Dolphin Tour - Swim with Dolphins in Zanzibar | Pago Travel Experience",
   description:
     "Witness and swim with wild dolphins on Zanzibar's South Coast. Enjoy a unique 3-hour experience in Kizimkazi, spotting and swimming with dolphins in their natural habitat.",
 }
@@ -63,7 +63,7 @@ export default function KizimkaziDolphinsTourPage() {
               <span>Kizimkazi, South Coast</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-golden font-bold text-xl">From $35</span>
+              <span className="text-golden font-bold text-xl">From $45</span>
             </div>
           </div>
         </div>
@@ -135,29 +135,29 @@ export default function KizimkaziDolphinsTourPage() {
                     <table className="w-full border-collapse">
                       <thead>
                         <tr className="bg-blue-season text-white">
-                          <th className="border border-blue-700 px-4 py-3 text-left">Group Size</th>
-                          <th className="border border-blue-700 px-4 py-3 text-left">Price per Person</th>
+                          <th className="border border-blue-season px-4 py-3 text-left">Group Size</th>
+                          <th className="border border-blue-season px-4 py-3 text-left">Price per Person</th>
                         </tr>
                       </thead>
                       <tbody>
-                        <tr className="bg-white hover:bg-blue-50">
+                        <tr className="bg-white hover:bg-[#f8f3f1]">
                           <td className="border border-gray-300 px-4 py-3">1 - 5 persons</td>
-                          <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">$40</td>
+                          <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">$50</td>
                         </tr>
-                        <tr className="bg-gray-50 hover:bg-blue-50">
+                        <tr className="bg-gray-50 hover:bg-[#f8f3f1]">
                           <td className="border border-gray-300 px-4 py-3">6 - 10 persons</td>
-                          <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">$35</td>
+                          <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">$45</td>
                         </tr>
-                        <tr className="bg-white hover:bg-blue-50">
+                        <tr className="bg-white hover:bg-[#f8f3f1]">
                           <td className="border border-gray-300 px-4 py-3">11 - 28 persons</td>
-                          <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">$30</td>
+                          <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">$40</td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
                 </div>
 
-                <Card className="bg-blue-50 border-blue-200">
+                <Card className="bg-[#f8f3f1] border-[#d8c7c2]">
                   <CardContent className="p-6">
                     <p className="text-lg font-semibold text-blue-season mb-4">
                       The tour price is comprehensive and includes:
@@ -212,7 +212,7 @@ export default function KizimkaziDolphinsTourPage() {
                 <CardContent className="p-6 space-y-6">
                   <div>
                     <h3 className="text-2xl font-display font-bold text-blue-season mb-2">Book This Experience</h3>
-                    <div className="text-3xl font-bold text-golden mb-4">From $35</div>
+                    <div className="text-3xl font-bold text-golden mb-4">From $45</div>
                     <p className="text-gray-600 text-sm">per person</p>
                   </div>
 
@@ -263,7 +263,7 @@ export default function KizimkaziDolphinsTourPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-blue-600 text-white">
+      <section className="py-16 bg-blue-season text-white">
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl md:text-4xl font-display font-bold mb-6">Ready to Meet the Dolphins?</h2>
           <p className="text-xl text-white mb-8">
@@ -273,7 +273,7 @@ export default function KizimkaziDolphinsTourPage() {
             <BookingModal
               tourName="Kizimkazi Wild Dolphin Tour"
               trigger={
-                <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white font-semibold px-8">
+                <Button size="lg" className="bg-blue-season hover:bg-blue-season/90 text-white font-semibold px-8">
                   Book Now on WhatsApp
                 </Button>
               }
@@ -282,7 +282,7 @@ export default function KizimkaziDolphinsTourPage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-white text-white hover:bg-white hover:text-ocean bg-transparent"
+                className="border-white text-white hover:bg-white hover:text-blue-season bg-transparent"
               >
                 View All Tours
               </Button>
