@@ -103,7 +103,7 @@ export default function Footer() {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <MapPin className="w-4 h-4 text-golden" />
-                <span className="text-white/80 text-sm">Stone Town, Zanzibar</span>
+                <span className="text-white/80 text-sm">Zanzibar</span>
               </div>
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-golden" />
@@ -141,7 +141,7 @@ export default function Footer() {
             <span className="sr-only">Driftmark</span>
           </a>
           <p className="relative z-0 text-white/80 text-sm">
-            © 2026 Pago Travel Experience. All rights reserved. | Crafted with passion in Stone Town, Zanzibar
+            © 2026 Pago Travel Experience. All rights reserved. | Crafted with passion in Zanzibar
           </p>
         </div>
       </div>

@@ -9,7 +9,7 @@ import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "Zanzibar 5-Day Tour Package - $400 Per Person | Pago Travel Experience",
+  title: "Zanzibar 5-Day Tour Package - Quote on WhatsApp Quote via WhatsApp | Pago Travel Experience",
   description:
     "Complete 5-day Zanzibar experience including Safari Blue, Jozani Forest, Stone Town, Prison Island, spice farms, and The Rock Restaurant. All-inclusive beach and culture tour package.",
   alternates: {
@@ -43,7 +43,7 @@ export default function ZanzibarTourPage() {
               <Clock className="w-5 h-5" />
               <span>5 Days</span>
             </div>
-            <div className="text-2xl font-bold text-golden">$400 Per Person</div>
+            <div className="text-2xl font-bold text-golden">Quote on WhatsApp Quote via WhatsApp</div>
           </div>
         </div>
       </section>

@@ -58,7 +58,7 @@ export default function MaalumCavePage() {
                 <Users className="w-5 h-5" />
                 <span>2-25 People</span>
               </div>
-              <div className="bg-golden px-4 py-2 rounded-full font-bold">From $37 per person</div>
+              <div className="bg-golden px-4 py-2 rounded-full font-bold">Quote on WhatsApp</div>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ export default function MaalumCavePage() {
                 <p className="text-gray-600 mb-6 text-lg">Experience Zanzibar's hidden natural swimming pool</p>
                 <BookingModal tourName="Maalum Cave Tour" />
                 <p className="text-sm text-gray-500 mt-4">
-                  ✓ Best Price Guarantee | ✓ Easy Online Booking | ✓ Book Now & Pay Later
+                  ✓ Fast WhatsApp Support | ✓ Easy Online Booking | ✓ Book Now & Pay Later
                 </p>
               </div>
             </CardContent>
@@ -120,11 +120,11 @@ export default function MaalumCavePage() {
             </div>
           </div>
 
-          {/* Pricing Section */}
+          {/* Quote Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Pricing Overview</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Quote Overview</h2>
             <p className="text-gray-600 mb-6">
-              The price per person decreases as your group size increases, offering excellent value for shared
+              Quotes improve as your group size increases as your group size increases, offering excellent value for shared
               experiences.
             </p>
             <div className="overflow-x-auto">
@@ -132,15 +132,15 @@ export default function MaalumCavePage() {
                 <thead>
                   <tr className="bg-blue-season text-white">
                     <th className="p-4 text-left border border-gray-300">Group Size</th>
-                    <th className="p-4 text-left border border-gray-300">Price Per Person</th>
+                    <th className="p-4 text-left border border-gray-300">Quote via WhatsApp</th>
                   </tr>
                 </thead>
                 <tbody>
                   {[
-                    { size: "1 - 2 persons", price: "$45.00 p.p" },
-                    { size: "3 - 6 persons", price: "$43.00 p.p" },
-                    { size: "7 - 10 persons", price: "$40.00 p.p" },
-                    { size: "11 - 25 persons", price: "$37.00 p.p" },
+                    { size: "1 - 2 persons", price: "Quote on WhatsApp " },
+                    { size: "3 - 6 persons", price: "Quote on WhatsApp " },
+                    { size: "7 - 10 persons", price: "Quote on WhatsApp " },
+                    { size: "11 - 25 persons", price: "Quote on WhatsApp " },
                   ].map((item, index) => (
                     <tr key={index} className={index % 2 === 0 ? "bg-gray-50" : "bg-white"}>
                       <td className="p-4 border border-gray-300 font-semibold">{item.size}</td>

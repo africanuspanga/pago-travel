@@ -63,7 +63,7 @@ export default function KizimkaziDolphinsTourPage() {
               <span>Kizimkazi, South Coast</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-golden font-bold text-xl">From $45</span>
+              <span className="text-golden font-bold text-xl">Quote on WhatsApp</span>
             </div>
           </div>
         </div>
@@ -127,30 +127,30 @@ export default function KizimkaziDolphinsTourPage() {
 
               {/* Inclusions Section */}
               <div>
-                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Price & Inclusions</h2>
+                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Tour Details & Inclusions</h2>
 
                 <div className="mb-6">
-                  <h3 className="text-xl font-bold text-blue-season mb-4">Tour Pricing</h3>
+                  <h3 className="text-xl font-bold text-blue-season mb-4">Tour Quote Details</h3>
                   <div className="overflow-x-auto">
                     <table className="w-full border-collapse">
                       <thead>
                         <tr className="bg-blue-season text-white">
                           <th className="border border-blue-season px-4 py-3 text-left">Group Size</th>
-                          <th className="border border-blue-season px-4 py-3 text-left">Price per Person</th>
+                          <th className="border border-blue-season px-4 py-3 text-left">Quote via WhatsApp</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr className="bg-white hover:bg-[#f8f3f1]">
                           <td className="border border-gray-300 px-4 py-3">1 - 5 persons</td>
-                          <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">$50</td>
+                          <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">Quote on WhatsApp</td>
                         </tr>
                         <tr className="bg-gray-50 hover:bg-[#f8f3f1]">
                           <td className="border border-gray-300 px-4 py-3">6 - 10 persons</td>
-                          <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">$45</td>
+                          <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">Quote on WhatsApp</td>
                         </tr>
                         <tr className="bg-white hover:bg-[#f8f3f1]">
                           <td className="border border-gray-300 px-4 py-3">11 - 28 persons</td>
-                          <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">$40</td>
+                          <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">Quote on WhatsApp</td>
                         </tr>
                       </tbody>
                     </table>
@@ -160,7 +160,7 @@ export default function KizimkaziDolphinsTourPage() {
                 <Card className="bg-[#f8f3f1] border-[#d8c7c2]">
                   <CardContent className="p-6">
                     <p className="text-lg font-semibold text-blue-season mb-4">
-                      The tour price is comprehensive and includes:
+                      The tour includes:
                     </p>
                     <ul className="space-y-3">
                       {[
@@ -188,7 +188,7 @@ export default function KizimkaziDolphinsTourPage() {
                     <p className="text-gray-700 leading-relaxed">
                       This tour is located on the South Coast of Zanzibar in Kizimkazi village. Please note that
                       transportation costs to and from your hotel to Kizimkazi are typically not included in the base
-                      price and will depend on your hotel's location.
+                      quote and will depend on your hotel's location.
                     </p>
                   </CardContent>
                 </Card>
@@ -212,8 +212,8 @@ export default function KizimkaziDolphinsTourPage() {
                 <CardContent className="p-6 space-y-6">
                   <div>
                     <h3 className="text-2xl font-display font-bold text-blue-season mb-2">Book This Experience</h3>
-                    <div className="text-3xl font-bold text-golden mb-4">From $45</div>
-                    <p className="text-gray-600 text-sm">per person</p>
+                    <div className="text-3xl font-bold text-golden mb-4">Quote on WhatsApp</div>
+                    <p className="text-gray-600 text-sm">quote via WhatsApp</p>
                   </div>
 
                   <div className="space-y-3 text-sm">

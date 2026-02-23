@@ -30,7 +30,7 @@ export default function ContactClientPage() {
             <div>
               <h2 className="text-4xl font-display font-bold text-blue-season mb-8">Get in Touch</h2>
               <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-                We're based in Stone Town, Zanzibar, and we're always ready to help you plan your
+                We're based in Zanzibar, and we're always ready to help you plan your
                 perfect East African adventure. Reach out to us through any of the channels below.
               </p>
 
@@ -41,11 +41,7 @@ export default function ContactClientPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-display font-semibold text-blue-season mb-1">Our Location</h3>
-                    <p className="text-gray-600">
-                      Stone Town
-                      <br />
-                      Zanzibar, Tanzania
-                    </p>
+                    <p className="text-gray-600">Zanzibar</p>
                   </div>
                 </div>
 
@@ -124,19 +120,19 @@ export default function ContactClientPage() {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-display font-bold text-blue-season mb-6">Find Us</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Located in Stone Town, Zanzibar
+              Located in Zanzibar
             </p>
           </div>
           <div className="rounded-lg overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps?q=Stone+Town,+Zanzibar&output=embed"
+              src="https://www.google.com/maps?q=Zanzibar&output=embed"
               width="100%"
               height="450"
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              title="Stone Town, Zanzibar Location"
+              title="Zanzibar Location"
             />
           </div>
         </div>

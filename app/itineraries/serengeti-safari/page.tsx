@@ -10,7 +10,7 @@ import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "Serengeti 2 Days 1 Night Safari Package - $1,686 | Pago Travel Experience",
+  title: "Serengeti 2 Days 1 Night Safari Package - Quote on WhatsApp | Pago Travel Experience",
   description:
     "Fly-in safari to Serengeti National Park from Zanzibar. 2 days of game drives, Big Five viewing, accommodation included. Experience the Great Migration and Tanzania's premier wildlife destination.",
   alternates: {
@@ -53,7 +53,7 @@ export default function SerengetiSafariPage() {
             <div className="hidden sm:block">•</div>
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5" />
-              <span>$1,686 Per Adult</span>
+              <span>Quote on WhatsApp Quote via WhatsApp</span>
             </div>
           </div>
         </div>
@@ -111,8 +111,8 @@ export default function SerengetiSafariPage() {
               <Card className="sticky top-24">
                 <CardContent className="p-6">
                   <div className="text-center mb-6">
-                    <p className="text-3xl font-bold text-golden mb-2">$1,686</p>
-                    <p className="text-gray-600">Per Adult</p>
+                    <p className="text-3xl font-bold text-golden mb-2">Quote on WhatsApp</p>
+                    <p className="text-gray-600">Quote via WhatsApp</p>
                   </div>
 
                   <div className="space-y-4 mb-6">

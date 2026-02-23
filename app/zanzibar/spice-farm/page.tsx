@@ -11,7 +11,7 @@ import type { Metadata } from "next"
 export const metadata: Metadata = {
   title: "Zanzibar Spice Farm Tour - Experience the Spice Island | Pago Travel Experience",
   description:
-    "Discover why Zanzibar is the Spice Island. Half-day walking tour through spice plantations to taste, smell, and learn about turmeric, cardamom, cinnamon, cloves, and nutmeg. Includes spiced rice lunch. $35 per person.",
+    "Discover why Zanzibar is the Spice Island. Half-day walking tour through spice plantations to taste, smell, and learn about turmeric, cardamom, cinnamon, cloves, and nutmeg. Includes spiced rice lunch. Quote on WhatsApp.",
   alternates: {
     canonical: "https://www.pagotravelexperience.co.tz/zanzibar/spice-farm",
   },
@@ -58,7 +58,7 @@ export default function SpiceFarmPage() {
             <div className="hidden sm:block">•</div>
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5" />
-              <span>$35 Per Person</span>
+              <span>Quote on WhatsApp Quote via WhatsApp</span>
             </div>
           </div>
         </div>
@@ -121,7 +121,7 @@ export default function SpiceFarmPage() {
 
               <h3 className="text-2xl font-display font-bold text-blue-season mb-4">Tour Details & Inclusions</h3>
               <div className="bg-[#f8f3f1] rounded-lg p-6 mb-6">
-                <h4 className="font-semibold text-blue-season mb-3">The tour price includes:</h4>
+                <h4 className="font-semibold text-blue-season mb-3">The tour includes:</h4>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-start gap-2">
                     <span className="text-golden mt-1">✓</span>
@@ -145,11 +145,11 @@ export default function SpiceFarmPage() {
               </div>
 
               <div className="bg-amber-50 border-l-4 border-amber-500 p-6 mb-8">
-                <h4 className="font-semibold text-amber-900 mb-2">Important Note on Pricing</h4>
+                <h4 className="font-semibold text-amber-900 mb-2">Important Note on Quotes</h4>
                 <p className="text-amber-800">
-                  Please be aware that the price for this tour does <strong>not</strong> include transportation costs.
-                  Since the final price depends on your hotel's location, kindly reach out to us, and we will provide you
-                  with the full price based on your accommodation details.
+                  Please be aware that the quote for this tour does <strong>not</strong> include transportation costs.
+                  Since the final quote depends on your hotel's location, kindly reach out to us, and we will provide you
+                  with the full quote based on your accommodation details.
                 </p>
               </div>
 
@@ -190,8 +190,8 @@ export default function SpiceFarmPage() {
                 <CardContent className="p-6">
                   <div className="text-center mb-6">
                     <p className="text-gray-500 text-sm mb-1">From</p>
-                    <p className="text-4xl font-bold text-golden mb-2">$35</p>
-                    <p className="text-gray-600">Per Person</p>
+                    <p className="text-4xl font-bold text-golden mb-2">Quote on WhatsApp</p>
+                    <p className="text-gray-600">Quote via WhatsApp</p>
                     <div className="flex items-center justify-center gap-1 mt-2">
                       <div className="flex text-golden">
                         {[...Array(5)].map((_, i) => (
@@ -235,7 +235,7 @@ export default function SpiceFarmPage() {
                   <div className="mt-6 pt-6 border-t">
                     <div className="flex items-center gap-2 text-sm text-gray-600 mb-2">
                       <CheckCircle className="w-4 h-4 text-blue-season" />
-                      <span>Best Price Guarantee</span>
+                      <span>Fast WhatsApp Support</span>
                     </div>
                     <div className="flex items-center gap-2 text-sm text-gray-600">
                       <CheckCircle className="w-4 h-4 text-blue-season" />

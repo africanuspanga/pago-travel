@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     template: "%s | Pago Travel Experience",
   },
   description:
-    "Experience authentic East African adventures with Pago Travel Experience. Based in Stone Town, Zanzibar, we offer premium island tours, Tanzania safaris, and Kilimanjaro climbing expeditions. Expert local guides, personalized service, and unforgettable memories.",
+    "Experience authentic East African adventures with Pago Travel Experience. Based in Zanzibar, we offer premium island tours, Tanzania safaris, and Kilimanjaro climbing expeditions. Expert local guides, personalized service, and unforgettable memories.",
   keywords:
     "Zanzibar tours, Tanzania safari, Kilimanjaro climbing, Stone Town tours, spice tours, Safari Blue, Serengeti safari, Ngorongoro crater, beach tours, dolphin tours, Zanzibar travel, East Africa adventures",
   authors: [{ name: "Pago Travel Experience" }],
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Pago Travel Experience - Premium Zanzibar Tours & Tanzania Safari",
-    description: "Experience authentic East African adventures with expert local guides based in Stone Town, Zanzibar.",
+    description: "Experience authentic East African adventures with expert local guides based in Zanzibar.",
     images: ["/pg/hero.jpg"],
   },
   alternates: {

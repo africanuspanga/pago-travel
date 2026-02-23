@@ -13,7 +13,7 @@ import BookingModal from "@/components/booking-modal"
 export const metadata: Metadata = {
   title: "Nakupenda Sandbank Trip - Swim, Snorkel & Relax | Pago Travel Experience",
   description:
-    "Experience the pristine 'I Love You' sandbank. 5-star rated tour with snorkeling, seafood BBQ, and crystal-clear waters. Book now with best price guarantee!",
+    "Experience the pristine 'I Love You' sandbank. 5-star rated tour with snorkeling, seafood BBQ, and crystal-clear waters. Book now with fast quote support!",
   keywords: "Nakupenda sandbank, Zanzibar sandbank tour, snorkeling Zanzibar, seafood BBQ, romantic beach Zanzibar",
   openGraph: {
     title: "Nakupenda Sandbank Trip - Paradise in Zanzibar",
@@ -53,7 +53,7 @@ export default function NakupendaSandbankPage() {
               </div>
               <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Check className="w-5 h-5" />
-                <span className="font-semibold">Best Price Guarantee</span>
+                <span className="font-semibold">Fast WhatsApp Support</span>
               </div>
               <div className="flex items-center gap-2 bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full">
                 <Check className="w-5 h-5" />
@@ -75,7 +75,7 @@ export default function NakupendaSandbankPage() {
             <Users className="w-5 h-5" />
             <span className="font-semibold">4-20 People</span>
           </div>
-          <div className="text-lg font-bold">From $59 per person</div>
+          <div className="text-lg font-bold">Quote on WhatsApp</div>
         </div>
       </section>
 
@@ -148,8 +148,8 @@ export default function NakupendaSandbankPage() {
 
               {/* Tour Inclusions */}
               <div>
-                <h2 className="text-3xl font-display font-bold text-[#3d1a14] mb-4">Price & Inclusions</h2>
-                <p className="text-gray-700 mb-4">The tour price is comprehensive and includes:</p>
+                <h2 className="text-3xl font-display font-bold text-[#3d1a14] mb-4">Tour Details & Inclusions</h2>
+                <p className="text-gray-700 mb-4">The tour includes:</p>
                 <div className="bg-[#f8f3f1] rounded-lg p-6">
                   <ul className="space-y-3">
                     <li className="flex items-start gap-3">
@@ -186,50 +186,50 @@ export default function NakupendaSandbankPage() {
                 </div>
               </div>
 
-              {/* Tour Pricing */}
+              {/* Tour Quote Details */}
               <div>
-                <h2 className="text-3xl font-display font-bold text-[#3d1a14] mb-4">Tour Pricing</h2>
+                <h2 className="text-3xl font-display font-bold text-[#3d1a14] mb-4">Tour Quote Details</h2>
                 <div className="overflow-x-auto">
                   <table className="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-sm">
                     <thead>
                       <tr className="bg-blue-season text-white">
                         <th className="border border-gray-300 px-4 py-3 text-left">Group Size</th>
-                        <th className="border border-gray-300 px-4 py-3 text-left">Price Per Person</th>
+                        <th className="border border-gray-300 px-4 py-3 text-left">Quote via WhatsApp</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr className="hover:bg-gray-50">
                         <td className="border border-gray-300 px-4 py-3">1 - 2 persons</td>
-                        <td className="border border-gray-300 px-4 py-3 font-semibold text-[#3d1a14]">$90 p.p</td>
+                        <td className="border border-gray-300 px-4 py-3 font-semibold text-[#3d1a14]">Quote on WhatsApp </td>
                       </tr>
                       <tr className="hover:bg-gray-50">
                         <td className="border border-gray-300 px-4 py-3">3 - 5 persons</td>
-                        <td className="border border-gray-300 px-4 py-3 font-semibold text-[#3d1a14]">$65 p.p</td>
+                        <td className="border border-gray-300 px-4 py-3 font-semibold text-[#3d1a14]">Quote on WhatsApp </td>
                       </tr>
                       <tr className="hover:bg-gray-50">
                         <td className="border border-gray-300 px-4 py-3">6 - 10 persons</td>
-                        <td className="border border-gray-300 px-4 py-3 font-semibold text-[#3d1a14]">$58 p.p</td>
+                        <td className="border border-gray-300 px-4 py-3 font-semibold text-[#3d1a14]">Quote on WhatsApp </td>
                       </tr>
                       <tr className="hover:bg-gray-50">
                         <td className="border border-gray-300 px-4 py-3">11 - 25 persons</td>
-                        <td className="border border-gray-300 px-4 py-3 font-semibold text-[#3d1a14]">$50 p.p</td>
+                        <td className="border border-gray-300 px-4 py-3 font-semibold text-[#3d1a14]">Quote on WhatsApp </td>
                       </tr>
                     </tbody>
                   </table>
                 </div>
                 <p className="text-sm text-gray-600 mt-4 italic">
-                  Prices are per person. For guests staying in Stone Town, additional transportation costs may not
+                  Quotes are shared via WhatsApp. For guests staying in Stone Town, additional transportation costs may not
                   apply.
                 </p>
               </div>
 
               {/* Important Note */}
               <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded">
-                <h3 className="font-bold text-gray-900 mb-2">💡 Important Note on Pricing</h3>
+                <h3 className="font-bold text-gray-900 mb-2">💡 Important Note on Quotes</h3>
                 <p className="text-gray-700">
                   This tour is very accessible from Stone Town's coast. If you are staying in Stone Town, you may{" "}
                   <strong>not</strong> need to pay for additional transport costs to the departure point. For guests
-                  staying outside Stone Town, please inquire for the full price including transfer fees.
+                  staying outside Stone Town, please inquire for the full quote including transfer fees.
                 </p>
               </div>
             </div>
@@ -240,8 +240,8 @@ export default function NakupendaSandbankPage() {
                 <Card className="shadow-xl border-2 border-golden">
                   <CardContent className="p-6 space-y-6">
                     <div className="text-center">
-                      <div className="text-4xl font-bold text-[#3d1a14] mb-2">$59</div>
-                      <p className="text-gray-600">per person</p>
+                      <div className="text-4xl font-bold text-[#3d1a14] mb-2">Quote on WhatsApp</div>
+                      <p className="text-gray-600">quote via WhatsApp</p>
                     </div>
 
                     <BookingModal
@@ -272,7 +272,7 @@ export default function NakupendaSandbankPage() {
                       </div>
                       <div className="flex items-center gap-2">
                         <Check className="w-4 h-4 text-blue-season" />
-                        <span>Best price guarantee</span>
+                        <span>fast quote support</span>
                       </div>
                     </div>
                   </CardContent>

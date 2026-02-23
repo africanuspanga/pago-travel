@@ -61,7 +61,7 @@ export default function MnembaIslandTourPage() {
               <span>Northeast Coast (Matemwe/Muyuni)</span>
             </div>
             <div className="flex items-center gap-2">
-              <span className="text-golden font-bold text-xl">From $52</span>
+              <span className="text-golden font-bold text-xl">Quote on WhatsApp</span>
             </div>
           </div>
         </div>
@@ -114,35 +114,35 @@ export default function MnembaIslandTourPage() {
 
               {/* Inclusions Section */}
               <div>
-                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Price & Inclusions</h2>
+                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Tour Details & Inclusions</h2>
 
                 <Card className="bg-[#f8f3f1] border-[#d8c7c2] mb-6">
                   <CardContent className="p-6">
-                    <p className="text-lg font-semibold text-blue-season mb-4">Tour Pricing (Per Person):</p>
+                    <p className="text-lg font-semibold text-blue-season mb-4">Tour Quote Details (Quote via WhatsApp):</p>
                     <div className="overflow-x-auto">
                       <table className="w-full border-collapse">
                         <thead>
                           <tr className="bg-blue-season text-white">
                             <th className="py-3 px-4 text-left font-semibold">Group Size</th>
-                            <th className="py-3 px-4 text-right font-semibold">Price per Person</th>
+                            <th className="py-3 px-4 text-right font-semibold">Quote via WhatsApp</th>
                           </tr>
                         </thead>
                         <tbody>
                           <tr className="border-b border-[#d8c7c2]">
                             <td className="py-3 px-4 text-gray-700">1 - 2 persons</td>
-                            <td className="py-3 px-4 text-right font-semibold text-blue-season">$65</td>
+                            <td className="py-3 px-4 text-right font-semibold text-blue-season">Quote on WhatsApp</td>
                           </tr>
                           <tr className="border-b border-[#d8c7c2] bg-[#f8f3f1]/50">
                             <td className="py-3 px-4 text-gray-700">3 - 5 persons</td>
-                            <td className="py-3 px-4 text-right font-semibold text-blue-season">$63</td>
+                            <td className="py-3 px-4 text-right font-semibold text-blue-season">Quote on WhatsApp</td>
                           </tr>
                           <tr className="border-b border-[#d8c7c2]">
                             <td className="py-3 px-4 text-gray-700">6 - 10 persons</td>
-                            <td className="py-3 px-4 text-right font-semibold text-blue-season">$50</td>
+                            <td className="py-3 px-4 text-right font-semibold text-blue-season">Quote on WhatsApp</td>
                           </tr>
                           <tr className="bg-[#f8f3f1]/50">
                             <td className="py-3 px-4 text-gray-700">11 - 25 persons</td>
-                            <td className="py-3 px-4 text-right font-semibold text-blue-season">$45</td>
+                            <td className="py-3 px-4 text-right font-semibold text-blue-season">Quote on WhatsApp</td>
                           </tr>
                         </tbody>
                       </table>
@@ -150,7 +150,7 @@ export default function MnembaIslandTourPage() {
                     <div className="mt-4 p-3 bg-amber-50 border border-amber-200 rounded">
                       <p className="text-sm text-gray-600">
                         <strong>Note:</strong> Transport costs to the departure point are excluded from the prices
-                        above. Contact us with your hotel location for the final price.
+                        above. Contact us with your hotel location for the final quote.
                       </p>
                     </div>
                   </CardContent>
@@ -158,7 +158,7 @@ export default function MnembaIslandTourPage() {
 
                 <Card className="bg-[#f8f3f1] border-[#d8c7c2]">
                   <CardContent className="p-6">
-                    <p className="text-lg font-semibold text-blue-season mb-4">The tour price includes:</p>
+                    <p className="text-lg font-semibold text-blue-season mb-4">The tour includes:</p>
                     <ul className="space-y-3">
                       {[
                         "Services of an English-Speaking Guide",
@@ -184,16 +184,16 @@ export default function MnembaIslandTourPage() {
 
               {/* Important Note */}
               <div>
-                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Important Note on Pricing</h2>
+                <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Important Note on Quotes</h2>
                 <Card className="bg-amber-50 border-amber-200">
                   <CardContent className="p-6 flex gap-4">
                     <AlertCircle className="w-6 h-6 text-amber-600 flex-shrink-0" />
                     <div>
                       <p className="font-semibold text-amber-900 mb-2">TRANSPORT IS EXCLUDED</p>
                       <p className="text-gray-700 leading-relaxed">
-                        The displayed price is <strong>exclusive of transport costs</strong> to the departure point
+                        The quoted amount is <strong>exclusive of transport costs</strong> to the departure point
                         (usually Matemwe/Muyuni). Please contact us with your hotel location, and we will provide you
-                        with the full, final price including hotel transfers.
+                        with the full, final quote including hotel transfers.
                       </p>
                     </div>
                   </CardContent>
@@ -228,8 +228,8 @@ export default function MnembaIslandTourPage() {
                 <CardContent className="p-6 space-y-6">
                   <div>
                     <h3 className="text-2xl font-display font-bold text-blue-season mb-2">Book This Experience</h3>
-                    <div className="text-3xl font-bold text-golden mb-4">From $52</div>
-                    <p className="text-gray-600 text-sm">per person (transport extra)</p>
+                    <div className="text-3xl font-bold text-golden mb-4">Quote on WhatsApp</div>
+                    <p className="text-gray-600 text-sm">quote via WhatsApp (transport extra)</p>
                   </div>
 
                   <div className="space-y-3 text-sm">

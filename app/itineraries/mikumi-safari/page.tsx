@@ -10,7 +10,7 @@ import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "Mikumi Day Trip Safari - $440 Per Person | Pago Travel Experience",
+  title: "Mikumi Day Trip Safari - Quote on WhatsApp Quote via WhatsApp | Pago Travel Experience",
   description:
     "Full-day flying safari to Mikumi National Park from Zanzibar. See elephants, giraffes, lions, and zebras. Includes round-trip flights, game drive, and bush lunch. Perfect day safari experience.",
   alternates: {
@@ -47,7 +47,7 @@ export default function MikumiSafariPage() {
             <div className="hidden sm:block">•</div>
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5" />
-              <span>$440 Per Person</span>
+              <span>Quote on WhatsApp Quote via WhatsApp</span>
             </div>
           </div>
         </div>
@@ -105,8 +105,8 @@ export default function MikumiSafariPage() {
               <Card className="sticky top-24">
                 <CardContent className="p-6">
                   <div className="text-center mb-6">
-                    <p className="text-3xl font-bold text-golden mb-2">$440</p>
-                    <p className="text-gray-600">Per Person</p>
+                    <p className="text-3xl font-bold text-golden mb-2">Quote on WhatsApp</p>
+                    <p className="text-gray-600">Quote via WhatsApp</p>
                   </div>
 
                   <div className="space-y-4 mb-6">

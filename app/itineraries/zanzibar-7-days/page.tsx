@@ -11,7 +11,7 @@ import BookingModal from "@/components/booking-modal"
 export default function Zanzibar7DaysPackage() {
   const whatsappNumber = "255718881882"
   const packageName = "Zanzibar 7 Days 6 Nights Package"
-  const whatsappMessage = `Hi, I'm interested in booking the ${packageName} ($1398). Can you provide more details?`
+  const whatsappMessage = `Hi, I'm interested in booking the ${packageName} (Quote on WhatsApp). Can you provide more details?`
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`
 
   return (
@@ -188,8 +188,8 @@ export default function Zanzibar7DaysPackage() {
                   <CardContent className="p-6">
                     <div className="text-center mb-6">
                       <p className="text-gray-600 text-sm mb-2">Starting from</p>
-                      <p className="text-5xl font-bold text-[#3d1a14]">$1398</p>
-                      <p className="text-gray-500 text-sm mt-2">per person</p>
+                      <p className="text-5xl font-bold text-[#3d1a14]">Quote on WhatsApp</p>
+                      <p className="text-gray-500 text-sm mt-2">quote via WhatsApp</p>
                     </div>
                     
                     <div className="space-y-3 mb-6">

@@ -58,7 +58,7 @@ export default function SalaamCavePage() {
                 <Users className="w-5 h-5" />
                 <span>2-25 People</span>
               </div>
-              <div className="bg-golden px-4 py-2 rounded-full font-bold">From $35 per person</div>
+              <div className="bg-golden px-4 py-2 rounded-full font-bold">Quote on WhatsApp</div>
             </div>
           </div>
         </div>
@@ -75,7 +75,7 @@ export default function SalaamCavePage() {
                 <p className="text-gray-600 mb-6 text-lg">Swim with sea turtles and support conservation</p>
                 <BookingModal tourName="Salaam Cave Tour" />
                 <p className="text-sm text-gray-500 mt-4">
-                  ✓ Best Price Guarantee | ✓ Easy Online Booking | ✓ Book Now & Pay Later
+                  ✓ Fast WhatsApp Support | ✓ Easy Online Booking | ✓ Book Now & Pay Later
                 </p>
               </div>
             </CardContent>
@@ -119,26 +119,26 @@ export default function SalaamCavePage() {
             </div>
           </div>
 
-          {/* Pricing Section */}
+          {/* Quote Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Pricing Overview</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Quote Overview</h2>
             <p className="text-gray-600 mb-6">
-              The price per person decreases with larger groups, offering excellent value for families and friends.
+              Quotes improve as your group size increases with larger groups, offering excellent value for families and friends.
             </p>
             <div className="overflow-x-auto">
               <table className="w-full border-collapse">
                 <thead>
                   <tr className="bg-blue-season text-white">
                     <th className="p-4 text-left border border-gray-300">Group Size</th>
-                    <th className="p-4 text-left border border-gray-300">Price Per Person</th>
+                    <th className="p-4 text-left border border-gray-300">Quote via WhatsApp</th>
                   </tr>
                 </thead>
                 <tbody>
                   {[
-                    { size: "1 - 2 persons", price: "$45.00 p.p" },
-                    { size: "3 - 6 persons", price: "$43.00 p.p" },
-                    { size: "7 - 10 persons", price: "$40.00 p.p" },
-                    { size: "11 - 25 persons", price: "$35.00 p.p" },
+                    { size: "1 - 2 persons", price: "Quote on WhatsApp " },
+                    { size: "3 - 6 persons", price: "Quote on WhatsApp " },
+                    { size: "7 - 10 persons", price: "Quote on WhatsApp " },
+                    { size: "11 - 25 persons", price: "Quote on WhatsApp " },
                   ].map((item, index) => (
                     <tr key={index} className={index % 2 === 0 ? "bg-gray-50" : "bg-white"}>
                       <td className="p-4 border border-gray-300 font-semibold">{item.size}</td>
@@ -177,7 +177,7 @@ export default function SalaamCavePage() {
                 </p>
                 <p className="text-gray-700 text-sm leading-relaxed">
                   <strong>TRANSPORT IS EXCLUDED:</strong> Hotel transfers vary by location. Contact us for the full
-                  price including transfers from your accommodation.
+                  quote including transfers from your accommodation.
                 </p>
               </div>
             </div>

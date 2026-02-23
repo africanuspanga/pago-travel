@@ -89,7 +89,7 @@ export default function JozaniForestTourPage() {
                   }
                 />
                 <p className="text-sm text-gray-500 mt-4">
-                  ✓ Best Price Guarantee | ✓ Easy Online Booking | ✓ Expert Local Guides
+                  ✓ Fast WhatsApp Support | ✓ Easy Online Booking | ✓ Expert Local Guides
                 </p>
               </div>
             </CardContent>
@@ -186,34 +186,34 @@ export default function JozaniForestTourPage() {
 
           {/* Inclusions & Pricing */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Price & Inclusions</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Tour Details & Inclusions</h2>
 
             <div className="mb-8">
-              <h3 className="text-xl font-bold text-blue-season mb-4">Tour Pricing</h3>
+              <h3 className="text-xl font-bold text-blue-season mb-4">Tour Quote Details</h3>
               <div className="overflow-x-auto">
                 <table className="w-full border-collapse">
                   <thead>
                     <tr className="bg-blue-season text-white">
                       <th className="border border-blue-season px-4 py-3 text-left">Group Size</th>
-                      <th className="border border-blue-season px-4 py-3 text-left">Price per Person</th>
+                      <th className="border border-blue-season px-4 py-3 text-left">Quote via WhatsApp</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr className="bg-white hover:bg-[#f8f3f1]">
                       <td className="border border-gray-300 px-4 py-3">1 - 2 persons</td>
-                      <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">$35</td>
+                      <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">Quote on WhatsApp</td>
                     </tr>
                     <tr className="bg-gray-50 hover:bg-[#f8f3f1]">
                       <td className="border border-gray-300 px-4 py-3">3 - 5 persons</td>
-                      <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">$24</td>
+                      <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">Quote on WhatsApp</td>
                     </tr>
                     <tr className="bg-white hover:bg-[#f8f3f1]">
                       <td className="border border-gray-300 px-4 py-3">6 - 10 persons</td>
-                      <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">$22</td>
+                      <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">Quote on WhatsApp</td>
                     </tr>
                     <tr className="bg-gray-50 hover:bg-[#f8f3f1]">
                       <td className="border border-gray-300 px-4 py-3">11 - 25 persons</td>
-                      <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">$20</td>
+                      <td className="border border-gray-300 px-4 py-3 font-bold text-blue-season">Quote on WhatsApp</td>
                     </tr>
                   </tbody>
                 </table>
@@ -222,7 +222,7 @@ export default function JozaniForestTourPage() {
 
             <div className="grid md:grid-cols-2 gap-6">
               <div>
-                <h3 className="font-bold text-blue-season mb-4 text-lg">The Tour Price Includes:</h3>
+                <h3 className="font-bold text-blue-season mb-4 text-lg">The Tour What's Included:</h3>
                 <div className="space-y-3">
                   {[
                     "English-Speaking Guide (Local Expert)",
@@ -239,13 +239,13 @@ export default function JozaniForestTourPage() {
               </div>
 
               <div className="bg-amber-50 p-6 rounded-lg border-l-4 border-golden">
-                <h3 className="font-bold text-blue-season mb-3">Important Note on Pricing</h3>
+                <h3 className="font-bold text-blue-season mb-3">Important Note on Quotes</h3>
                 <p className="text-gray-700 text-sm leading-relaxed mb-4">
-                  <strong>TRANSPORT IS EXCLUDED:</strong> The displayed price is exclusive of transport costs to Jozani
-                  Forest (Chwaka Village, East Coast). The final price depends entirely on your hotel's location.
+                  <strong>TRANSPORT IS EXCLUDED:</strong> The quoted amount is exclusive of transport costs to Jozani
+                  Forest (Chwaka Village, East Coast). The final quote depends entirely on your hotel's location.
                 </p>
                 <p className="text-gray-700 text-sm leading-relaxed">
-                  Please contact us via WhatsApp and we will provide you with the full price including hotel transfers.
+                  Please contact us via WhatsApp and we will provide you with the full quote including hotel transfers.
                 </p>
               </div>
             </div>

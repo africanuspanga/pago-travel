@@ -10,7 +10,7 @@ import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "3 Days Serengeti Safari & Hot Air Balloon from Zanzibar - $2,803 | Pago Travel Experience",
+  title: "3 Days Serengeti Safari & Hot Air Balloon from Zanzibar - Quote on WhatsApp | Pago Travel Experience",
   description:
     "Ultimate Serengeti adventure with hot air balloon safari at sunrise. Witness wildlife from the sky, enjoy game drives, night safari, and bush breakfast. Unforgettable 3-day package from Zanzibar.",
 }
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function SerengetiBalloonSafariPage() {
   const whatsappNumber = "255628734126"
   const message = encodeURIComponent(
-    "Hello! I'm interested in booking the 3 Days Serengeti Safari & Hot Air Balloon from Zanzibar ($2,803 per person). Can you provide more details?"
+    "Hello! I'm interested in booking the 3 Days Serengeti Safari & Hot Air Balloon from Zanzibar (Quote on WhatsApp). Can you provide more details?"
   )
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${message}`
 
@@ -70,8 +70,8 @@ export default function SerengetiBalloonSafariPage() {
               <span className="text-gray-600">5 Stars Rated</span>
             </div>
             <div className="text-center sm:text-right">
-              <p className="text-3xl sm:text-4xl font-bold text-golden">$2,803</p>
-              <p className="text-gray-600">Per Adult</p>
+              <p className="text-3xl sm:text-4xl font-bold text-golden">Quote on WhatsApp</p>
+              <p className="text-gray-600">Quote via WhatsApp</p>
             </div>
           </div>
         </div>
@@ -175,18 +175,18 @@ export default function SerengetiBalloonSafariPage() {
                 {/* Pricing Card */}
                 <Card className="border-2 border-golden">
                   <CardContent className="p-6">
-                    <h3 className="text-2xl font-bold text-blue-season mb-4">Tour Prices</h3>
+                    <h3 className="text-2xl font-bold text-blue-season mb-4">Tour Quotes</h3>
                     <div className="space-y-3 mb-6">
                       <div className="flex justify-between items-center pb-3 border-b">
-                        <span className="text-gray-600">Price per Adult</span>
-                        <span className="text-2xl font-bold text-golden">$2,803</span>
+                        <span className="text-gray-600">Adult quote via WhatsApp</span>
+                        <span className="text-2xl font-bold text-golden">Quote on WhatsApp</span>
                       </div>
                       <div className="flex justify-between items-center">
-                        <span className="text-gray-600">Price per Kid (3-9 Years)</span>
-                        <span className="text-2xl font-bold text-golden">$1,235</span>
+                        <span className="text-gray-600">Child quote via WhatsApp (3-9 Years)</span>
+                        <span className="text-2xl font-bold text-golden">Quote on WhatsApp</span>
                       </div>
                     </div>
-                    <p className="text-sm text-gray-500 mb-6">Price per person</p>
+                    <p className="text-sm text-gray-500 mb-6">Quote via WhatsApp</p>
                     <BookingModal 
                       tourName="3 Days Serengeti Safari & Hot Air Balloon" 
                       className="w-full bg-blue-season hover:bg-blue-season/90 text-white text-lg py-6"
@@ -197,7 +197,7 @@ export default function SerengetiBalloonSafariPage() {
                 {/* Inclusions */}
                 <Card>
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-bold text-blue-season mb-4">Price Includes</h3>
+                    <h3 className="text-xl font-bold text-blue-season mb-4">What's Included</h3>
                     <ul className="space-y-3">
                       {[
                         "Roundtrip flight from Zanzibar to Arusha",

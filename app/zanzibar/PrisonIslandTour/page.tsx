@@ -117,10 +117,10 @@ export default function PrisonIslandTourPage() {
                 </CardContent>
               </Card>
 
-              {/* Tour Pricing */}
+              {/* Tour Quote Details */}
               <Card>
                 <CardHeader>
-                  <CardTitle className="text-2xl text-blue-season">Tour Pricing</CardTitle>
+                  <CardTitle className="text-2xl text-blue-season">Tour Quote Details</CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="overflow-x-auto">
@@ -128,31 +128,31 @@ export default function PrisonIslandTourPage() {
                       <thead>
                         <tr className="bg-blue-season text-white">
                           <th className="border border-gray-300 px-4 py-3 text-left">Group Size</th>
-                          <th className="border border-gray-300 px-4 py-3 text-left">Price Per Person</th>
+                          <th className="border border-gray-300 px-4 py-3 text-left">Quote via WhatsApp</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr className="hover:bg-gray-50">
                           <td className="border border-gray-300 px-4 py-3">1 - 2 persons</td>
-                          <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-season">$60 p.p</td>
+                          <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-season">Quote on WhatsApp </td>
                         </tr>
                         <tr className="hover:bg-gray-50">
                           <td className="border border-gray-300 px-4 py-3">3 - 5 persons</td>
-                          <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-season">$56 p.p</td>
+                          <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-season">Quote on WhatsApp </td>
                         </tr>
                         <tr className="hover:bg-gray-50">
                           <td className="border border-gray-300 px-4 py-3">6 - 10 persons</td>
-                          <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-season">$48 p.p</td>
+                          <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-season">Quote on WhatsApp </td>
                         </tr>
                         <tr className="hover:bg-gray-50">
                           <td className="border border-gray-300 px-4 py-3">11 - 25 persons</td>
-                          <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-season">$45 p.p</td>
+                          <td className="border border-gray-300 px-4 py-3 font-semibold text-blue-season">Quote on WhatsApp </td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
                   <p className="text-sm text-gray-600 mt-4 italic">
-                    Prices are per person and exclude transportation costs from your hotel.
+                    Quotes are shared via WhatsApp and exclude transportation costs from your hotel.
                   </p>
                 </CardContent>
               </Card>
@@ -164,7 +164,7 @@ export default function PrisonIslandTourPage() {
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div>
-                    <h3 className="font-semibold text-lg text-blue-season mb-3">The tour price includes:</h3>
+                    <h3 className="font-semibold text-lg text-blue-season mb-3">The tour includes:</h3>
                     <ul className="space-y-2">
                       {[
                         "Expert Local Guide: Services of a licensed guide (available in English, French, German, and Italian)",
@@ -181,11 +181,11 @@ export default function PrisonIslandTourPage() {
                   </div>
 
                   <div className="bg-amber-50 border-l-4 border-amber-500 p-4 rounded">
-                    <h3 className="font-semibold text-amber-900 mb-2">Important Note on Pricing</h3>
+                    <h3 className="font-semibold text-amber-900 mb-2">Important Note on Quotes</h3>
                     <p className="text-amber-800 text-sm">
-                      <strong>TRANSPORT IS EXCLUDED:</strong> The displayed price is exclusive of transport costs
-                      between your hotel and Stone Town. The final price depends on your hotel's specific location.
-                      Please contact us and we will provide you with the full, final price based on your accommodation
+                      <strong>TRANSPORT IS EXCLUDED:</strong> The quoted amount is exclusive of transport costs
+                      between your hotel and Stone Town. The final quote depends on your hotel's specific location.
+                      Please contact us and we will provide you with the full, final quote based on your accommodation
                       details.
                     </p>
                   </div>
@@ -235,8 +235,8 @@ export default function PrisonIslandTourPage() {
                 <CardHeader className="bg-white">
                   <CardTitle className="text-2xl text-gray-900">Book This Tour</CardTitle>
                   <div className="flex items-center gap-2 mt-2">
-                    <span className="text-3xl font-bold text-gray-900">$40</span>
-                    <span className="text-gray-600">per person</span>
+                    <span className="text-3xl font-bold text-gray-900">Quote on WhatsApp</span>
+                    <span className="text-gray-600">quote via WhatsApp</span>
                   </div>
                 </CardHeader>
                 <CardContent className="p-6 space-y-6">
@@ -252,7 +252,7 @@ export default function PrisonIslandTourPage() {
                     </div>
                     <div className="flex items-center gap-2 text-sm text-gray-600">
                       <CheckCircle2 className="w-4 h-4 text-blue-season" />
-                      <span>Best Price Guarantee</span>
+                      <span>Fast WhatsApp Support</span>
                     </div>
                     <div className="flex items-center gap-2 text-sm text-gray-600">
                       <CheckCircle2 className="w-4 h-4 text-blue-season" />

@@ -8,6 +8,7 @@ import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
+import HotelBookingModal from "@/components/hotel-booking-modal"
 
 export const metadata: Metadata = {
   title: "Home - Premium Zanzibar Tours, Tanzania Safari & Kilimanjaro Climbing",
@@ -74,6 +75,39 @@ const travelerTestimonials = [
     flag: "🇩🇪",
     quote:
       "A very reliable operator with strong local expertise. The safari days were unforgettable and the Zanzibar excursions were exactly what we wanted.",
+  },
+]
+
+const transferHighlights = [
+  {
+    title: "Airport to Stone Town",
+    image: "/20080512_01_01_2.jpg",
+    description: "Comfortable pickup from the airport or ferry terminal to Stone Town hotels and stays.",
+  },
+  {
+    title: "Airport to Nungwi - Kendwa",
+    image: "/11637336.jpg",
+    description: "Direct transfer to Zanzibar's northern beaches with professional drivers and clean vehicles.",
+  },
+  {
+    title: "Airport to Paje - Jambiani",
+    image: "/01_l3.jpg",
+    description: "Smooth ride to the east coast for beach stays, kitesurf camps, and family holidays.",
+  },
+  {
+    title: "Airport to Matemwe",
+    image: "/images/vehicles/coaster-bus.jpg",
+    description: "Reliable transport to Matemwe resorts with convenient pickup scheduling.",
+  },
+  {
+    title: "Airport to Kiwengwa",
+    image: "/images/vehicles/alphard-black-2.jpg",
+    description: "Private and shared transfer options available for Kiwengwa accommodations.",
+  },
+  {
+    title: "Jambiani to Stone Town",
+    image: "/images/vehicles/alphard-white-van.jpg",
+    description: "Easy inter-hotel transfer from Jambiani to Stone Town and nearby departure points.",
   },
 ]
 
@@ -449,7 +483,7 @@ export default function HomePage() {
                 <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-2">
                   Mikumi Day Trip Safari
                 </h3>
-                <p className="text-lg font-semibold text-golden mb-3">From $410</p>
+                <p className="text-lg font-semibold text-golden mb-3">Quote on WhatsApp</p>
                 <p className="text-gray-600 mb-4 text-sm sm:text-base">
                   Full-day flying safari to Mikumi National Park. Experience incredible wildlife viewing including
                   elephants, giraffes, lions, and zebras.
@@ -484,7 +518,7 @@ export default function HomePage() {
                 <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-2">
                   Zanzibar 5-Day Tour Package
                 </h3>
-                <p className="text-lg font-semibold text-golden mb-3">From $400</p>
+                <p className="text-lg font-semibold text-golden mb-3">Quote on WhatsApp</p>
                 <p className="text-gray-600 mb-4 text-sm sm:text-base">
                   Comprehensive exploration of Zanzibar's culture, nature, and beaches. Includes Safari Blue, Jozani
                   Forest, Stone Town, and more.
@@ -519,7 +553,7 @@ export default function HomePage() {
                 <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-2">
                   Serengeti 2 Days 1 Night Safari
                 </h3>
-                <p className="text-lg font-semibold text-golden mb-3">From $1,686</p>
+                <p className="text-lg font-semibold text-golden mb-3">Quote on WhatsApp</p>
                 <p className="text-gray-600 mb-4 text-sm sm:text-base">
                   Experience the magic of Serengeti with a fly-in safari. Witness the Great Migration and spot the Big
                   Five across endless plains.
@@ -540,97 +574,80 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-blue-season mb-4 sm:mb-6">
-              Reliable Transfer Services
+              Transfer Highlights
             </h2>
             <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-2">
-              Comfortable and affordable transportation across Zanzibar
+              Explore our most requested transfer routes and get your quote quickly on WhatsApp.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
-            {/* Airport to Stone Town */}
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="relative h-48 sm:h-64 w-full">
-                <Image
-                  src="/20080512_01_01_2.jpg"
-                  alt="Airport to Stone Town Transfer"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
-              </div>
-              <CardContent className="p-4 sm:p-6">
-                <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-2">
-                  Airport to Stone Town
-                </h3>
-                <p className="text-2xl font-bold text-golden mb-3">$15</p>
-                <p className="text-gray-600 mb-4 text-sm sm:text-base">
-                  Quick and convenient transfer from the airport or ferry terminal to historic Stone Town. Perfect for
-                  arrivals and departures.
-                </p>
-                <Link href="/transfers">
-                  <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">
-                    View All Transfers
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            {transferHighlights.map((transfer) => (
+              <Card key={transfer.title} className="overflow-hidden hover:shadow-xl transition-shadow">
+                <div className="relative h-48 sm:h-64 w-full">
+                  <Image
+                    src={transfer.image}
+                    alt={transfer.title}
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                </div>
+                <CardContent className="p-4 sm:p-6">
+                  <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-2">{transfer.title}</h3>
+                  <p className="text-base font-semibold text-golden mb-3">Quote on WhatsApp</p>
+                  <p className="text-gray-600 mb-4 text-sm sm:text-base">{transfer.description}</p>
+                  <Link href="/transfers">
+                    <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">
+                      View All Transfers
+                    </Button>
+                  </Link>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
 
-            {/* Airport to Nungwi */}
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="relative h-48 sm:h-64 w-full">
-                <Image
-                  src="/11637336.jpg"
-                  alt="Airport to Nungwi Transfer"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
+      {/* Hotel Booking Section */}
+      <section className="py-12 sm:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div className="relative h-[340px] sm:h-[460px] rounded-2xl overflow-hidden shadow-xl">
+              <Image
+                src="/Zanzibar hotel.jpg"
+                alt="Zanzibar Hotel Booking"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+              <div className="absolute bottom-0 p-6 text-white">
+                <p className="text-sm uppercase tracking-wide text-golden font-semibold">Hotel Booking</p>
+                <h3 className="text-2xl sm:text-3xl font-display font-bold">Stay in the Best of Zanzibar</h3>
               </div>
-              <CardContent className="p-4 sm:p-6">
-                <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-2">
-                  Airport to Nungwi - Kendwa
-                </h3>
-                <p className="text-2xl font-bold text-golden mb-3">$45</p>
-                <p className="text-gray-600 mb-4 text-sm sm:text-base">
-                  Direct transfer to the beautiful northern beaches of Nungwi and Kendwa. Enjoy a comfortable ride in
-                  our modern vehicles.
-                </p>
-                <Link href="/transfers">
-                  <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">
-                    View All Transfers
-                  </Button>
-                </Link>
-              </CardContent>
-            </Card>
+            </div>
 
-            {/* Airport to East Coast */}
-            <Card className="overflow-hidden hover:shadow-xl transition-shadow">
-              <div className="relative h-48 sm:h-64 w-full">
-                <Image
-                  src="/01_l3.jpg"
-                  alt="Airport to Paje Transfer"
-                  fill
-                  className="object-cover"
-                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                />
+            <div>
+              <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-blue-season mb-5">
+                Zanzibar Hotel Booking
+              </h2>
+              <p className="text-lg text-gray-600 mb-5 leading-relaxed">
+                Share your check-in dates, preferred area, hotel category, and budget, and we will send personalized hotel options directly on WhatsApp.
+              </p>
+              <div className="space-y-3 text-gray-700 mb-7">
+                <p>Handpicked hotels and resorts</p>
+                <p>Fast responses and clear availability</p>
+                <p>Support for couples, families, and groups</p>
               </div>
-              <CardContent className="p-4 sm:p-6">
-                <h3 className="text-xl sm:text-2xl font-display font-bold text-blue-season mb-2">
-                  Airport to Paje - Jambiani
-                </h3>
-                <p className="text-2xl font-bold text-golden mb-3">$45</p>
-                <p className="text-gray-600 mb-4 text-sm sm:text-base">
-                  Travel to the stunning east coast beaches of Paje and Jambiani. Perfect for kitesurf enthusiasts and
-                  beach lovers.
-                </p>
-                <Link href="/transfers">
-                  <Button className="w-full bg-golden hover:bg-golden/90 text-white min-h-[44px]">
-                    View All Transfers
+              <HotelBookingModal
+                trigger={
+                  <Button className="bg-golden hover:bg-golden/90 text-white font-semibold px-8 py-6 text-lg">
+                    Book Hotel
                   </Button>
-                </Link>
-              </CardContent>
-            </Card>
+                }
+              />
+            </div>
           </div>
         </div>
       </section>

@@ -7,12 +7,12 @@ import WhatsAppFloat from "@/components/whatsapp-float"
 import BookingModal from "@/components/booking-modal"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { MapPin, DollarSign } from "lucide-react"
+import { MapPin, MessageCircle } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Airport & Hotel Transfers in Zanzibar - Reliable Transport | Pago Travel Experience",
   description:
-    "Book reliable and comfortable transfer services across Zanzibar. Airport transfers starting at $15, hotel transfers, and ferry connections to Stone Town, Nungwi, Paje, Jambiani, and all major destinations. Professional drivers and modern vehicles available 24/7.",
+    "Book reliable and comfortable transfer services across Zanzibar. Airport transfers, hotel transfers, and ferry connections to Stone Town, Nungwi, Paje, Jambiani, and all major destinations. Professional drivers and modern vehicles available 24/7.",
   keywords:
     "Zanzibar transfers, airport transfer, ferry transfer, hotel transfer, Zanzibar transportation, Stone Town transfer, Nungwi transfer",
 }
@@ -20,40 +20,38 @@ export const metadata: Metadata = {
 interface TransferRoute {
   from: string
   to: string
-  price: number
   image: string
 }
 
 const transferRoutes: TransferRoute[] = [
-  { from: "Airport / Ferry", to: "Stone Town", price: 15, image: "/images/vehicles/alphard-gold.jpg" },
-  { from: "Airport / Ferry", to: "Chuini", price: 20, image: "/images/vehicles/alphard-white.png" },
-  { from: "Airport / Ferry", to: "M/Pwani", price: 30, image: "/images/vehicles/alphard-black.jpg" },
-  { from: "Airport / Ferry", to: "Nungwi - Kendwa", price: 35, image: "/images/vehicles/alphard-white-rear.jpg" },
-  { from: "Airport / Ferry", to: "Kiwengwa", price: 30, image: "/images/vehicles/alphard-black-2.jpg" },
-  { from: "Airport / Ferry", to: "P/Mchangani", price: 30, image: "/images/vehicles/alphard-white-van.jpg" },
-  { from: "Airport / Ferry", to: "Matemwe", price: 30, image: "/images/vehicles/coaster-bus.jpg" },
-  { from: "Airport / Ferry", to: "Bwejuu", price: 35, image: "/images/vehicles/alphard-gold.jpg" },
-  { from: "Airport / Ferry", to: "Michamvi", price: 35, image: "/images/vehicles/alphard-white.png" },
-  { from: "Airport / Ferry", to: "Paje", price: 35, image: "/images/vehicles/alphard-black.jpg" },
-  { from: "Airport / Ferry", to: "Jambiani", price: 35, image: "/images/vehicles/alphard-white-rear.jpg" },
-  { from: "Airport / Ferry", to: "Makunduchi", price: 40, image: "/images/vehicles/coaster-bus.jpg" },
-  { from: "Airport / Ferry", to: "Kizimkazi", price: 40, image: "/images/vehicles/alphard-black-2.jpg" },
-  { from: "Airport / Ferry", to: "Pongwe", price: 30, image: "/images/vehicles/alphard-white-van.jpg" },
+  { from: "Airport / Ferry", to: "Stone Town", image: "/images/vehicles/alphard-gold.jpg" },
+  { from: "Airport / Ferry", to: "Chuini", image: "/images/vehicles/alphard-white.png" },
+  { from: "Airport / Ferry", to: "M/Pwani", image: "/images/vehicles/alphard-black.jpg" },
+  { from: "Airport / Ferry", to: "Nungwi - Kendwa", image: "/images/vehicles/alphard-white-rear.jpg" },
+  { from: "Airport / Ferry", to: "Kiwengwa", image: "/images/vehicles/alphard-black-2.jpg" },
+  { from: "Airport / Ferry", to: "P/Mchangani", image: "/images/vehicles/alphard-white-van.jpg" },
+  { from: "Airport / Ferry", to: "Matemwe", image: "/images/vehicles/coaster-bus.jpg" },
+  { from: "Airport / Ferry", to: "Bwejuu", image: "/images/vehicles/alphard-gold.jpg" },
+  { from: "Airport / Ferry", to: "Michamvi", image: "/images/vehicles/alphard-white.png" },
+  { from: "Airport / Ferry", to: "Paje", image: "/images/vehicles/alphard-black.jpg" },
+  { from: "Airport / Ferry", to: "Jambiani", image: "/images/vehicles/alphard-white-rear.jpg" },
+  { from: "Airport / Ferry", to: "Makunduchi", image: "/images/vehicles/coaster-bus.jpg" },
+  { from: "Airport / Ferry", to: "Kizimkazi", image: "/images/vehicles/alphard-black-2.jpg" },
+  { from: "Airport / Ferry", to: "Pongwe", image: "/images/vehicles/alphard-white-van.jpg" },
   {
     from: "Airport / Ferry",
     to: "Uroa / Marumbi / Chwaka",
-    price: 30,
     image: "/images/vehicles/alphard-gold.jpg",
   },
-  { from: "Jambiani", to: "Paje / Bwejuu / Dongwe", price: 15, image: "/images/vehicles/alphard-white.png" },
-  { from: "Jambiani", to: "Michamvi", price: 20, image: "/images/vehicles/alphard-black.jpg" },
-  { from: "Jambiani", to: "Makunduchi", price: 15, image: "/images/vehicles/alphard-white-rear.jpg" },
-  { from: "Jambiani", to: "Kizimkazi", price: 20, image: "/images/vehicles/alphard-black-2.jpg" },
-  { from: "Jambiani", to: "Stone Town", price: 35, image: "/images/vehicles/coaster-bus.jpg" },
-  { from: "Jambiani", to: "Uroa / Pongwe", price: 40, image: "/images/vehicles/alphard-white-van.jpg" },
-  { from: "Jambiani", to: "Kiwengwa / P'Mchangani", price: 40, image: "/images/vehicles/alphard-gold.jpg" },
-  { from: "Jambiani", to: "Nungwi / Kendwa", price: 45, image: "/images/vehicles/alphard-white.png" },
-  { from: "Jambiani", to: "Matemwe", price: 45, image: "/images/vehicles/coaster-bus.jpg" },
+  { from: "Jambiani", to: "Paje / Bwejuu / Dongwe", image: "/images/vehicles/alphard-white.png" },
+  { from: "Jambiani", to: "Michamvi", image: "/images/vehicles/alphard-black.jpg" },
+  { from: "Jambiani", to: "Makunduchi", image: "/images/vehicles/alphard-white-rear.jpg" },
+  { from: "Jambiani", to: "Kizimkazi", image: "/images/vehicles/alphard-black-2.jpg" },
+  { from: "Jambiani", to: "Stone Town", image: "/images/vehicles/coaster-bus.jpg" },
+  { from: "Jambiani", to: "Uroa / Pongwe", image: "/images/vehicles/alphard-white-van.jpg" },
+  { from: "Jambiani", to: "Kiwengwa / P'Mchangani", image: "/images/vehicles/alphard-gold.jpg" },
+  { from: "Jambiani", to: "Nungwi / Kendwa", image: "/images/vehicles/alphard-white.png" },
+  { from: "Jambiani", to: "Matemwe", image: "/images/vehicles/coaster-bus.jpg" },
 ]
 
 export default function TransfersPage() {
@@ -104,10 +102,10 @@ export default function TransfersPage() {
           </div>
           <div className="text-center p-6">
             <div className="w-16 h-16 bg-golden/20 rounded-full flex items-center justify-center mx-auto mb-4">
-              <DollarSign className="w-8 h-8 text-golden" />
+              <MessageCircle className="w-8 h-8 text-golden" />
             </div>
-            <h3 className="text-xl font-semibold mb-2">Transparent Pricing</h3>
-            <p className="text-gray-600">Fixed rates with no hidden charges</p>
+            <h3 className="text-xl font-semibold mb-2">Quick WhatsApp Quotes</h3>
+            <p className="text-gray-600">Share your route and receive a fast quote</p>
           </div>
           <div className="text-center p-6">
             <div className="w-16 h-16 bg-golden/20 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -135,7 +133,7 @@ export default function TransfersPage() {
       {/* Transfer Routes Grid */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
         <h2 className="text-3xl md:text-4xl font-display font-bold text-gray-900 mb-8 text-center">
-          Our Transfer Routes & Prices
+          Our Transfer Routes
         </h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -160,11 +158,11 @@ export default function TransfersPage() {
                     <p className="font-semibold text-gray-900">{route.to}</p>
                   </div>
                   <div className="pt-2 border-t">
-                    <p className="text-2xl font-bold text-golden">${route.price}</p>
-                    <p className="text-sm text-gray-500">Per vehicle</p>
+                    <p className="text-lg font-semibold text-blue-season">Quote on WhatsApp</p>
+                    <p className="text-sm text-gray-500">Tell us your pickup and drop-off location</p>
                   </div>
                   <Link href="/contact" className="block">
-                    <Button className="w-full bg-golden hover:bg-golden/90 text-white">Book Now</Button>
+                    <Button className="w-full bg-golden hover:bg-golden/90 text-white">Get Quote & Book</Button>
                   </Link>
                 </div>
               </CardContent>

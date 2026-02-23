@@ -28,8 +28,8 @@ const packages = [
   {
     id: "mikumi-safari",
     title: "Mikumi Day Trip Safari",
-    price: "$440",
-    priceNote: "Per Person",
+    price: "Quote on WhatsApp",
+    priceNote: "WhatsApp Quote",
     duration: "1 Day",
     image: "/images/packages/mikumi-safari.jpg",
     description:
@@ -44,8 +44,8 @@ const packages = [
   {
     id: "zanzibar-tour",
     title: "Zanzibar 5-Day Tour Package",
-    price: "$400",
-    priceNote: "Per Person",
+    price: "Quote on WhatsApp",
+    priceNote: "WhatsApp Quote",
     duration: "5 Days / 4 Nights",
     image: "/images/packages/zanzibar-tour.jpg",
     description:
@@ -55,8 +55,8 @@ const packages = [
   {
     id: "serengeti-safari",
     title: "Serengeti 2 Days 1 Night Safari Package",
-    price: "$1,686",
-    priceNote: "Per Adult",
+    price: "Quote on WhatsApp",
+    priceNote: "WhatsApp Quote",
     duration: "2 Days / 1 Night",
     image: "/images/packages/serengeti-safari.jpg",
     description:
@@ -71,8 +71,8 @@ const packages = [
   {
     id: "mikumi-day-trip",
     title: "Mikumi Day Trip Safari from Zanzibar",
-    price: "$440",
-    priceNote: "Per Person",
+    price: "Quote on WhatsApp",
+    priceNote: "WhatsApp Quote",
     duration: "1 Day",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/mikumi-bxYBdPwmmPNbzzdU2RvasPGdoZnptH.jpg",
     description:
@@ -87,8 +87,8 @@ const packages = [
   {
     id: "selous-day-trip",
     title: "Selous Day Trip Safari from Zanzibar",
-    price: "$460",
-    priceNote: "Per Person",
+    price: "Quote on WhatsApp",
+    priceNote: "WhatsApp Quote",
     duration: "1 Day",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/selous-PLPCwmHRaGPCeRtGO4YFWqPzgbbLuj.jpg",
     description:
@@ -103,8 +103,8 @@ const packages = [
   {
     id: "serengeti-3-days",
     title: "3 Days 2 Nights Serengeti Safari from Zanzibar",
-    price: "$2,058",
-    priceNote: "Per Adult",
+    price: "Quote on WhatsApp",
+    priceNote: "WhatsApp Quote",
     duration: "3 Days / 2 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/serengeti%20-lSPfjdMgugUtgqOQjyHFkanjYQCjbI.jpg",
     description:
@@ -119,8 +119,8 @@ const packages = [
   {
     id: "serengeti-balloon-safari",
     title: "3 Days Serengeti Safari & Hot Air Balloon from Zanzibar",
-    price: "$2,803",
-    priceNote: "Per Adult",
+    price: "Quote on WhatsApp",
+    priceNote: "WhatsApp Quote",
     duration: "3 Days / 2 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/serengeti-VUxSGtAmLFsVZH7cx67afMN8rT2oBn.jpg",
     description:
@@ -135,8 +135,8 @@ const packages = [
   {
     id: "zanzibar-3-days",
     title: "Zanzibar 3 Days 2 Nights Package",
-    price: "$408",
-    priceNote: "Per Person",
+    price: "Quote on WhatsApp",
+    priceNote: "WhatsApp Quote",
     duration: "3 Days / 2 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/1-mGZVMQ2iZK1EpkoVsQUYgGmAH9CwNP.jpg",
     description:
@@ -151,8 +151,8 @@ const packages = [
   {
     id: "zanzibar-4-days",
     title: "Zanzibar 4 Days 3 Nights Package",
-    price: "$627",
-    priceNote: "Per Person",
+    price: "Quote on WhatsApp",
+    priceNote: "WhatsApp Quote",
     duration: "4 Days / 3 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/2-b94hGpun4A1YdQW2nQ8PHk6WqCkm8k.jpg",
     description:
@@ -167,8 +167,8 @@ const packages = [
   {
     id: "zanzibar-5-days",
     title: "Zanzibar 5 Days 4 Nights Package",
-    price: "$750",
-    priceNote: "Per Person",
+    price: "Quote on WhatsApp",
+    priceNote: "WhatsApp Quote",
     duration: "5 Days / 4 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/3-pkDJR7WXf4YSlGOacUsAnIpo2RGvl7.jpg",
     description:
@@ -183,8 +183,8 @@ const packages = [
   {
     id: "zanzibar-7-days",
     title: "Zanzibar 7 Days 6 Nights Package",
-    price: "$1,308",
-    priceNote: "Per Person",
+    price: "Quote on WhatsApp",
+    priceNote: "WhatsApp Quote",
     duration: "7 Days / 6 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/4-DY5HqYR6uOcnDpyE0cfBG2gUwBTPIU.jpg",
     description:
@@ -199,8 +199,8 @@ const packages = [
   {
     id: "zanzibar-8-days",
     title: "Zanzibar 8 Days 7 Nights Package",
-    price: "$1,350",
-    priceNote: "Per Person",
+    price: "Quote on WhatsApp",
+    priceNote: "WhatsApp Quote",
     duration: "8 Days / 7 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/7-6eePncVQ8Op8dAB1gTA69IbyRlXwOx.jpg",
     description:
@@ -215,8 +215,8 @@ const packages = [
   {
     id: "zanzibar-9-days",
     title: "Zanzibar 9 Days 8 Nights Package",
-    price: "$1,440",
-    priceNote: "Per Person",
+    price: "Quote on WhatsApp",
+    priceNote: "WhatsApp Quote",
     duration: "9 Days / 8 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/5-hguPTgqUvdnvQXLPvVHOBq7ruQNM8U.jpg",
     description:
@@ -231,8 +231,8 @@ const packages = [
   {
     id: "zanzibar-10-days",
     title: "Zanzibar 10 Days 9 Nights Package",
-    price: "$1,600",
-    priceNote: "Per Person",
+    price: "Quote on WhatsApp",
+    priceNote: "WhatsApp Quote",
     duration: "10 Days / 9 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/6-Z4TldhxGWRDyxKK89AKFzO1b4FyrP5.jpg",
     description:
@@ -247,8 +247,8 @@ const packages = [
   {
     id: "tanzania-safari-5-days",
     title: "5 Days Tanzania Safari Package",
-    price: "$1,780",
-    priceNote: "Per Person",
+    price: "Quote on WhatsApp",
+    priceNote: "WhatsApp Quote",
     duration: "5 Days / 4 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/istockphoto-2164403934-612x612-HdABUcJJ5XjxbXARXyQB7coV71ddDx.jpg",
     description:
@@ -263,8 +263,8 @@ const packages = [
   {
     id: "tanzania-safari-7-days",
     title: "7 Days Tanzania Safari Package",
-    price: "$2,490",
-    priceNote: "Per Person",
+    price: "Quote on WhatsApp",
+    priceNote: "WhatsApp Quote",
     duration: "7 Days / 6 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/istockphoto-2140549925-612x612-xqVFbqqrcJxrD746BZh8NSB62q3K61.jpg",
     description:
@@ -279,8 +279,8 @@ const packages = [
   {
     id: "tanzania-safari-8-days",
     title: "8 Days Tanzania Safari Package",
-    price: "$2,610",
-    priceNote: "Per Person",
+    price: "Quote on WhatsApp",
+    priceNote: "WhatsApp Quote",
     duration: "8 Days / 7 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/istockphoto-1136053333-612x612-qGo4tXLLhliU6LP9YpvviF7vAU9Om4.jpg",
     description:
@@ -295,8 +295,8 @@ const packages = [
   {
     id: "tanzania-safari-10-days",
     title: "10 Days Tanzania Safari Package",
-    price: "$3,730",
-    priceNote: "Per Person",
+    price: "Quote on WhatsApp",
+    priceNote: "WhatsApp Quote",
     duration: "10 Days / 9 Nights",
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/istockphoto-93469821-612x612-QhIAeWpzjALB7ZnlEHegynJmpCGhfS.jpg",
     description:

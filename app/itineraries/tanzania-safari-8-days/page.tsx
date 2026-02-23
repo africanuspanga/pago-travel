@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 export default function TanzaniaSafari8Days() {
   const whatsappMessage = encodeURIComponent(
-    "Hello! I'm interested in booking the 8 Days Tanzania Safari Package ($2,610 per person). Can you provide more details?"
+    "Hello! I'm interested in booking the 8 Days Tanzania Safari Package (Quote on WhatsApp). Can you provide more details?"
   )
 
   return (
@@ -64,9 +64,9 @@ export default function TanzaniaSafari8Days() {
               <p className="text-gray-600">4 Parks + Cultural Tour</p>
             </div>
             <div className="flex flex-col items-center">
-              <div className="text-3xl font-bold text-golden mb-2">$2,610</div>
-              <p className="font-semibold text-gray-900">Price</p>
-              <p className="text-gray-600">Per Person</p>
+              <div className="text-3xl font-bold text-golden mb-2">Quote on WhatsApp</div>
+              <p className="font-semibold text-gray-900">Quote</p>
+              <p className="text-gray-600">Quote via WhatsApp</p>
             </div>
           </div>
         </div>
@@ -202,7 +202,7 @@ export default function TanzaniaSafari8Days() {
       <section className="py-12 sm:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl sm:text-4xl font-display font-bold text-blue-season mb-8 text-center">
-            Package Pricing
+            Package Quote Details
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6 mb-8">
@@ -211,15 +211,15 @@ export default function TanzaniaSafari8Days() {
                 <h3 className="text-xl font-bold text-blue-season mb-4">Lodge Safari</h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center border-b pb-2">
-                    <span className="text-gray-600">Price per Adult</span>
-                    <span className="text-2xl font-bold text-golden">$2,610</span>
+                    <span className="text-gray-600">Adult quote via WhatsApp</span>
+                    <span className="text-2xl font-bold text-golden">Quote on WhatsApp</span>
                   </div>
                   <div className="flex justify-between items-center border-b pb-2">
-                    <span className="text-gray-600">Price per Child (3-9 yrs)</span>
-                    <span className="text-xl font-bold text-golden">$1,840</span>
+                    <span className="text-gray-600">Child quote via WhatsApp (3-9 yrs)</span>
+                    <span className="text-xl font-bold text-golden">Quote on WhatsApp</span>
                   </div>
                   <p className="text-sm text-gray-500 italic mt-4">
-                    *Price is per person for a group of two. Rate decreases as group size increases.
+                    *Quote is shared via WhatsApp for a group of two. Rate decreases as group size increases.
                   </p>
                 </div>
               </CardContent>
@@ -230,15 +230,15 @@ export default function TanzaniaSafari8Days() {
                 <h3 className="text-xl font-bold text-blue-season mb-4">Camping Safari</h3>
                 <div className="space-y-3">
                   <div className="flex justify-between items-center border-b pb-2">
-                    <span className="text-gray-600">Price per Adult</span>
-                    <span className="text-2xl font-bold text-golden">$1,990</span>
+                    <span className="text-gray-600">Adult quote via WhatsApp</span>
+                    <span className="text-2xl font-bold text-golden">Quote on WhatsApp</span>
                   </div>
                   <div className="flex justify-between items-center border-b pb-2">
-                    <span className="text-gray-600">Price per Child (3-9 yrs)</span>
-                    <span className="text-xl font-bold text-golden">$1,420</span>
+                    <span className="text-gray-600">Child quote via WhatsApp (3-9 yrs)</span>
+                    <span className="text-xl font-bold text-golden">Quote on WhatsApp</span>
                   </div>
                   <p className="text-sm text-gray-500 italic mt-4">
-                    *Price is per person for a group of two. Rate decreases as group size increases.
+                    *Quote is shared via WhatsApp for a group of two. Rate decreases as group size increases.
                   </p>
                 </div>
               </CardContent>

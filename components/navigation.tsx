@@ -27,7 +27,7 @@ export default function Navigation() {
             </div>
           </div>
           <div className="hidden md:block">
-            <span>Stone Town, Zanzibar</span>
+            <span>Zanzibar</span>
           </div>
         </div>
       </div>

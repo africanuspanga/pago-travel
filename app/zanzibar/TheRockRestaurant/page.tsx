@@ -85,7 +85,7 @@ export default function TheRockRestaurantPage() {
                   }
                 />
                 <p className="text-sm text-gray-500 mt-4">
-                  ✓ Best Price Guarantee | ✓ Instant Confirmation | ✓ Perfect for Couples & Families
+                  ✓ Fast WhatsApp Support | ✓ Instant Confirmation | ✓ Perfect for Couples & Families
                 </p>
               </div>
             </CardContent>
@@ -134,36 +134,36 @@ export default function TheRockRestaurantPage() {
             </div>
           </div>
 
-          {/* Tour Pricing Section */}
+          {/* Tour Quote Details Section */}
           <div className="bg-white rounded-lg shadow-lg p-8 mb-8">
-            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Tour Pricing</h2>
+            <h2 className="text-3xl font-display font-bold text-blue-season mb-6">Tour Quote Details</h2>
             <Card className="bg-[#f8f3f1] border-[#d8c7c2]">
               <CardContent className="p-6">
-                <p className="text-lg font-semibold text-blue-season mb-4">Price per Person (Tour Only):</p>
+                <p className="text-lg font-semibold text-blue-season mb-4">Quote via WhatsApp (Tour Only):</p>
                 <div className="overflow-x-auto">
                   <table className="w-full border-collapse">
                     <thead>
                       <tr className="bg-blue-season text-white">
                         <th className="py-3 px-4 text-left font-semibold">Group Size</th>
-                        <th className="py-3 px-4 text-right font-semibold">Price per Person</th>
+                        <th className="py-3 px-4 text-right font-semibold">Quote via WhatsApp</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr className="border-b border-[#d8c7c2]">
                         <td className="py-3 px-4 text-gray-700">1 - 2 persons</td>
-                        <td className="py-3 px-4 text-right font-semibold text-blue-season">$55</td>
+                        <td className="py-3 px-4 text-right font-semibold text-blue-season">Quote on WhatsApp</td>
                       </tr>
                       <tr className="border-b border-[#d8c7c2] bg-[#f8f3f1]/50">
                         <td className="py-3 px-4 text-gray-700">3 - 6 persons</td>
-                        <td className="py-3 px-4 text-right font-semibold text-blue-season">$50</td>
+                        <td className="py-3 px-4 text-right font-semibold text-blue-season">Quote on WhatsApp</td>
                       </tr>
                       <tr className="border-b border-[#d8c7c2]">
                         <td className="py-3 px-4 text-gray-700">7 - 10 persons</td>
-                        <td className="py-3 px-4 text-right font-semibold text-blue-season">$47</td>
+                        <td className="py-3 px-4 text-right font-semibold text-blue-season">Quote on WhatsApp</td>
                       </tr>
                       <tr className="bg-[#f8f3f1]/50">
                         <td className="py-3 px-4 text-gray-700">11 - 28 persons</td>
-                        <td className="py-3 px-4 text-right font-semibold text-blue-season">$45</td>
+                        <td className="py-3 px-4 text-right font-semibold text-blue-season">Quote on WhatsApp</td>
                       </tr>
                     </tbody>
                   </table>
@@ -171,7 +171,7 @@ export default function TheRockRestaurantPage() {
                 <div className="mt-4 p-3 bg-amber-50 border border-amber-200 rounded">
                   <p className="text-sm text-gray-600">
                     <strong>Important:</strong> Restaurant meals are paid separately at The Rock Restaurant. The tour
-                    price includes transportation and snorkeling equipment only. Contact us for complete pricing based
+                    quote includes transportation and snorkeling equipment only. Contact us for complete quote based
                     on your hotel location.
                   </p>
                 </div>
@@ -249,15 +249,15 @@ export default function TheRockRestaurantPage() {
                 <h3 className="font-bold text-blue-season mb-2">What to Bring</h3>
                 <p className="text-gray-700">
                   Swimwear, towel, sunscreen, camera, and cash for the restaurant (meals are not included in the tour
-                  price).
+                  quote).
                 </p>
               </div>
 
               <div className="p-4 bg-[#f8f3f1] border-l-4 border-blue-season rounded">
-                <h3 className="font-bold text-blue-season mb-2">Pricing Note</h3>
+                <h3 className="font-bold text-blue-season mb-2">Quote Note</h3>
                 <p className="text-gray-700">
                   <strong>Restaurant meals are paid separately.</strong> The tour includes transportation and snorkeling
-                  equipment. Contact us via WhatsApp for complete pricing based on your hotel location.
+                  equipment. Contact us via WhatsApp for complete quote based on your hotel location.
                 </p>
               </div>
             </div>

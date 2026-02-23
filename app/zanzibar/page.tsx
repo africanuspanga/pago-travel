@@ -16,7 +16,7 @@ const zanzibarTours = [
     image: "/images/tours/safari-blue-day.jpg",
     duration: "Full Day",
     groupSize: "4-20 people",
-    price: "$50",
+    price: "Quote on WhatsApp",
     slug: "SafariBlueTour", // Added slug for Safari Blue detail page
     description:
       "Sail on traditional dhows to pristine sandbanks and enjoy the ultimate marine adventure with snorkeling, swimming, and a seafood feast.",
@@ -34,7 +34,7 @@ const zanzibarTours = [
     image: "/images/tours/stone-town-tour.jpg",
     duration: "Half Day",
     groupSize: "2-12 people",
-    price: "$35",
+    price: "Quote on WhatsApp",
     slug: "StoneTownTour",
     description:
       "Explore the UNESCO World Heritage site with its narrow alleys, historic buildings, and vibrant markets. Discover the cultural heart of Zanzibar.",
@@ -52,7 +52,7 @@ const zanzibarTours = [
     image: "/images/tours/prison-island.jpg",
     duration: "Half Day",
     groupSize: "2-15 people",
-    price: "$40",
+    price: "Quote on WhatsApp",
     slug: "PrisonIslandTour",
     description:
       "Visit the historic Changuu Island to learn about its fascinating past and meet the famous giant Aldabra tortoises, some over 100 years old.",
@@ -70,7 +70,7 @@ const zanzibarTours = [
     image: "/images/tours/nakupenda-sandbank.jpg",
     duration: "Half Day",
     groupSize: "4-20 people",
-    price: "$59",
+    price: "Quote on WhatsApp",
     slug: "NakupendaSandbankTour",
     description:
       "Escape to a pristine white sand paradise in the middle of the ocean. Perfect for relaxation, swimming, and enjoying fresh seafood.",
@@ -88,7 +88,7 @@ const zanzibarTours = [
     image: "/images/tours/spice-tour.jpg",
     duration: "Half Day",
     groupSize: "2-15 people",
-    price: "$35",
+    price: "Quote on WhatsApp",
     slug: "SpiceFarmTour",
     description:
       "Discover why Zanzibar is called the 'Spice Island' with visits to working spice plantations where you'll see, smell, and taste exotic spices.",
@@ -106,7 +106,7 @@ const zanzibarTours = [
     image: "/images/tours/jozani-forest.jpg",
     duration: "Half Day",
     groupSize: "2-15 people",
-    price: "$40",
+    price: "Quote on WhatsApp",
     slug: "JozaniForestTour", // Added slug for Jozani Forest detail page
     description:
       "Explore Zanzibar's indigenous forest and meet the rare Red Colobus monkeys found nowhere else on Earth. A nature lover's paradise with guided forest walks.",
@@ -124,7 +124,7 @@ const zanzibarTours = [
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Salam%20Cave-maSMMXqzhTperq8CvQZOv47LUaKQYl.jpeg",
     duration: "Half Day",
     groupSize: "2-25 people",
-    price: "$35",
+    price: "Quote on WhatsApp",
     slug: "SalaamCave", // Added slug for detail page
     description:
       "Experience the unique sea turtle sanctuary in this natural coral grotto. Swim alongside rescued sea turtles in crystal-clear saltwater pools and support vital conservation efforts.",
@@ -142,7 +142,7 @@ const zanzibarTours = [
     image: "/images/tours/kizimkazi-dolphin.jpg",
     duration: "Half Day",
     groupSize: "2-12 people",
-    price: "$45",
+    price: "Quote on WhatsApp",
     slug: "KizimkaziDolphinsTour",
     description:
       "Swim with wild dolphins in their natural habitat at Kizimkazi. An unforgettable wildlife encounter in the warm waters of the Indian Ocean.",
@@ -160,7 +160,7 @@ const zanzibarTours = [
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Mtende%20Beach-6BjUwLXrLo6prVoiEffWsirJQT11vW.jpeg",
     duration: "Half Day",
     groupSize: "2-25 people",
-    price: "$15",
+    price: "Quote on WhatsApp",
     slug: "MtendeBeach",
     description:
       "Discover Zanzibar's secret, picturesque cove with dramatic rock formations and extreme tidal displays. Perfect for those seeking authentic, tranquil atmosphere away from the crowds.",
@@ -178,7 +178,7 @@ const zanzibarTours = [
     image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Maalum%20Cave-7PuunGmAhTkHZ7MtEO0Mzjuf7H5N4x.jpeg",
     duration: "Half Day",
     groupSize: "2-25 people",
-    price: "$37",
+    price: "Quote on WhatsApp",
     slug: "MaalumCave", // Added slug for detail page
     description:
       "Discover Zanzibar's hidden oasis featuring a stunning natural limestone cave with crystal-clear freshwater pools. Perfect for swimming and geological exploration in a serene jungle setting.",
@@ -196,7 +196,7 @@ const zanzibarTours = [
     image: "/images/tours/the-rock-restaurant.jpg",
     duration: "Half Day",
     groupSize: "2-8 people",
-    price: "$55",
+    price: "Quote on WhatsApp",
     slug: "TheRockRestaurant", // Added slug for The Rock Restaurant detail page
     description:
       "Dine at the world-famous restaurant built on a rock in the Indian Ocean. An iconic Zanzibar experience combining great food with stunning views.",
@@ -214,7 +214,7 @@ const zanzibarTours = [
     image: "/images/tours/mnemba-island.jpg",
     duration: "Half Day",
     groupSize: "2-12 people",
-    price: "$52",
+    price: "Quote on WhatsApp",
     slug: "MnembaIslandTour",
     description:
       "Discover pristine coral reefs and swim in crystal-clear waters around this protected marine sanctuary. Perfect for snorkeling enthusiasts and marine life lovers.",
@@ -232,7 +232,7 @@ const zanzibarTours = [
     image: "/images/tours/sunset-dhow.jpg",
     duration: "Half Day",
     groupSize: "2-20 people",
-    price: "$45",
+    price: "Quote on WhatsApp",
     slug: "SunsetDhowCruise",
     description:
       "Sail into the golden hour aboard a traditional dhow and watch the spectacular Zanzibar sunset paint the sky in brilliant colors.",
@@ -324,7 +324,7 @@ export default function ZanzibarPage() {
                   </div>
                   {tour.price && (
                     <div className="mb-3">
-                      <p className="text-lg font-semibold text-golden">From {tour.price}</p>
+                      <p className="text-lg font-semibold text-golden">{tour.price}</p>
                     </div>
                   )}
                   <p className="text-gray-600 mb-4 text-sm leading-relaxed">{tour.description}</p>

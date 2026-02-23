@@ -10,7 +10,7 @@ import type { Metadata } from "next"
 import BookingModal from "@/components/booking-modal"
 
 export const metadata: Metadata = {
-  title: "Mikumi Day Trip Safari from Zanzibar - $440 | Pago Travel Experience",
+  title: "Mikumi Day Trip Safari from Zanzibar - Quote on WhatsApp | Pago Travel Experience",
   description:
     "Experience incredible wildlife in Mikumi National Park on this day trip from Zanzibar. Round-trip flights included. Spot lions, elephants, giraffes, zebras, and more in Tanzania's accessible park.",
 }
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 export default function MikumiDayTripPage() {
   const whatsappNumber = "255628734126"
   const message = encodeURIComponent(
-    "Hello! I'm interested in booking the Mikumi Day Trip Safari from Zanzibar ($440 per person). Can you provide more details?"
+    "Hello! I'm interested in booking the Mikumi Day Trip Safari from Zanzibar (Quote on WhatsApp). Can you provide more details?"
   )
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${message}`
 
@@ -70,8 +70,8 @@ export default function MikumiDayTripPage() {
               <span className="text-gray-600">5 Stars Rated</span>
             </div>
             <div className="text-center sm:text-right">
-              <p className="text-3xl sm:text-4xl font-bold text-golden">$440</p>
-              <p className="text-gray-600">Per Person (Sharing Vehicle)</p>
+              <p className="text-3xl sm:text-4xl font-bold text-golden">Quote on WhatsApp</p>
+              <p className="text-gray-600">Quote via WhatsApp (Sharing Vehicle)</p>
             </div>
           </div>
         </div>
@@ -195,18 +195,18 @@ export default function MikumiDayTripPage() {
                 {/* Pricing Card */}
                 <Card className="border-2 border-golden">
                   <CardContent className="p-6">
-                    <h3 className="text-2xl font-bold text-blue-season mb-4">Tour Prices</h3>
+                    <h3 className="text-2xl font-bold text-blue-season mb-4">Tour Quotes</h3>
                     <div className="space-y-3 mb-6">
                       <div className="flex justify-between items-center pb-3 border-b">
                         <span className="text-gray-600">Sharing Vehicle</span>
-                        <span className="text-2xl font-bold text-golden">$440</span>
+                        <span className="text-2xl font-bold text-golden">Quote on WhatsApp</span>
                       </div>
                       <div className="flex justify-between items-center">
                         <span className="text-gray-600">Private Vehicle</span>
-                        <span className="text-2xl font-bold text-golden">$690</span>
+                        <span className="text-2xl font-bold text-golden">Quote on WhatsApp</span>
                       </div>
                     </div>
-                    <p className="text-sm text-gray-500 mb-6">Price per person</p>
+                    <p className="text-sm text-gray-500 mb-6">Quote via WhatsApp</p>
                     <BookingModal 
                       tourName="Mikumi Day Trip Safari" 
                       className="w-full bg-blue-season hover:bg-blue-season/90 text-white text-lg py-6"
@@ -217,7 +217,7 @@ export default function MikumiDayTripPage() {
                 {/* Inclusions */}
                 <Card>
                   <CardContent className="p-6">
-                    <h3 className="text-xl font-bold text-blue-season mb-4">Price Includes</h3>
+                    <h3 className="text-xl font-bold text-blue-season mb-4">What's Included</h3>
                     <ul className="space-y-3">
                       {[
                         "Roundtrip flight from Zanzibar to Mikumi",
