@@ -3,7 +3,7 @@ import WhatsAppFloat from "@/components/whatsapp-float"
 import Footer from "@/components/footer"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Star, Users, Shield, Clock, MapPin, Plane, Car } from "lucide-react"
+import { Star, Users, Shield, Clock, MapPin, Plane, Car, CheckCircle2, MessageCircle } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import type { Metadata } from "next"
@@ -110,6 +110,17 @@ const transferHighlights = [
     description: "Easy inter-hotel transfer from Jambiani to Stone Town and nearby departure points.",
   },
 ]
+
+const carRentalTypes = [
+  "3-door sedans",
+  "5-door sedans",
+  "Toyota RAV4s",
+  "Toyota Alphards",
+  "Other models on request",
+]
+
+const carRentalWhatsAppLink =
+  "https://wa.me/255614363504?text=Hello%20Pago%20Travel%2C%20I%20would%20like%20more%20information%20about%20your%20self-drive%20car%20rental%20options%20in%20Zanzibar."
 
 export default function HomePage() {
   return (
@@ -250,6 +261,82 @@ export default function HomePage() {
               <p className="text-gray-600">
                 Reliable taxi services for all your transportation needs throughout Zanzibar at competitive rates.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Car Rental Section */}
+      <section className="py-12 sm:py-20 bg-[linear-gradient(180deg,#ffffff_0%,#f7f1ef_100%)]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-8 sm:gap-10 items-center">
+            <div className="relative h-[340px] sm:h-[460px] rounded-[28px] overflow-hidden shadow-2xl">
+              <Image
+                src="/Pago Images/car rental.png"
+                alt="Pago Travel self-drive car rental in Zanzibar"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 100vw, 55vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#24100d]/80 via-[#24100d]/20 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 p-6 sm:p-8 text-white">
+                <p className="text-xs sm:text-sm uppercase tracking-[0.32em] text-white/75 mb-2">
+                  Self-Drive in Zanzibar
+                </p>
+                <h2 className="text-2xl sm:text-4xl font-display font-bold leading-tight max-w-md">
+                  Rent the right car and explore the island on your own time.
+                </h2>
+              </div>
+            </div>
+
+            <div className="bg-white border border-[#eadfdb] rounded-[28px] shadow-xl p-6 sm:p-10">
+              <p className="inline-flex items-center rounded-full bg-blue-season px-4 py-2 text-xs font-semibold uppercase tracking-[0.24em] text-white">
+                Car Rental
+              </p>
+              <h3 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-blue-season mt-5 mb-5">
+                Self-drive car hire for every stay
+              </h3>
+              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                Need a car while you are in Zanzibar? We arrange dependable self-drive rentals so you can move around
+                the island comfortably, whether you need a vehicle for a day, a few days, or your full holiday.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+                {carRentalTypes.map((type) => (
+                  <div
+                    key={type}
+                    className="flex items-center gap-3 rounded-2xl border border-[#eadfdb] bg-[#fbf7f5] px-4 py-3"
+                  >
+                    <CheckCircle2 className="w-5 h-5 text-golden shrink-0" />
+                    <span className="text-sm sm:text-base font-medium text-blue-season">{type}</span>
+                  </div>
+                ))}
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mb-8">
+                <div className="rounded-2xl bg-[#f7f1ef] px-4 py-4">
+                  <p className="text-sm font-semibold text-blue-season">Flexible duration</p>
+                  <p className="text-sm text-gray-600 mt-1">Daily, weekly, and longer rentals available.</p>
+                </div>
+                <div className="rounded-2xl bg-[#f7f1ef] px-4 py-4">
+                  <p className="text-sm font-semibold text-blue-season">Drive yourself</p>
+                  <p className="text-sm text-gray-600 mt-1">Enjoy Zanzibar at your own pace and schedule.</p>
+                </div>
+                <div className="rounded-2xl bg-[#f7f1ef] px-4 py-4">
+                  <p className="text-sm font-semibold text-blue-season">Fast assistance</p>
+                  <p className="text-sm text-gray-600 mt-1">Message us on WhatsApp for options and rates.</p>
+                </div>
+              </div>
+
+              <Link href={carRentalWhatsAppLink} target="_blank" rel="noreferrer">
+                <Button
+                  size="lg"
+                  className="bg-golden hover:bg-golden/90 text-white font-semibold px-8 py-6 text-lg min-h-[52px]"
+                >
+                  <MessageCircle className="w-5 h-5 mr-2" />
+                  WhatsApp Us
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
