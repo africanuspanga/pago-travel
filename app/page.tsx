@@ -272,7 +272,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-8 sm:gap-10 items-center">
             <div className="relative h-[340px] sm:h-[460px] rounded-[28px] overflow-hidden shadow-2xl">
               <Image
-                src="/Pago Images/car rental.png"
+                src="/transfer section.jpeg"
                 alt="Pago Travel self-drive car rental in Zanzibar"
                 fill
                 className="object-cover"
